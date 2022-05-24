@@ -1,14 +1,28 @@
 /* styling navbar */
-a:hover{background-color: lightslategray;}
+a:hover{background-color: beige;}
 
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: fixed;
+  right: 0;
+  top: 0px;
+  min-width: 100%;
+  min-height: 100%;
+}
 
-.containersponsor {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-    
-  }
+.collapse
+{
+    position: relative;
+}
+.container
+{
+  background-image: url();
+}
+#juryleden .card
+{
+  border: 0px;
+  background-color: lightgray;
+}
   
   @media (min-width: 768px) {
     .container {
@@ -48,12 +62,12 @@ a:hover{background-color: lightslategray;}
     
     #featureContainer .carousel-inner .carousel-item-end.active,
     #featureContainer .carousel-inner .carousel-item-next {
-      transform: translateX(25%);
+      transform: translateX(100%);
     }
     
     #featureContainer .carousel-inner .carousel-item-start.active, 
     #featureContainer .carousel-inner .carousel-item-prev {
-      transform: translateX(-25%);
+      transform: translateX(-100%);
     }
   
     #featureContainer .card img{
@@ -106,7 +120,6 @@ a:hover{background-color: lightslategray;}
   
   #featureContainer .indicator:hover{
     background-color: blue;
-    border: 1px solid blue;
     transition: 200ms;
   }
   
@@ -122,3 +135,5 @@ a:hover{background-color: lightslategray;}
   #featureContainer .float-end{
     padding-top: 10px;
   }
+
+  
