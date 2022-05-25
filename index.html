@@ -8,8 +8,8 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-  <script src="index.js"></script>
-  <link rel="stylesheet" href="index.css">
+  <script src="JS/index.js"></script>
+  <link rel="stylesheet" href="CSS/index.css">
   <!-- jQuery -->
   <script src="/path/to/cdn/jquery.slim.min.js"></script>
 
@@ -67,8 +67,8 @@
 
   <div class="container">
     <!-- row juryleden -->
-    <div class="row" id="juryleden">
-      <div class="col-sm-4">
+    <div class="row col-12" id="juryleden">
+      <div class="col-4">
         <div class="card" style="width: 18rem;">
           <img src="/images/jurylid1.jpg" style="height: 350px;" class="card-img-top" alt="...">
           <div class="card-body">
@@ -78,7 +78,7 @@
         </div>
       </div>
 
-      <div class="col-sm-4">
+      <div class="col-4">
         <div class="card" style="width: 18rem;">
           <img src="/images/jurylid2.jpg" style="height: 350px;" class="card-img-top" alt="...">
           <div class="card-body">
@@ -88,7 +88,7 @@
         </div>
       </div>
 
-      <div class="col-sm-4">
+      <div class="col-4">
         <div class="card" style="width: 18rem;">
           <img src="/images/jurylid1.jpg" style="height: 350px;" class="card-img-top" alt="...">
           <div class="card-body">
@@ -99,418 +99,182 @@
       </div>
     </div>
 
+    <div class="row" style="height: 100px;"></div>
+
     <!--carousel sponsoren -->
-    <div class="containersponsor" id="featureContainer">
-      <div class="row mx-auto my-auto justify-content-center">
-        <div id="feature" a href="https://www.jqueryscript.net/tags.php?/Carousel/" Carousel class="carousel slide"
-          data-bs-ride="carousel">
-          <!-- Prev & Next Buttons -->
-          <div class="float-end pe-md-4">
-            <a class="indicator" href="#featureCarousel" role="button" data-bs-slide="prev">
-              <span class="fas fa-chevron-left" aria-hidden="true"></span>
-            </a> &nbsp;&nbsp;
-            <a class="w-aut indicator" href="#featureCarousel" role="button" data-bs-slide="next">
-              <span class="fas fa-chevron-right" aria-hidden="true"></span>
-            </a>
-          </div>
-          <!-- Carousel Items -->
-          <div class="carousel-inner" role="listbox" style="height: 150px;">
-            <div class="carousel-item active">
-              <div class="row">
-                <div class="col d-flex justify-content-center">
-                  <div class="card border-0">
-                    <div class="card-img">
-                      <img src="https://inweh.unu.edu/wp-content/uploads/2013/03/image-alignment-150x150.jpg"
-                        class="img-fluid">
-                    </div>
-                  </div>
-                </div>
-                <div class="col d-flex justify-content-center">
-                  <div class="card border-0">
-                    <div class="card-img">
-                      <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
-                    </div>
-                  </div>
-                </div>
-                <div class="col d-flex justify-content-center">
-                  <div class="card border-0">
-                    <div class="card-img">
-                      <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
-                    </div>
-                  </div>
-                </div>
-                <div class="col d-flex justify-content-center">
-                  <div class="card border-0">
-                    <div class="card-img">
-                      <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
-                    </div>
-                  </div>
-                </div>
-                <div class="col d-flex justify-content-center">
-                  <div class="card border-0">
-                    <div class="card-img">
-                      <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
-                    </div>
-                  </div>
-                </div>
-                <div class="col d-flex justify-content-center">
-                  <div class="card border-0">
-                    <div class="card-img">
-                      <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
-                    </div>
-                  </div>
-                </div>
-              </div>
+    <div class="row col-12">
 
-            </div>
-            <div class="carousel-item">
-              <div class="row">
+      <div class="containersponsor" id="featureContainer">
+        <div class="row  justify-content-center">
+          <div id="feature" a href="https://www.jqueryscript.net/tags.php?/Carousel/" Carousel class="carousel slide"
+            data-bs-ride="carousel">
 
-                <div class="col d-flex justify-content-center">
-                  <div class="card border-0">
-                    <div class="card-img">
-                      <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
+            <!-- Carousel Items -->
+            <div class="carousel-inner" role="listbox" style="height: 150px;">
+              <div class="carousel-item active">
+                <div class="row col-12">
+                  <div class="col-2  justify-content-center">
+                    <div class="card ">
+                      <div class="card-img">
+                        <img src="https://inweh.unu.edu/wp-content/uploads/2013/03/image-alignment-150x150.jpg"
+                          class="img-fluid">
+                      </div>
                     </div>
                   </div>
-                </div>
-
-                <div class="col d-flex justify-content-center">
-                  <div class="card border-0">
-                    <div class="card-img">
-                      <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
+                  <div class="col-2  justify-content-center">
+                    <div class="card">
+                      <div class="card-img">
+                        <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
+                      </div>
                     </div>
                   </div>
-                </div>
-
-                <div class="col d-flex justify-content-center">
-                  <div class="card border-0">
-                    <div class="card-img">
-                      <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
+                  <div class="col-2 d-flex justify-content-center">
+                    <div class="card border-0">
+                      <div class="card-img">
+                        <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
+                      </div>
                     </div>
                   </div>
-                </div>
-
-                <div class="col d-flex justify-content-center">
-                  <div class="card border-0">
-                    <div class="card-img">
-                      <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
+                  <div class="col-2 d-flex justify-content-center">
+                    <div class="card border-0">
+                      <div class="card-img">
+                        <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
+                      </div>
                     </div>
                   </div>
-                </div>
-
-                <div class="col d-flex justify-content-center">
-                  <div class="card border-0">
-                    <div class="card-img">
-                      <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
+                  <div class="col-2 d-flex justify-content-center">
+                    <div class="card border-0">
+                      <div class="card-img">
+                        <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
+                      </div>
                     </div>
                   </div>
-                </div>
-
-                <div class="col d-flex justify-content-center">
-                  <div class="card border-0">
-                    <div class="card-img">
-                      <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
+                  <div class="col-2 d-flex justify-content-center">
+                    <div class="card border-0">
+                      <div class="card-img">
+                        <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
+                      </div>
                     </div>
                   </div>
                 </div>
 
               </div>
-            </div>
+              <div class="carousel-item">
+                <div class="row">
 
-            <div class="carousel-item">
-              <div class="row">
-
-                <div class="col d-flex justify-content-center">
-                  <div class="card border-0">
-                    <div class="card-img">
-                      <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
+                  <div class="col d-flex justify-content-center">
+                    <div class="card border-0">
+                      <div class="card-img">
+                        <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="col d-flex justify-content-center">
-                  <div class="card border-0">
-                    <div class="card-img">
-                      <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
+                  <div class="col d-flex justify-content-center">
+                    <div class="card border-0">
+                      <div class="card-img">
+                        <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="col d-flex justify-content-center">
-                  <div class="card border-0">
-                    <div class="card-img">
-                      <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
+                  <div class="col d-flex justify-content-center">
+                    <div class="card border-0">
+                      <div class="card-img">
+                        <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="col d-flex justify-content-center">
-                  <div class="card border-0">
-                    <div class="card-img">
-                      <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
+                  <div class="col d-flex justify-content-center">
+                    <div class="card border-0">
+                      <div class="card-img">
+                        <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="col d-flex justify-content-center">
-                  <div class="card border-0">
-                    <div class="card-img">
-                      <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
+                  <div class="col d-flex justify-content-center">
+                    <div class="card border-0">
+                      <div class="card-img">
+                        <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
+                      </div>
                     </div>
                   </div>
-                </div>
 
-                <div class="col d-flex justify-content-center">
-                  <div class="card border-0">
-                    <div class="card-img">
-                      <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
+                  <div class="col d-flex justify-content-center">
+                    <div class="card border-0">
+                      <div class="card-img">
+                        <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
+                      </div>
                     </div>
                   </div>
-                </div>
 
+                </div>
               </div>
+
+              <div class="carousel-item">
+                <div class="row">
+
+                  <div class="col d-flex justify-content-center">
+                    <div class="card border-0">
+                      <div class="card-img">
+                        <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col d-flex justify-content-center">
+                    <div class="card border-0">
+                      <div class="card-img">
+                        <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col d-flex justify-content-center">
+                    <div class="card border-0">
+                      <div class="card-img">
+                        <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col d-flex justify-content-center">
+                    <div class="card border-0">
+                      <div class="card-img">
+                        <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col d-flex justify-content-center">
+                    <div class="card border-0">
+                      <div class="card-img">
+                        <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col d-flex justify-content-center">
+                    <div class="card border-0">
+                      <div class="card-img">
+                        <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+
             </div>
-
-
           </div>
         </div>
       </div>
     </div>
 
 
-
-  </div>
-
-
-  <!-- carousel uitprobeersel -->
-
-  <div class="container my-5">
-
-    <!-- Section: Introduction -->
-    <section class="">
-
-
-      <hr class="mt-5">
-
-      <hr class="mb-5" />
-
-    </section>
-    <!-- Section: Introduction -->
-
-    <!-- Section: Basic example -->
-    <section class="">
-
-
-
-      <div class="container my-5">
-        <!-- Carousel wrapper -->
-        <div id="carouselBasicExample" class="carousel slide carousel-dark text-center" data-mdb-ride="carousel">
-          <!-- Controls -->
-          <div class="d-flex justify-content-center mb-4">
-          </div>
-          <!-- Inner -->
-          <div class="carousel-inner py-4">
-            <!-- Single item -->
-            <div class="carousel-item active">
-              <div class="container">
-                <div class="row">
-                  <div class="col-lg-4">
-                    <div class="card">
-                      <img src="images/vice-og.jpg" class="card-img-top" alt="..." />
-                      <div class="card-body">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4 d-none d-lg-block">
-                    <div class="card">
-                      <img src="images/download.png" class="card-img-top" alt="..." />
-                      <div class="card-body">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4 d-none d-lg-block">
-                    <div class="card">
-                      <img src="images/logo-philips.png" class="card-img-top" alt="..." />
-                      <div class="card-body">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Single item -->
-            <div class="carousel-item">
-              <div class="container">
-                <div class="row">
-                  <div class="col-lg-4 col-md-12">
-                    <div class="card">
-                      <img src="images/logo-thuisbezorgd-nl-bezorgservice.png" class="card-img-top" alt="..." />
-                      <div class="card-body">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4 d-none d-lg-block">
-                    <div class="card">
-                      <img src="https://mdbootstrap.com/img/new/standard/nature/185.jpg" class="card-img-top"
-                        alt="..." />
-                      <div class="card-body">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4 d-none d-lg-block">
-                    <div class="card">
-                      <img src="https://mdbootstrap.com/img/new/standard/nature/186.jpg" class="card-img-top"
-                        alt="..." />
-                      <div class="card-body">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Single item -->
-            <div class="carousel-item">
-              <div class="container">
-                <div class="row">
-                  <div class="col-lg-4 col-md-12">
-                    <div class="card">
-                      <img src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" class="card-img-top"
-                        alt="..." />
-                      <div class="card-body">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4 d-none d-lg-block">
-                    <div class="card">
-                      <img src="https://mdbootstrap.com/img/new/standard/nature/185.jpg" class="card-img-top"
-                        alt="..." />
-                      <div class="card-body">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4 d-none d-lg-block">
-                    <div class="card">
-                      <img src="https://mdbootstrap.com/img/new/standard/nature/186.jpg" class="card-img-top"
-                        alt="..." />
-                      <div class="card-body">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <!-- Single item -->
-            <div class="carousel-item">
-              <div class="container">
-                <div class="row">
-                  <div class="col-lg-4 col-md-12">
-                    <div class="card">
-                      <img src="https://mdbootstrap.com/img/new/standard/nature/184.jpg" class="card-img-top"
-                        alt="..." />
-                      <div class="card-body">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4 d-none d-lg-block">
-                    <div class="card">
-                      <img src="https://mdbootstrap.com/img/new/standard/nature/185.jpg" class="card-img-top"
-                        alt="..." />
-                      <div class="card-body">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4 d-none d-lg-block">
-                    <div class="card">
-                      <img src="https://mdbootstrap.com/img/new/standard/nature/186.jpg" class="card-img-top"
-                        alt="..." />
-                      <div class="card-body">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Single item -->
-            <div class="carousel-item">
-              <div class="container">
-                <div class="row">
-                  <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                    <div class="card">
-                      <img src="https://mdbootstrap.com/img/new/standard/nature/187.jpg" class="card-img-top"
-                        alt="..." />
-                      <div class="card-body">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
-                    <div class="card">
-                      <img src="https://mdbootstrap.com/img/new/standard/nature/188.jpg" class="card-img-top"
-                        alt="..." />
-                      <div class="card-body">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
-                    <div class="card">
-                      <img src="https://mdbootstrap.com/img/new/standard/nature/189.jpg" class="card-img-top"
-                        alt="..." />
-                      <div class="card-body">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- Single item -->
-          <div class="carousel-item">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0">
-                  <div class="card">
-                    <img src="https://mdbootstrap.com/img/new/standard/nature/187.jpg" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
-                  <div class="card">
-                    <img src="https://mdbootstrap.com/img/new/standard/nature/188.jpg" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                    </div>
-                  </div>
-                </div>
-
-                <div class="col-lg-4 mb-4 mb-lg-0 d-none d-lg-block">
-                  <div class="card">
-                    <img src="https://mdbootstrap.com/img/new/standard/nature/189.jpg" class="card-img-top" alt="..." />
-                    <div class="card-body">
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- Inner -->
-      </div>
-      <!-- Carousel wrapper -->
-  </div>
-
-  </section>
-  <!-- Section: Basic example -->
   </div>
 
 </body>

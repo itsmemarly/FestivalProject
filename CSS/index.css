@@ -14,10 +14,6 @@ a:hover{background-color: beige;}
 {
     position: relative;
 }
-.container
-{
-  background-image: url();
-}
 
 #juryleden .card
 {
@@ -89,4 +85,52 @@ a:hover{background-color: beige;}
     }
   }
   
- 
+  #featureContainer .carousel-inner .carousel-item-end,
+  #featureContainer .carousel-inner .carousel-item-start { 
+    transform: translateX(0);
+  }
+  
+  #featureContainer .card{
+    border: 0;
+  }
+  
+  #featureContainer .card{
+    position: relative;
+  }
+  
+  #featureContainer .card .card-img-overlays{
+    position: absolute;
+    bottom: 15%;
+    left: 10%;
+    color: #fff;
+    font-weight: bolder;
+  }
+  
+  #featureContainer a{
+    text-decoration: none;
+  }
+  
+  #featureContainer .indicator{
+    border: 1px solid rgb(202, 202, 202);
+    padding: 3px 6px 3px 6px;
+  }
+  
+  #featureContainer .indicator:hover{
+    background-color: blue;
+    transition: 200ms;
+  }
+  
+  #featureContainer .indicator:hover{
+    color: white;
+    transition: 200ms;
+  }
+  
+  #featureContainer .indicator {
+    color: lightgray;
+  }
+  
+  #featureContainer .float-end{
+    padding-top: 10px;
+  }
+
+  
