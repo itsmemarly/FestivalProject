@@ -1,14 +1,7 @@
 /* styling navbar */
 a:hover{background-color: beige;}
 
-/* Style the video: 100% width and height to cover the entire window */
-#myVideo {
-    position: fixed;
-    right: 0;
-    top: 0px;
-    min-width: 100%;
-    min-height: 100%;
-  }
+
   
   .collapse
   {
@@ -23,7 +16,7 @@ a:hover{background-color: beige;}
   background-image: url();
 }
 
-#festivals .card
+.festivals .card
 {
   border: 0px;
   background-color: lightgray
