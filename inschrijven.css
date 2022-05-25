@@ -1,0 +1,32 @@
+/* styling navbar */
+a:hover{background-color: beige;}
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: fixed;
+    right: 0;
+    top: 0px;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  .collapse
+  {
+      position: relative;
+  }
+
+/* styling container inschrijven */
+
+
+.container
+{
+  background-image: url();
+}
+
+#festivals .card
+{
+  border: 0px;
+  background-color: lightgray
+}
+  
+  
