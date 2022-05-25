@@ -1,0 +1,15 @@
+.card {
+    margin-left: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.row2 {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
