@@ -1,4 +1,4 @@
-<html lang="nl-nl">
+<html lang="en">
 
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -9,7 +9,7 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
   <script src="index.js"></script>
-  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="Styles/index.css">
   <!-- jQuery -->
   <script src="/path/to/cdn/jquery.slim.min.js"></script>
 
@@ -20,33 +20,18 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="/path/to/font-awesome/all.min.css" />
 
-  <!-- fullcalendar -->
-  <link href='fullcalendar/main.css' rel='stylesheet' />
-  <script src='fullcalendar/main.js'></script>
-  <script>
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-      themeSystem: 'bootstrap5'
-    });
-  </script>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      var calendarEl = document.getElementById('calendar');
-      var calendar = new FullCalendar.Calendar(calendarEl, {
-        initialView: 'dayGridMonth'
-      });
-      calendar.render();
-    });
-  </script>
-
 </head>
 
 <body>
-  <!-- The video -->
-  <video autoplay muted loop id="myVideo">
-    <source src="images/brass2.mp4" type="video/mp4">
-  </video>
+  <!-- Background image-->
+  <section>
+    <video autoplay muted loop id="myVideo">
+      <source src="images/brass2.mp4" type="video/mp4">
+    </video>
+  </section>
 
+  <!-- Navbar-->
+  <section>
   <nav class="navbar navbar-dark bg-dark">
     <div class="container-fluid">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -64,216 +49,193 @@
       <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="login.html">Inloggen</a>
     </div>
   </div>
+</section>
 
   <div class="container">
+
     <!-- row juryleden -->
-    <div class="row col-12" id="juryleden">
-      <div class="col-4">
-        <div class="card" style="width: 18rem;">
-          <img src="/images/jurylid1.jpg" style="height: 350px;" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Jury lid</h5>
-            <p class="card-text">Ik ben een jurylid.</p>
+    <section>
+      <div class="row col-12 mx-auto" id="juryleden">
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <img src="/images/jurylid1.jpg" style="height: 350px;" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Jury lid</h5>
+              <p class="card-text">Ik ben een jurylid.</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-4">
-        <div class="card" style="width: 18rem;">
-          <img src="/images/jurylid2.jpg" style="height: 350px;" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Jury lid</h5>
-            <p class="card-text">Ik ben een jurylid.</p>
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <img src="/images/jurylid2.jpg" style="height: 350px;" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Jury lid</h5>
+              <p class="card-text">Ik ben een jurylid.</p>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="col-4">
-        <div class="card" style="width: 18rem;">
-          <img src="/images/jurylid1.jpg" style="height: 350px;" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Jury lid</h5>
-            <p class="card-text">Ik ben een jurylid.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row" style="height: 100px;"></div>
-
-    <!--carousel sponsoren -->
-    <div class="row col-12">
-
-      <div class="containersponsor" id="featureContainer">
-        <div class="row  justify-content-center">
-          <div id="feature" a href="https://www.jqueryscript.net/tags.php?/Carousel/" Carousel class="carousel slide"
-            data-bs-ride="carousel">
-
-            <!-- Carousel Items -->
-            <div class="carousel-inner" role="listbox" style="height: 150px;">
-              <div class="carousel-item active">
-                <div class="row col-12">
-                  <div class="col-2  justify-content-center">
-                    <div class="card ">
-                      <div class="card-img">
-                        <img src="https://inweh.unu.edu/wp-content/uploads/2013/03/image-alignment-150x150.jpg"
-                          class="img-fluid">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-2  justify-content-center">
-                    <div class="card">
-                      <div class="card-img">
-                        <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-2 d-flex justify-content-center">
-                    <div class="card border-0">
-                      <div class="card-img">
-                        <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-2 d-flex justify-content-center">
-                    <div class="card border-0">
-                      <div class="card-img">
-                        <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-2 d-flex justify-content-center">
-                    <div class="card border-0">
-                      <div class="card-img">
-                        <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-2 d-flex justify-content-center">
-                    <div class="card border-0">
-                      <div class="card-img">
-                        <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-              </div>
-              <div class="carousel-item">
-                <div class="row">
-
-                  <div class="col d-flex justify-content-center">
-                    <div class="card border-0">
-                      <div class="card-img">
-                        <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col d-flex justify-content-center">
-                    <div class="card border-0">
-                      <div class="card-img">
-                        <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col d-flex justify-content-center">
-                    <div class="card border-0">
-                      <div class="card-img">
-                        <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col d-flex justify-content-center">
-                    <div class="card border-0">
-                      <div class="card-img">
-                        <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col d-flex justify-content-center">
-                    <div class="card border-0">
-                      <div class="card-img">
-                        <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col d-flex justify-content-center">
-                    <div class="card border-0">
-                      <div class="card-img">
-                        <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-              <div class="carousel-item">
-                <div class="row">
-
-                  <div class="col d-flex justify-content-center">
-                    <div class="card border-0">
-                      <div class="card-img">
-                        <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col d-flex justify-content-center">
-                    <div class="card border-0">
-                      <div class="card-img">
-                        <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col d-flex justify-content-center">
-                    <div class="card border-0">
-                      <div class="card-img">
-                        <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col d-flex justify-content-center">
-                    <div class="card border-0">
-                      <div class="card-img">
-                        <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col d-flex justify-content-center">
-                    <div class="card border-0">
-                      <div class="card-img">
-                        <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col d-flex justify-content-center">
-                    <div class="card border-0">
-                      <div class="card-img">
-                        <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-              </div>
-
-
+        <div class="col-4">
+          <div class="card" style="width: 18rem;">
+            <img src="/images/jurylid1.jpg" style="height: 350px;" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Jury lid</h5>
+              <p class="card-text">Ik ben een jurylid.</p>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
+    <!-- whitespace-->
+    <div class="row" style="height: 100px;"></div>
+
+    <!--carousel sponsoren -->
+    <section>
+
+      <div class="row col-12">
+
+        <div class="containersponsor" id="featureContainer">
+          <div class="row  justify-content-center">
+            <div id="feature" a href="https://www.jqueryscript.net/tags.php?/Carousel/" Carousel class="carousel slide"
+              data-bs-ride="carousel">
+
+              <!-- Carousel Items -->
+              <div class="carousel-inner" role="listbox" style="height: 150px;">
+                <div class="carousel-item active">
+                  <div class="row col-12">
+
+                    <div class="col  justify-content-center">
+                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
+                      </div>
+                    </div>
+
+                    <div class="col  justify-content-center">
+                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
+                      </div>
+                    </div>
+
+                    <div class="col  justify-content-center">
+                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
+                      </div>
+                    </div>
+
+                    <div class="col  justify-content-center">
+                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
+                      </div>
+                    </div>
+
+                    <div class="col  justify-content-center">
+                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
+                      </div>
+                    </div>
+
+                    <div class="col  justify-content-center">
+                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
+                      </div>
+                    </div>
+
+                  </div>
+
+                </div>
+                <div class="carousel-item">
+                  <div class="row">
+
+                    <div class="col  justify-content-center">
+                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
+                      </div>
+                    </div>
+
+                    <div class="col  justify-content-center">
+                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
+                      </div>
+                    </div>
+
+                    <div class="col  justify-content-center">
+                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
+                      </div>
+                    </div>
+
+                    <div class="col  justify-content-center">
+                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
+                      </div>
+                    </div>
+
+                    <div class="col  justify-content-center">
+                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
+                      </div>
+                    </div>
+
+                    <div class="col  justify-content-center">
+                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="row">
+
+                    <div class="col d-flex justify-content-center">
+                      <div class="card border-0">
+                        <div class="card-img">
+                          <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col d-flex justify-content-center">
+                      <div class="card border-0">
+                        <div class="card-img">
+                          <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col d-flex justify-content-center">
+                      <div class="card border-0">
+                        <div class="card-img">
+                          <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col d-flex justify-content-center">
+                      <div class="card border-0">
+                        <div class="card-img">
+                          <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col d-flex justify-content-center">
+                      <div class="card border-0">
+                        <div class="card-img">
+                          <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col d-flex justify-content-center">
+                      <div class="card border-0">
+                        <div class="card-img">
+                          <img src="https://source.unsplash.com/JTkibpa_Xv4/450x650" class="img-fluid">
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
   </div>
 

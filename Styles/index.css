@@ -1,5 +1,13 @@
-/* styling navbar */
-a:hover{background-color: beige;}
+/* for carousel with sponsors */
+.SponsorItem {
+
+
+height: 150px; 
+width: 150px; 
+background-repeat: no-repeat; 
+background-size: cover;
+}
+
 
 /* Style the video: 100% width and height to cover the entire window */
 #myVideo {
