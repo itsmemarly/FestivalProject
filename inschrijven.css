@@ -29,4 +29,7 @@ a:hover{background-color: beige;}
   background-color: lightgray
 }
   
-  
+.spacer {
+    padding-top: 0px;
+    padding-bottom: 25px
+}
