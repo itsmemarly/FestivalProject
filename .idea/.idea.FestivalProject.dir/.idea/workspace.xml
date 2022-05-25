@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="0ec31465-fa38-4b9c-9bcf-e0ac67486cfb" name="Changes" comment="">
       <change afterPath="$PROJECT_DIR$/CSS/sponsoren.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/img/pexels.png" afterDir="false" />
@@ -12,6 +13,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FestivalProject.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FestivalProject.dir/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sponsoren.html" beforeDir="false" afterPath="$PROJECT_DIR$/sponsoren.html" afterDir="false" />
     </list>
+=======
+    <list default="true" id="0ec31465-fa38-4b9c-9bcf-e0ac67486cfb" name="Changes" comment="" />
+>>>>>>> 22a0b563bc53239a3c30b711dffe193e50c7e3e9
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +56,11 @@
       <workItem from="1652872546422" duration="2791000" />
       <workItem from="1652876905623" duration="1295000" />
       <workItem from="1653034944332" duration="1054000" />
+<<<<<<< HEAD
       <workItem from="1653075759212" duration="2035000" />
+=======
+      <workItem from="1653040671962" duration="5787000" />
+>>>>>>> 22a0b563bc53239a3c30b711dffe193e50c7e3e9
     </task>
     <servers />
   </component>
