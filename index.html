@@ -8,7 +8,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
-    <!-- JS-->
+  <!-- JS-->
   <script src="index.js"></script>
   <!-- CSS stylesheet-->
   <link rel="stylesheet" href="CSS/index.css">
@@ -22,6 +22,8 @@
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="/path/to/font-awesome/all.min.css" />
+  <link rel='stylesheet' type='text/css'
+    href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
 
 </head>
 
@@ -35,208 +37,256 @@
 
   <!-- Navbar-->
   <section>
-  <nav class="navbar navbar-dark bg-dark">
-    <div class="container-fluid">
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </div>
-  </nav>
-  <div class="collapse" id="navbarToggleExternalContent">
-    <div class="bg-dark p-4">
-      <a class="nav-link" style="color: aliceblue; font-weight: bolder; font-size: 30px;" href="index.html">Home</a>
-      <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="inschrijven.html">Inschrijven</a>
-      <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="sponsoren.html">Sponsoren</a>
-      <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="login.html">Inloggen</a>
-    </div>
-  </div>
-</section>
-
-  <div class="container">
-
-    <div class="row">
-      <div class="card">
-        <div class="card-header">
-          Header
-        </div>
-        <div class="card-body">
-          <h4 class="card-title">Title</h4>
-          <p class="card-text">Text</p>
-        </div>
-        
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container-fluid">
+        <img src="https://lirp.cdn-website.com/a8be4524/dms3rep/multi/opt/logo+surventofestival-98w.png" alt="">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4">
+        <a class="nav-link" style="color: aliceblue; font-weight: bolder; font-size: 30px;" href="index.html">Home</a>
+        <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="inschrijven.html">Inschrijven</a>
+        <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="sponsoren.html">Sponsoren</a>
+        <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="login.html">Inloggen</a>
       </div>
     </div>
+  </section>
 
-    <div class="row" style="height: 100px;"></div>
-    <!-- row juryleden -->
+  <div class="container">
+    <!-- about header-->
     <section>
-      <div class="row col-12 mx-auto" id="juryleden">
-        <div class="col-4">
-          <div class="card" style="width: 18rem;">
-            <img src="/images/jurylid1.jpg" style="height: 350px;" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Jury lid</h5>
-              <p class="card-text">Ik ben een jurylid. Hier staat veel interessante informatie over mij</p>
-            </div>
+      <div class="row justify-content-md-center">
+        <div class="card" style="background-color: rgb(211, 211, 211, 0.4)" id="FestivalInfo">
+          <h4 style="font-size: 36px; color: brown;">Survento Fanfare Festival</h4>
+          <div class="card-body">
+            <h4 class="card-title d-flex">Over het festival</h4>
+            <p class="card-text d-flex">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quas facilis
+              magnam accusantium, ullam dicta delectus maxime eius voluptatibus aliquam molestiae amet recusandae labore
+              vero reiciendis earum. Ab, reprehenderit quia.</p>
           </div>
-        </div>
 
-        <div class="col-4">
-          <div class="card" style="width: 18rem;">
-            <img src="/images/jurylid2.jpg" style="height: 350px;" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Jury lid</h5>
-              <p class="card-text">Ik ben een jurylid. Hier staat veel interessante informatie over mij.</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-4">
-          <div class="card" style="width: 18rem;">
-            <img src="/images/jurylid3.jpg" style="height: 350px;" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Jury lid</h5>
-              <p class="card-text">Ik ben een jurylid. Hier staat veel interessante informatie over mij.</p>
-            </div>
-          </div>
         </div>
       </div>
     </section>
 
-    <!-- whitespace-->
-    <div class="row" style="height: 100px;"></div>
+    <div class="row">
+      <div class="card" style="background-color: rgb(211, 211, 211, 0.4)">
+        <h2 class="text-center" style="color: brown ;"> Dagplanning </h2>
+        <div class="timeline timeline-left mx-lg-10">
+          <!--Timeline item 1-->
+          <div class="timeline-item mt-3 row text-center p-2">
+            <div class="col font-weight-bold text-md-right">00:00 - 00:00</div>
+            <div class="col">Bandnaam</div>
+            <div class="col font-weight-bold text-md-left">Muziekstukken</div>
+            <div class="col2 text-xs text-muted">Dirigent</div>
+          </div>
+          <!--Timeline item 2 - NOTE: the .right class-->
+          <div class="timeline-item mt-3 row text-center p-2">
+            <div class="col font-weight-bold text-md-right">00:00 - 00:00</div>
+            <div class="col">Bandnaam</div>
+            <div class="col font-weight-bold text-md-left">Muziekstukken</div>
+            <div class="col2 text-xs text-muted">Dirigent</div>
+          </div>
+          <div class="timeline-item mt-3 row text-center p-2">
+            <div class="col font-weight-bold text-md-right">00:00 - 00:00</div>
+            <div class="col">Bandnaam</div>
+            <div class="col font-weight-bold text-md-left">Muziekstukken</div>
+            <div class="col2 text-xs text-muted">Dirigent</div>
+          </div>
+          <div class="timeline-item mt-3 row text-center p-2">
+            <div class="col font-weight-bold text-md-right">00:00 - 00:00</div>
+            <div class="col">Bandnaam</div>
+            <div class="col font-weight-bold text-md-left">Muziekstukken</div>
+            <div class="col2 text-xs text-muted">Dirigent</div>
+          </div>
+          <div class="timeline-item mt-3 row text-center p-2">
+            <div class="col font-weight-bold text-md-right">00:00 - 00:00</div>
+            <div class="col">Bandnaam</div>
+            <div class="col font-weight-bold text-md-left">Muziekstukken</div>
+            <div class="col2 text-xs text-muted">Dirigent</div>
+          </div>
+          <div class="timeline-item mt-3 row text-center p-2">
+            <div class="col font-weight-bold text-md-right">00:00 - 00:00</div>
+            <div class="col">Bandnaam</div>
+            <div class="col font-weight-bold text-md-left">Muziekstukken</div>
+            <div class="col2 text-xs text-muted">Dirigent</div>
+          </div>
+        </div>
+      </div>
 
-    <!--carousel sponsoren -->
-    <section>
+      <div class="row" style="height: 100px;"></div>
+      <!-- row juryleden -->
+      <section>
+        <div class="row justify-content-between" style="margin:0cm ;" id="juryleden">
+          <div class="col">
+            <div class="card">
+              <img src="/images/jurylid1.jpg" style="height: 350px;" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Jury lid</h5>
+                <p class="card-text">Ik ben een jurylid. Hier staat veel interessante informatie over mij</p>
+              </div>
+            </div>
+          </div>
 
-      <div class="row col-12">
+          <div class="col">
+            <div class="card">
+              <img src="/images/jurylid2.jpg" style="height: 350px;" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Jury lid</h5>
+                <p class="card-text">Ik ben een jurylid. Hier staat veel interessante informatie over mij.</p>
+              </div>
+            </div>
+          </div>
 
-        <div class="containersponsor" id="featureContainer">
-          <div class="row  justify-content-center">
-            <div id="feature" a href="https://www.jqueryscript.net/tags.php?/Carousel/" Carousel class="carousel slide"
-              data-bs-ride="carousel">
-
-              <!-- Carousel Items -->
-              <div class="carousel-inner" role="listbox" style="height: 150px;">
-                <div class="carousel-item active">
-                  <div class="row col-12">
-
-                    <div class="col  justify-content-center">
-                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                      </div>
-                    </div>
-
-                    <div class="col  justify-content-center">
-                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                      </div>
-                    </div>
-
-                    <div class="col  justify-content-center">
-                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                      </div>
-                    </div>
-
-                    <div class="col  justify-content-center">
-                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                      </div>
-                    </div>
-
-                    <div class="col  justify-content-center">
-                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                      </div>
-                    </div>
-
-                    <div class="col  justify-content-center">
-                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                      </div>
-                    </div>
-
-                  </div>
-
-                </div>
-                <div class="carousel-item">
-                  <div class="row col-12">
-
-                    <div class="col  justify-content-center">
-                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                      </div>
-                    </div>
-
-                    <div class="col  justify-content-center">
-                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                      </div>
-                    </div>
-
-                    <div class="col  justify-content-center">
-                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                      </div>
-                    </div>
-
-                    <div class="col  justify-content-center">
-                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                      </div>
-                    </div>
-
-                    <div class="col  justify-content-center">
-                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                      </div>
-                    </div>
-
-                    <div class="col  justify-content-center">
-                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <div class="row col-12">
-
-                    <div class="col  justify-content-center">
-                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                      </div>
-                    </div>
-
-                    <div class="col  justify-content-center">
-                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                      </div>
-                    </div>
-
-                    <div class="col  justify-content-center">
-                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                      </div>
-                    </div>
-
-                    <div class="col  justify-content-center">
-                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                      </div>
-                    </div>
-
-                    <div class="col  justify-content-center">
-                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                      </div>
-                    </div>
-
-                    <div class="col  justify-content-center">
-                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-
-
+          <div class="col">
+            <div class="card">
+              <img src="/images/jurylid3.jpg" style="height: 350px;" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Jury lid</h5>
+                <p class="card-text">Ik ben een jurylid. Hier staat veel interessante informatie over mij.</p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-  </div>
+      <!-- whitespace-->
+      <div class="row" style="height: 100px;"></div>
+
+      <!--carousel sponsoren -->
+      <section>
+
+        <div class="row col2" style="padding: 0cm;">
+
+          <div class="containersponsor" id="featureContainer">
+            <div class="row  justify-content-center">
+              <div id="feature" a href="https://www.jqueryscript.net/tags.php?/Carousel/" Carousel
+                class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Carousel Items -->
+                <div class="carousel-inner" role="listbox" style="height: 150px;">
+                  <div class="carousel-item active">
+                    <div class="row col2 justify-content-md-between">
+
+                      <div class="col  justify-content-center">
+                        <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
+                        </div>
+                      </div>
+
+                      <div class="col  justify-content-center">
+                        <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
+                        </div>
+                      </div>
+
+                      <div class="col  justify-content-center">
+                        <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
+                        </div>
+                      </div>
+
+                      <div class="col  justify-content-center">
+                        <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
+                        </div>
+                      </div>
+
+                      <div class="col  justify-content-center">
+                        <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
+                        </div>
+                      </div>
+
+                      <div class="col  justify-content-center">
+                        <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
+                        </div>
+                      </div>
+
+                    </div>
+
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row col2">
+
+                      <div class="col  justify-content-center">
+                        <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
+                        </div>
+                      </div>
+
+                      <div class="col  justify-content-center">
+                        <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
+                        </div>
+                      </div>
+
+                      <div class="col  justify-content-center">
+                        <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
+                        </div>
+                      </div>
+
+                      <div class="col  justify-content-center">
+                        <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
+                        </div>
+                      </div>
+
+                      <div class="col  justify-content-center">
+                        <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
+                        </div>
+                      </div>
+
+                      <div class="col  justify-content-center">
+                        <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+                  <div class="carousel-item">
+                    <div class="row col2">
+
+                      <div class="col  justify-content-center">
+                        <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
+                        </div>
+                      </div>
+
+                      <div class="col  justify-content-center">
+                        <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
+                        </div>
+                      </div>
+
+                      <div class="col  justify-content-center">
+                        <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
+                        </div>
+                      </div>
+
+                      <div class="col  justify-content-center">
+                        <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
+                        </div>
+                      </div>
+
+                      <div class="col  justify-content-center">
+                        <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
+                        </div>
+                      </div>
+
+                      <div class="col  justify-content-center">
+                        <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
 
 </body>
 
