@@ -22,7 +22,6 @@
 }
 
 .card{
-  border-radius: 5px;
   border:0ch;
 }
 .card-title{
@@ -49,24 +48,19 @@
 .timetableobject{
   border-top: 2px black solid;
   border-right: 2px black solid;
-  border-radius: 25px;
 }
 .divisie1{
-  border-radius: 25px;
   background-color: olive ;
 }
 
 .divisie2{
-  border-radius: 25px;
   background-color: #3d91E0;
 }
 
 .divisie3{
-  border-radius: 25px;
   background-color: #952B60;
 }
 
 .divisie4{
-  border-radius: 25px;
   background-color: #F1B620;
 }
