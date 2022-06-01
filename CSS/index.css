@@ -45,22 +45,4 @@
   align-items: center;
 }
 
-.timetableobject{
-  border-top: 2px black solid;
-  border-right: 2px black solid;
-}
-.divisie1{
-  background-color: olive ;
-}
 
-.divisie2{
-  background-color: #3d91E0;
-}
-
-.divisie3{
-  background-color: #952B60;
-}
-
-.divisie4{
-  background-color: #F1B620;
-}

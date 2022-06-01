@@ -10,6 +10,7 @@
     crossorigin="anonymous"></script>
   <!-- JS-->
   <script src="index.js"></script>
+
   <!-- CSS stylesheet-->
   <link rel="stylesheet" href="CSS/index.css">
   <link rel="stylesheet" href="CSS/navbar.css">
@@ -39,7 +40,7 @@
   <section>
     <nav class="navbar navbar-dark bg-dark">
       <div class="container-fluid">
-        <img src="https://lirp.cdn-website.com/a8be4524/dms3rep/multi/opt/logo+surventofestival-98w.png" alt="">
+        <img src="https://lirp.cdn-website.com/a8be4524/dms3rep/multi/opt/logo+surventofestival-98w.png" alt="survento logo">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
           data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
           aria-expanded="false" aria-label="Toggle navigation">
@@ -82,206 +83,139 @@
     <section>
       <div class="row">
 
-        <div class="card" style="background-color:rgb(211,211,211,0.4) ;">
+        <div class="card" style="background-color:rgba(211, 211, 211, 0.4) ;">
           <h1 class="d-flex justify-content-center" style="color: brown ;">Festival Programma</h1>
           <div class="row">
-            <div class="col-2">
+            <div class="col-3">
               <h4> Tijd</h4>
             </div>
-            <div class="col-8 d-flex justify-content-center">
+            <div class="col-7 d-flex justify-content-center">
               <h4>Orkest & Stukken </h4>
             </div>
-            <div class="col-2">
+            <div class="col d-flex justify-content-end">
               <h4> Punten </h4>
             </div>
           </div>
-        </div>
 
-        <div class="card" style="background-color:rgb(211,211,211,0.4) ;">
-          <!-- timetable object number 1-->
-          <div class="col timetableobject d-flex">
-
-            <div class="col-2" style="padding: 0cm ;">
-              <div class="card divisie1">
+          <!-- timetable object-->
+          <div class="card timetableobject" style="background-color: rgb(211,211,211,0.4) ;">
+            <div class="row">
+              <div class="col-2 " style="padding: 0cm ;">
                 <div class="col">
-                  <div class="col-12" style="min-height: 100% ;">
-                    <div class="time">00:00 - 00:00</div>
-                  </div>
+                  <div class="time">00:00 - 00:00</div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-10" style="padding: 0cm ;">
-              <div class="card divisie1" style="padding: 0cm ;">
-                <div class="row">
-                  <div class="col d-flex justify-content-center">
+              <div class="col" style="padding: 0cm ;" data-bs-toggle="collapse" data-bs-target="#collapsemuziek1" aria-expanded="false" aria-controls="collapsemuziek1">
+                <div class="row" style="padding: 0cm">
+                  <div class="col-11 d-flex justify-content-center">
                     <h5>Bandnaam</h5>
                   </div>
-                  <div class="col-2 "> 3 </div>
+                  <div class="col d-flex justify-content-center "> 3 </div>
                 </div>
-                <div class="row">
-                  <div class="col d-flex justify-content-center">
-                    <p> Onder leiding van: </p>
-                  </div>
-                  <div class="col-2"></div>
+                <div class="row d-flex" style="padding: 0cm">
+                  <p class=" col-11 d-flex justify-content-center"> Dirigent </p>
                 </div>
-                <div class="row">
-                  <div class="col-10 d-flex justify-content-center">
-                    <div class="col d-flex justify-content-center align-items-center">
-                      <div class="row d-flex justify-content-center">
-                        <p> muziekstuk 1</p>
-                      </div>
-                      <div class="row d-flex justify-content-center">
-                        <p> muziekstuk 2</p>
-                      </div>
-                      <div class="row">
-                        <p> muziekstuk 3</p>
-                      </div>
-                    </div>
+                <div class="collapse" id="collapsemuziek1">
+                  <div class="row" style="padding: 0cm">
+                    <p class=" col-11 d-flex justify-content-center"> muziekstuk 1 </p>
+                    <p class=" col-11 d-flex justify-content-center"> muziekstuk 2</p>
+                    <p class=" col-11 d-flex justify-content-center"> muziekstuk 3</p>
+                    <div class="col"></div>
                   </div>
-                  <div class="col-2"></div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- timetable object 2-->
-          <div class="col timetableobject d-flex">
-
-            <div class="col-2" style="padding: 0cm ;">
-              <div class="card divisie2">
+          <!-- timetable object-->
+          <div class="card timetableobject" style="background-color: rgb(211,211,211,0.4) ;">
+            <div class="row">
+              <div class="col-2 " style="padding: 0cm ;">
                 <div class="col">
-                  <div class="col-12" style="min-height: 100% ;">
-                    <div class="time">00:00 - 00:00</div>
-                  </div>
+                  <div class="time">00:00 - 00:00</div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-10" style="padding: 0cm ;">
-              <div class="card divisie2" style="padding: 0cm ;">
-                <div class="row">
-                  <div class="col d-flex justify-content-center">
+              <div class="col" style="padding: 0cm ;" data-bs-toggle="collapse" data-bs-target="#collapsemuziek1" aria-expanded="false" aria-controls="collapsemuziek1">
+                <div class="row" style="padding: 0cm">
+                  <div class="col-11 d-flex justify-content-center">
                     <h5>Bandnaam</h5>
                   </div>
-                  <div class="col-2 "> 3 </div>
+                  <div class="col d-flex justify-content-center "> 3 </div>
                 </div>
-                <div class="row">
-                  <div class="col d-flex justify-content-center">
-                    <p> Onder leiding van: </p>
-                  </div>
-                  <div class="col-2"></div>
+                <div class="row d-flex" style="padding: 0cm">
+                  <p class=" col-11 d-flex justify-content-center"> Dirigent </p>
                 </div>
-                <div class="row">
-                  <div class="col-10 d-flex justify-content-center">
-                    <div class="col d-flex justify-content-center align-items-center">
-                      <div class="row d-flex justify-content-center">
-                        <p> muziekstuk 1</p>
-                      </div>
-                      <div class="row d-flex justify-content-center">
-                        <p> muziekstuk 2</p>
-                      </div>
-                      <div class="row">
-                        <p> muziekstuk 3</p>
-                      </div>
-                    </div>
+                <div class="collapse" id="collapsemuziek1">
+                  <div class="row" style="padding: 0cm">
+                    <p class=" col-11 d-flex justify-content-center"> muziekstuk 1 </p>
+                    <p class=" col-11 d-flex justify-content-center"> muziekstuk 2</p>
+                    <p class=" col-11 d-flex justify-content-center"> muziekstuk 3</p>
+                    <div class="col"></div>
                   </div>
-                  <div class="col-2"></div>
                 </div>
               </div>
             </div>
           </div>
 
-          <!-- timetable object 3-->
-          <div class="col timetableobject d-flex">
-
-            <div class="col-2" style="padding: 0cm ;">
-              <div class="card divisie3">
+          <!-- timetable object-->
+          <div class="card timetableobject" style="background-color: rgb(211,211,211,0.4) ;">
+            <div class="row">
+              <div class="col-2 " style="padding: 0cm ;">
                 <div class="col">
-                  <div class="col-12" style="min-height: 100% ;">
-                    <div class="time">00:00 - 00:00</div>
-                  </div>
+                  <div class="time">00:00 - 00:00</div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-10" style="padding: 0cm ;">
-              <div class="card divisie3" style="padding: 0cm ;">
-                <div class="row">
-                  <div class="col d-flex justify-content-center">
+              <div class="col" style="padding: 0cm ;" data-bs-toggle="collapse" data-bs-target="#collapsemuziek1" aria-expanded="false" aria-controls="collapsemuziek1">
+                <div class="row" style="padding: 0cm">
+                  <div class="col-11 d-flex justify-content-center">
                     <h5>Bandnaam</h5>
                   </div>
-                  <div class="puntenaantal col-2 "> 3 </div>
+                  <div class="col d-flex justify-content-center "> 3 </div>
                 </div>
-                <div class="row">
-                  <div class="col d-flex justify-content-center">
-                    <p> Onder leiding van: </p>
+                <div class="row d-flex" style="padding: 0cm">
+                  <p class=" col-11 d-flex justify-content-center"> Dirigent </p>
+                </div>
+                <div class="collapse" id="collapsemuziek1">
+                  <div class="row" style="padding: 0cm">
+                    <p class=" col-11 d-flex justify-content-center"> muziekstuk 1 </p>
+                    <p class=" col-11 d-flex justify-content-center"> muziekstuk 2</p>
+                    <p class=" col-11 d-flex justify-content-center"> muziekstuk 3</p>
+                    <div class="col"></div>
                   </div>
-                  <div class="col-2"></div>
                 </div>
-                <div class="row">
-                  <div class="col-10 d-flex justify-content-center">
-                    <div class="col d-flex justify-content-center align-items-center">
-                      <div class="row d-flex justify-content-center">
-                        <p> muziekstuk 1</p>
-                      </div>
-                      <div class="row d-flex justify-content-center">
-                        <p> muziekstuk 2</p>
-                      </div>
-                      <div class="row">
-                        <p> muziekstuk 3</p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-2"></div>
-                </div>
-
               </div>
             </div>
           </div>
-
-          <!-- timetable object 4-->
-          <div class="col timetableobject d-flex">
-
-            <div class="col-2" style="padding: 0cm ;">
-              <div class="card divisie4">
+          
+          <!-- timetable object-->
+          <div class="card timetableobject" style="background-color: rgb(211,211,211,0.4) ;">
+            <div class="row">
+              <div class="col-2 " style="padding: 0cm ;">
                 <div class="col">
-                  <div class="col-12" style="min-height: 100% ;">
-                    <div class="time">00:00 - 00:00</div>
-                  </div>
+                  <div class="time">00:00 - 00:00</div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-10" style="padding: 0cm ;">
-              <div class="card divisie4" style="padding: 0cm ;">
-                <div class="row">
-                  <div class="col d-flex justify-content-center">
+              <div class="col" style="padding: 0cm ;" data-bs-toggle="collapse" data-bs-target="#collapsemuziek1" aria-expanded="false" aria-controls="collapsemuziek1">
+                <div class="row" style="padding: 0cm">
+                  <div class="col-11 d-flex justify-content-center">
                     <h5>Bandnaam</h5>
                   </div>
-                  <div class="col-2 "> 3 </div>
+                  <div class="col d-flex justify-content-center "> 3 </div>
                 </div>
-                <div class="row">
-                  <div class="col d-flex justify-content-center">
-                    <p> Onder leiding van: </p>
-                  </div>
-                  <div class="col-2"></div>
+                <div class="row d-flex" style="padding: 0cm">
+                  <p class=" col-11 d-flex justify-content-center"> Dirigent </p>
                 </div>
-                <div class="row">
-                  <div class="col-10 d-flex justify-content-center">
-                    <div class="col d-flex justify-content-center align-items-center">
-                      <div class="row d-flex justify-content-center">
-                        <p> muziekstuk 1</p>
-                      </div>
-                      <div class="row d-flex justify-content-center">
-                        <p> muziekstuk 2</p>
-                      </div>
-                      <div class="row">
-                        <p> muziekstuk 3</p>
-                      </div>
-                    </div>
+                <div class="collapse" id="collapsemuziek1">
+                  <div class="row" style="padding: 0cm">
+                    <p class=" col-11 d-flex justify-content-center"> muziekstuk 1 </p>
+                    <p class=" col-11 d-flex justify-content-center"> muziekstuk 2</p>
+                    <p class=" col-11 d-flex justify-content-center"> muziekstuk 3</p>
+                    <div class="col"></div>
                   </div>
-                  <div class="col-2"></div>
                 </div>
               </div>
             </div>
@@ -290,13 +224,12 @@
         </div>
     </section>
 
-
     <!-- row juryleden -->
     <section>
 
-      <div class="row">
+      <div class="row d-flex justify-content-between">
 
-        <div class="col">
+        <div class="col-3">
           <div class="card">
             <img src="/images/jurylid1.jpg" style="height: 350px;" class="card-img-top" alt="...">
             <div class="card-body">
@@ -306,7 +239,7 @@
           </div>
         </div>
 
-        <div class="col">
+        <div class="col-3">
           <div class="card">
             <img src="/images/jurylid2.jpg" style="height: 350px;" class="card-img-top" alt="...">
             <div class="card-body">
@@ -316,7 +249,7 @@
           </div>
         </div>
 
-        <div class="col">
+        <div class="col-3">
           <div class="card">
             <img src="/images/jurylid3.jpg" style="height: 350px;" class="card-img-top" alt="...">
             <div class="card-body">
