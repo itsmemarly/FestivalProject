@@ -1,0 +1,12 @@
+.column {
+    display: flex;
+    justify-content: space-around;
+}
+
+.muzikaliteit {
+    margin-right: 30px;
+}
+
+.presentatie {
+    margin-left: 30px;
+}

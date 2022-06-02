@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="/path/to/cdn/bootstrap.min.css" />
+    <script src="/path/to/cdn/bootstrap.bundle.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="/path/to/cdn/jquery.slim.min.js"></script>
+
+    <!-- bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="CSS/puntentelling.css">
+    
+    <meta charset="UTF-8">
+    <title>Puntentelling</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <img src="https://lirp.cdn-website.com/a8be4524/dms3rep/multi/opt/logo+surventofestival-98w.png" alt="survento logo">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+    <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+            <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="index.html">Home</a>
+            <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="inschrijven.html">Inschrijven</a>
+            <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="index.html">Sponsoren</a>
+            <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="login.html">Inloggen</a>
+            <a class="nav-link" style="color: aliceblue; font-weight: bolder; font-size: 30px;" href="puntentelling.html">Puntentelling</a>
+        </div>
+    </div>
+
+    <!-- Form -->
+    <div class="container col-3 mt-4">
+        <div class="column">
+
+        <!-- muzikaliteit -->
+        <div class="muzikaliteit card col-3 mt-4" style="width: 30rem;">
+            <div class="card-body">
+                <h6 class="card-title">Beoordeling muzikaliteit</h6>
+                <div class="mb-3 mt-3">
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Voer hier de bandnaam in...">
+                </div>
+
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Selecteer divisie...</option>
+                    <option value="3">Concert divisie</option>
+                    <option value="1">1e divisie</option>
+                    <option value="2">2e divisie</option>
+                    <option value="3">3e divisie</option>
+                    <option value="3">4e divisie</option>
+                    <option value="3">5e divisie</option>
+                </select>
+
+                <select class="form-select mt-3" aria-label="Default select example">
+                    <option selected>Selecteer aantal punten...</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+
+                <button type="submit" class="btn btn-secondary mt-3">Verstuur</button>
+            </div>
+        </div>
+        
+        
+        <!-- programmaopbouw -->
+        <div class="card col-3 mt-4 " style="width: 30rem;">
+            <div class="card-body">
+                <h6 class="card-title">Beoordeling programmaopbouw</h6>
+                <div class="mb-3 mt-3">
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Voer hier de bandnaam in...">
+                </div>
+
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Selecteer divisie...</option>
+                    <option value="3">Concert divisie</option>
+                    <option value="1">1e divisie</option>
+                    <option value="2">2e divisie</option>
+                    <option value="3">3e divisie</option>
+                    <option value="3">4e divisie</option>
+                    <option value="3">5e divisie</option>
+                </select>
+
+                <select class="form-select mt-3" aria-label="Default select example">
+                    <option selected>Selecteer aantal punten...</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+
+                <button type="submit" class="btn btn-secondary mt-3">Verstuur</button>
+            </div>
+        </div>
+
+        <!-- presentatie en entertainment -->
+        <div class="presentatie card col-3 mt-4" style="width: 30rem;">
+            <div class="card-body">
+                <h6 class="card-title">Beoordeling presentatie en entertainment</h6>
+                <div class="mb-3 mt-3">
+                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Voer hier de bandnaam in...">
+                </div>
+
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Selecteer divisie...</option>
+                    <option value="3">Concert divisie</option>
+                    <option value="1">1e divisie</option>
+                    <option value="2">2e divisie</option>
+                    <option value="3">3e divisie</option>
+                    <option value="3">4e divisie</option>
+                    <option value="3">5e divisie</option>
+                </select>
+
+                <select class="form-select mt-3" aria-label="Default select example">
+                    <option selected>Selecteer aantal punten...</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+
+                <button type="submit" class="btn btn-secondary mt-3">Verstuur</button>
+            </div>
+        </div>
+        </div>
+
+        <!-- Uitslagen -->
+            <b> Uitslagen voor beste muzikaliteit</b>
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Bandnaam</th>
+                <th scope="col">Divisie</th>
+                <th scope="col">Totaal</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Mark</td>
+                <td>1e divisie</td>
+                <td>50 punten</td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                <td>Jacob</td>
+                <td>2e divisie</td>
+                <td>50 punten</td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                <td>Larry</td>
+                <td>3e divisie</td>
+                <td>50 punten</td>
+            </tr>
+            </tbody>
+        </table>
+        </div>
+        
+    </div> <!-- container -->
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
