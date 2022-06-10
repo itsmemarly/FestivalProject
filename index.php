@@ -1,3 +1,7 @@
+<?php
+include_once("connection.php");
+?>
+
 <html lang="en">
 
 <head>
@@ -37,32 +41,15 @@
   </section>
 
   <!-- Navbar-->
-  <section>
-    <nav class="navbar navbar-dark bg-dark">
-      <div class="container-fluid">
-        <img src="https://lirp.cdn-website.com/a8be4524/dms3rep/multi/opt/logo+surventofestival-98w.png" alt="survento logo">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-          aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      </div>
-    </nav>
-    <div class="collapse" id="navbarToggleExternalContent">
-      <div class="bg-dark p-4">
-        <a class="nav-link" style="color: aliceblue; font-weight: bolder; font-size: 30px;" href="index.html">Home</a>
-        <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="inschrijven.html">Inschrijven</a>
-        <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="sponsoren.html">Sponsoren</a>
-        <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="login.html">Inloggen</a>
-      </div>
-    </div>
-  </section>
-
+  <?php
+  include_once("navbar.php")
+  ?>
+  
   <div class="container">
     <!-- about header-->
     <section>
       <div class="row justify-content-md-center">
-        <div class="card" style="background-color: rgb(211, 211, 211, 0.4)" id="FestivalInfo">
+        <div class="card" style="background-color: rgb(211, 211, 211, 0.6)" id="FestivalInfo">
           <h4 style="font-size: 36px; color: brown;">Survento Fanfare Festival</h4>
           <div class="card-body">
             <h4 class="card-title d-flex">Over het festival</h4>
@@ -83,7 +70,7 @@
     <section>
       <div class="row">
 
-        <div class="card" style="background-color:rgba(211, 211, 211, 0.4) ;">
+        <div class="card" style="background-color:rgba(211, 211, 211, 0.6) ;">
           <div class="row col-sm-12 ">
             <h1 class="d-flex justify-content-center" style="color: brown ;">Festival Programma</h1>
           </div>
