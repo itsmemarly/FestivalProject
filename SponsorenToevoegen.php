@@ -44,7 +44,7 @@
     <div class="container">
       <div class="row">
         <div class="mt-4 ms-5 card col-md-6 col-sm-12">
-            <form>
+            <form method="post">
                 <div class=" mt-4 ms-2 mb-3 row">
                     <h1>Sponsor toevoegen</h1>
                 </div>
