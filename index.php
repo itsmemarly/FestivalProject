@@ -29,6 +29,7 @@ include_once("connection.php");
 </head>
 
 <body>
+
   <!-- Background image-->
   <section>
     <video autoplay muted loop id="myVideo">
