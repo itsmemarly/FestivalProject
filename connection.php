@@ -2,7 +2,7 @@
 $servername = "FestivalProject";
 $username = "root";
 //Wachtwoord van Patrick, aanpassen voor eigen connectie
-$password = "3xD4hJ54vI1!";
+$password = "Wachtwoord123";
 
 try {
   $conn = new PDO("mysql:host=$servername;dbname=myDB", $username, $password);
