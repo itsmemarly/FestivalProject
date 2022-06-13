@@ -8,8 +8,14 @@
             "name": "Launch Chrome",
             "request": "launch",
             "type": "chrome",
+<<<<<<< HEAD
             "url": "http://localhost:8080",
+=======
+            "url": "http://localhost:8080/festivalProject",
+>>>>>>> 1ebd398cd6e931a4ce4c31ba51bf845df0aa85c0
             "webRoot": "${workspaceFolder}"
         }
+
+     
     ]
 }
