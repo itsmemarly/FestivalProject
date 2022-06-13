@@ -7,11 +7,8 @@ include_once("connection.php");
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <!-- JS-->
   <script src="./JS/index.js"></script>
 
@@ -27,8 +24,7 @@ include_once("connection.php");
 
   <!-- Font Awesome -->
   <link rel="stylesheet" href="/path/to/font-awesome/all.min.css" />
-  <link rel='stylesheet' type='text/css'
-    href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
+  <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
 
 </head>
 
@@ -41,17 +37,10 @@ include_once("connection.php");
   </section>
 
   <!-- Navbar-->
-<<<<<<< HEAD
   <?php
-  include_once("navbar.php")
+  include_once("navbar.php");
   ?>
-  
-=======
-<?php
-include_once("navbar.php");
-?>
 
->>>>>>> 1ebd398cd6e931a4ce4c31ba51bf845df0aa85c0
   <div class="container">
     <!-- about header-->
     <section>
@@ -83,39 +72,39 @@ include_once("navbar.php");
           </div>
           <table class="table table-striped">
             <thead>
-            <tr>
-              <th scope="col">Tijd</th>
-              <th scope="col">Orkest & Stukken</th>
-              <th scope="col">Divisie</th>
-              <th scope="col">Punten</th>
-            </tr>
+              <tr>
+                <th scope="col">Tijd</th>
+                <th scope="col">Orkest & Stukken</th>
+                <th scope="col">Divisie</th>
+                <th scope="col">Punten</th>
+              </tr>
             </thead>
             <tbody>
-            <tr>
-              <th scope="row">00:00 - 00:00</th>
-              <td><b>Bandnaam</b><br> Stuk 1 <br> Stuk 2 <br> Stuk 3</td>
-              <td>1</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <th scope="row">00:00 - 00:00</th>
-              <td><b>Bandnaam</b></td>
-              <td>1</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <th scope="row">00:00 - 00:00</th>
-              <td><b>Bandnaam</b></td>
-              <td>1</td>
-              <td>4</td>
-            </tr>
+              <tr>
+                <th scope="row">00:00 - 00:00</th>
+                <td><b>Bandnaam</b><br> Stuk 1 <br> Stuk 2 <br> Stuk 3</td>
+                <td>1</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <th scope="row">00:00 - 00:00</th>
+                <td><b>Bandnaam</b></td>
+                <td>1</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <th scope="row">00:00 - 00:00</th>
+                <td><b>Bandnaam</b></td>
+                <td>1</td>
+                <td>4</td>
+              </tr>
             </tbody>
           </table>
-          
-         
-        
-           
-          </div>
+
+
+
+
+        </div>
     </section>
 
     <!-- row juryleden -->
@@ -164,8 +153,7 @@ include_once("navbar.php");
 
         <div class="containersponsor" id="featureContainer">
           <div class="row  justify-content-center">
-            <div id="feature" a href="https://www.jqueryscript.net/tags.php?/Carousel/" Carousel class="carousel slide"
-              data-bs-ride="carousel">
+            <div id="feature" a href="https://www.jqueryscript.net/tags.php?/Carousel/" Carousel class="carousel slide" data-bs-ride="carousel">
 
               <!-- Carousel Items -->
               <div class="carousel-inner" role="listbox" style="height: 150px;">
