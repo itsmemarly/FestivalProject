@@ -1,15 +1,24 @@
 <?php
-$servername = "localhost";
-$username = "root";
-//Wachtwoord van Patrick, aanpassen voor eigen connectie
-$password = "";
+
+$conn = "";
 
 try {
-  $conn = new PDO("mysql:host=$servername;dbname=FestivalProject", $username, $password);
-  // set the PDO error mode to exception
-  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-  echo "Connected successfully";
+	$servername = "localhost:3306";
+	$dbname = "projectFestival";
+	$username = "root";
+	$password = "";
+
+	$conn = new PDO(
+		"mysql:host=$servername; dbname=$dbname",
+		$username, $password
+	);
+	
+	$conn->setAttribute(PDO::ATTR_ERRMODE,
+				PDO::ERRMODE_EXCEPTION);
+	
 } catch(PDOException $e) {
-  echo "Connection failed: " . $e->getMessage();
+	echo "Connection failed: "
+		. $e->getMessage();
 }
+
 ?>
