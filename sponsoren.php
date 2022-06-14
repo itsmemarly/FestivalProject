@@ -57,11 +57,11 @@ foreach ($result as $row) {
 
 
     <div class="card col-md-3 col-sm-12" style="width: 18rem;">
-    <img class="card-img-top mt-4" src="<tr><td><?php echo $row['SponsorLogo']?></td></tr>" alt="Card image cap">
+    <img class="card-img-top mt-4" src="<?php echo $row['SponsorLogo']?>" alt="Card image cap">
     <div class="card-body">
         <h5 class="card-title"><tr><td><?php echo $row['Sponsornaam']?></td></tr></h5>
         <p class="card-text"><tr><td><?php echo $row['SponsorInfo']?></td></tr></p>
-        <a href='<tr><td><?php echo $row['SponsorWebsite']?></td></tr>' class="btn btn-block btn-secondary">Naar website</a>
+        <a href="<?php echo $row['SponsorWebsite']?>" class="btn btn-block btn-secondary">Naar website</a>
     </div>
 </div>
 
