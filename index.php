@@ -103,7 +103,7 @@ foreach ($result as $row) {
     ?>
     <tr>
                 <td><?php echo $begintijd ?> - <?php echo $eindtijd ?></td>
-                <td><?php echo $eindtijd ?></td>
+                <td>Leeg</td>
                 <td><?php echo $gescoordepunten ?></td>
                 <td><?php echo $bandID ?></td>
             </tr>
