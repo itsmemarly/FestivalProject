@@ -1,3 +1,7 @@
+<?php
+include_once("connection.php");
+?>
+
 <html lang="en">
 
 <head>
@@ -80,6 +84,32 @@ include_once("navbar.php");
             </tr>
             </thead>
             <tbody>
+            <?php
+
+$sth = $conn->prepare("SELECT * FROM tijdvak");
+$sth->execute();
+
+/* Fetch all of the remaining rows in the result set */
+
+$result = $sth->fetchAll();
+
+?>
+<?php
+foreach ($result as $row) {
+    $begintijd = $row['Begintijd'];
+    $eindtijd = $row['Eindtijd'];
+    $gescoordepunten = $row['GescoordePunten'];
+    $bandID = $row['BandID'];
+    ?>
+    <tr>
+                <td><?php echo $begintijd ?> - <?php echo $eindtijd ?></td>
+                <td><?php echo $eindtijd ?></td>
+                <td><?php echo $gescoordepunten ?></td>
+                <td><?php echo $bandID ?></td>
+            </tr>
+    <?php
+                        }
+    ?>
             <tr>
               <th scope="row">00:00 - 00:00</th>
               <td><b>Bandnaam</b><br> Stuk 1 <br> Stuk 2 <br> Stuk 3</td>
