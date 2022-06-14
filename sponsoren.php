@@ -43,20 +43,24 @@
 </div>
 
 <?php
-			include_once("connection.php");
-			$sql = "SELECT Sponsornaam, SponsorLogo, SponsorInfo, SponsorWebsite FROM sponsor";
-			$resultset = mysqli_query($conn, $sql) or die("database error:". mysqli_error($conn));			
-			while( $record = mysqli_fetch_assoc($resultset) ) {
+    require_once 'connection.php';
+ 
+    if(ISSET($_POST['display'])){
+        $sql = "SELECT * FROM `sponsor`";
+        $query = $conn->prepare($sql);
+        $query->execute();
+ 
+        while($fetch = $query->fetch()){
 ?>
 
 <div class="row mt-4">
     
     <div class="card col-3" style="width: 18rem;">
-    <img class="card-img-top mt-4" src="<?php echo $record['SponsorLogo']; ?>" alt="Card image cap">
+    <img class="card-img-top mt-4" src="<tr><td><?php echo $fetch['SponsorLogo']?></td></tr>" alt="Card image cap">
     <div class="card-body">
-        <h5 class="card-title"><?php echo $record['Sponsornaam']; ?></h5>
-        <p class="card-text"><?php echo $record['SponsorInfo']; ?></p>
-        <a href='<?php echo $record['SponsorWebsite']; ?>' class="btn btn-block btn-secondary">Naar website</a>
+        <h5 class="card-title"><tr><td><?php echo $fetch['Sponsornaam']?></td></tr>></h5>
+        <p class="card-text"><tr><td><?php echo $fetch['SponsorInfo']?></td></tr></p>
+        <a href='<tr><td><?php echo $fetch['SponsorWebsite']?></td></tr>' class="btn btn-block btn-secondary">Naar website</a>
     </div>
 </div>
 
@@ -106,7 +110,10 @@
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             <a href="#" class="btn btn-block btn-secondary">Naar website</a>
         </div>
-        <?php } ?>
+        <?php
+        }
+    }
+?>
     </div>
     
 </div>
