@@ -51,6 +51,7 @@ $sth->execute();
 print("Fetch all of the remaining rows in the result set:\n");
 $result = $sth->fetchAll();
 print_r($result);
+foreach ($result as $row) {
     // if(ISSET($_POST['display'])){
     //     $sql = "SELECT * FROM 'sponsor' WHERE SponsorID = 1";
     //     $query = $conn->prepare($sql);
@@ -59,19 +60,19 @@ print_r($result);
 
 ?>
 
-<!-- <div class="row mt-4">
+<div class="row mt-4">
     
     <div class="card col-3" style="width: 18rem;">
-    <img class="card-img-top mt-4" src="<tr><td><?php echo $fetch['SponsorLogo']?></td></tr>" alt="Card image cap">
+    <img class="card-img-top mt-4" src="<tr><td><?php echo $row['SponsorLogo']?></td></tr>" alt="Card image cap">
     <div class="card-body">
-        <h5 class="card-title"><tr><td><?php echo $fetch['Sponsornaam']?></td></tr>></h5>
-        <p class="card-text"><tr><td><?php echo $fetch['SponsorInfo']?></td></tr></p>
-        <a href='<tr><td><?php echo $fetch['SponsorWebsite']?></td></tr>' class="btn btn-block btn-secondary">Naar website</a>
+        <h5 class="card-title"><tr><td><?php echo $row['Sponsornaam']?></td></tr></h5>
+        <p class="card-text"><tr><td><?php echo $row['SponsorInfo']?></td></tr></p>
+        <a href='<tr><td><?php echo $row['SponsorWebsite']?></td></tr>' class="btn btn-block btn-secondary">Naar website</a>
     </div>
-</div> -->
+</div>
 
 <?php
-        //    }
+           }
         // }
 ?>
 
