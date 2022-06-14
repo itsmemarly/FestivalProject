@@ -1,6 +1,9 @@
+<<<<<<< HEAD
+=======
 <?php
 include_once("connection.php");
 ?>
+>>>>>>> 1ebd398cd6e931a4ce4c31ba51bf845df0aa85c0
 <!DOCTYPE html>
 <html lang="en">
 <header>
@@ -16,6 +19,48 @@ include_once("connection.php");
 
 <body>
 
+<<<<<<< HEAD
+    <!-- Navbar-->
+    <?php
+    include_once("navbar.php")
+    ?>
+
+    <body style="background-image: linear-gradient(#2BC0E4, #EAECC6); background-repeat: no-repeat;  background-attachment: fixed;">
+        <section>
+            <div class="container mt-3">
+                <h2>Gebruikers</h2>
+                <p>Informatie over de gebruikers van de website:</p>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Firstname</th>
+                            <th>Lastname</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John</td>
+                            <td>Doe</td>
+                            <td>john@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>Mary</td>
+                            <td>Moe</td>
+                            <td>mary@example.com</td>
+                        </tr>
+                        <tr>
+                            <td>July</td>
+                            <td>Dooley</td>
+                            <td>july@example.com</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </body>
+
+=======
 <!-- Navbar -->
 <section>
     <nav class="navbar navbar-dark bg-dark">
@@ -72,4 +117,5 @@ include_once("connection.php");
     </div>
 </section>
 </body>
+>>>>>>> 1ebd398cd6e931a4ce4c31ba51bf845df0aa85c0
 </html>
