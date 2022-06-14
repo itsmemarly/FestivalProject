@@ -43,7 +43,6 @@ include_once("connection.php");
 </div>
 
 <?php
-
 $sth = $conn->prepare("SELECT * FROM sponsor");
 $sth->execute();
 
