@@ -132,39 +132,32 @@ include_once("connection.php");
         <section>
 
             <div class="row d-flex justify-content-between">
+<?php
+$sth = $conn->prepare("SELECT * FROM jury");
+$sth->execute();
+
+/* Fetch all of the remaining rows in the result set */
+
+$result = $sth->fetchAll();
+
+?>
+<?php
+foreach ($result as $row) {
+?>
 
                 <div class="col-md-3 col-sm-12 mt-4">
                     <div class="card">
-                        <img src="./images/jurylid1.jpg" style="height: 350px;" class="card-img-top" alt="...">
+                        <img src="<?php echo $row['JuryLogo']?>" style="height: 350px;" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Jury lid</h5>
-                            <p class="card-text">Ik ben een jurylid. Hier staat veel interessante informatie over mij
-                            </p>
-                        </div>
-                    </div>
-                </div>z
-
-                <div class="col-md-3 col-sm-12 mt-4">
-                    <div class="card">
-                        <img src="./images/jurylid2.jpg" style="height: 350px;" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Jury lid</h5>
-                            <p class="card-text">Ik ben een jurylid. Hier staat veel interessante informatie over mij.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-3 col-sm-12 mt-4">
-                    <div class="card">
-                        <img src="./images/jurylid3.jpg" style="height: 350px;" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Jury lid</h5>
-                            <p class="card-text">Ik ben een jurylid. Hier staat veel interessante informatie over mij.
-                            </p>
+                            <h5 class="card-title"><tr><td><?php echo $row['JuryNaam']?></td></tr></h5>
+                            <p class="card-text"><tr><td><?php echo $row['JuryInfo']?></td></tr></p>
+                            <a href="<?php echo $row['JuryWebsite']?>" class="btn btn-block btn-secondary">Naar website</a>
                         </div>
                     </div>
                 </div>
+<?php
+    }
+?>
 
             </div>
 
@@ -174,6 +167,18 @@ include_once("connection.php");
         <section>
 
             <div class="row col2" style="padding: 0cm;">
+<?php
+$sth = $conn->prepare("SELECT * FROM sponsor");
+$sth->execute();
+
+/* Fetch all of the remaining rows in the result set */
+
+$result = $sth->fetchAll();
+
+?>
+<?php
+foreach ($result as $row) {
+?>
 
                 <div class="containersponsor" id="featureContainer">
                     <div class="row  justify-content-center">
@@ -183,133 +188,24 @@ include_once("connection.php");
                             <!-- Carousel Items -->
                             <div class="carousel-inner" role="listbox" style="height: 150px;">
                                 <div class="carousel-item active">
+                                    
                                     <div class="row col2 justify-content-md-between">
 
-                                        <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem"
-                                                style="background-image:  url('./images/image150.jpg');">
-                                            </div>
+                                        <div class="col justify-content-center">
+                                            <img class="card border-0 SponsorItem"  src="<?php echo $row['SponsorLogo']?>">
+                                            </img>
                                         </div>
-
-                                        <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem"
-                                                style="background-image:  url('./images/image150.jpg');">
-                                            </div>
-                                        </div>
-
-                                        <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem"
-                                                style="background-image:  url('./images/image150.jpg');">
-                                            </div>
-                                        </div>
-
-                                        <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem"
-                                                style="background-image:  url('./images/image150.jpg');">
-                                            </div>
-                                        </div>
-
-                                        <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem"
-                                                style="background-image:  url('./images/image150.jpg');">
-                                            </div>
-                                        </div>
-
-                                        <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem"
-                                                style="background-image:  url('./images/image150.jpg');">
-                                            </div>
-                                        </div>
-
                                     </div>
-
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="row col2">
-
-                                        <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem"
-                                                style="background-image:  url('./images/image150.jpg');">
-                                            </div>
-                                        </div>
-
-                                        <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem"
-                                                style="background-image:  url('images/image150.jpg');">
-                                            </div>
-                                        </div>
-
-                                        <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem"
-                                                style="background-image:  url('images/image150.jpg');">
-                                            </div>
-                                        </div>
-
-                                        <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem"
-                                                style="background-image:  url('images/image150.jpg');">
-                                            </div>
-                                        </div>
-
-                                        <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem"
-                                                style="background-image:  url('images/image150.jpg');">
-                                            </div>
-                                        </div>
-
-                                        <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem"
-                                                style="background-image:  url('images/image150.jpg');">
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="carousel-item">
-                                    <div class="row col2">
-
-                                        <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem"
-                                                style="background-image:  url('images/image150.jpg');">
-                                            </div>
-                                        </div>
-
-                                        <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem"
-                                                style="background-image:  url('images/image150.jpg');">
-                                            </div>
-                                        </div>
-
-                                        <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem"
-                                                style="background-image:  url('images/image150.jpg');">
-                                            </div>
-                                        </div>
-
-                                        <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem"
-                                                style="background-image:  url('images/image150.jpg');">
-                                            </div>
-                                        </div>
-
-                                        <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem"
-                                                style="background-image:  url('images/image150.jpg');">
-                                            </div>
-                                        </div>
-
-                                        <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem"
-                                                style="background-image:  url('images/image150.jpg');">
-                                            </div>
+<?php
+    }
+?>
                                         </div>
 
                                     </div>
                                 </div>
 
 
-                            </div>
+</div>
                         </div>
                     </div>
                 </div>
