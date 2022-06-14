@@ -97,16 +97,14 @@ include_once("connection.php");
                        
                         $stmt = $conn->prepare("SELECT * FROM tijdvak");
                         $stmt->execute();
-                        $tijdvakken = $stmt->fetchAll();
-                        foreach($tijdvakken as $tijdvak)
+                        while($tijdvak = $stmt->fetch(PDO::FETCH_ASSOC))
+                       
                         ?>
 
                             <tr>
                                 <th scope="row"> <?php echo $tijdvak['BeginTijd']?> '-' <?php echo $tijdvak['Eindtijd'] ?> </th>
-                                <td><b><?php echo $tijdvak['BandNaam'] ?></b>
-                                <?php foreach()
-
-                                  ?>
+                                <td><b><?php $tijdvak['BandNaam'] ?></b>
+                               
                                 <br> Stuk 1 <br> Stuk 2 <br> Stuk 3</td>
                                 <td>1</td>
                                 <td>4</td>
