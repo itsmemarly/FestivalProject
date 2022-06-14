@@ -41,98 +41,33 @@ include_once("connection.php");
         <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="login.html">Inloggen</a>
     </div>
 </div>
-
+<div class="row mt-4">
 <?php
-
 $sth = $conn->prepare("SELECT * FROM sponsor");
 $sth->execute();
 
 /* Fetch all of the remaining rows in the result set */
-print("Fetch all of the remaining rows in the result set:\n");
+
 $result = $sth->fetchAll();
-print_r($result);
-    // if(ISSET($_POST['display'])){
-    //     $sql = "SELECT * FROM 'sponsor' WHERE SponsorID = 1";
-    //     $query = $conn->prepare($sql);
-    //     $query->execute();
-    //     while($fetch = $query->fetch()){ 
 
 ?>
+<?php
+foreach ($result as $row) {
+?>
 
-<!-- <div class="row mt-4">
-    
-    <div class="card col-3" style="width: 18rem;">
-    <img class="card-img-top mt-4" src="<tr><td><?php echo $fetch['SponsorLogo']?></td></tr>" alt="Card image cap">
+
+    <div class="card col-md-3 col-sm-12" style="width: 18rem;">
+    <img class="card-img-top mt-4" src="<tr><td><?php echo $row['SponsorLogo']?></td></tr>" alt="Card image cap">
     <div class="card-body">
-        <h5 class="card-title"><tr><td><?php echo $fetch['Sponsornaam']?></td></tr>></h5>
-        <p class="card-text"><tr><td><?php echo $fetch['SponsorInfo']?></td></tr></p>
-        <a href='<tr><td><?php echo $fetch['SponsorWebsite']?></td></tr>' class="btn btn-block btn-secondary">Naar website</a>
+        <h5 class="card-title"><tr><td><?php echo $row['Sponsornaam']?></td></tr></h5>
+        <p class="card-text"><tr><td><?php echo $row['SponsorInfo']?></td></tr></p>
+        <a href='<tr><td><?php echo $row['SponsorWebsite']?></td></tr>' class="btn btn-block btn-secondary">Naar website</a>
     </div>
-</div> -->
+</div>
 
 <?php
-        //    }
-        // }
+           }
 ?>
-
-<div class="row mt-4">
-    
-    <div class="card col-3" style="width: 18rem;">
-    <img class="card-img-top mt-4" src="images/pexels.png" alt="Card image cap">
-    <div class="card-body">
-        <h5 class="card-title">Sponsor</h5>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" class="btn btn-block btn-secondary">Naar website</a>
-    </div>
-</div>
-
-        <div class="card col-3" style="width: 18rem;">
-        <img class="card-img-top mt-4" src="images/pexels1.png" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Sponsor</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-block btn-secondary">Naar website</a>
-        </div>
-    </div>
-
-            <div class="card  col-4" style="width: 18rem;">
-        <img class="card-img-top mt-4" src="images/pexels3.png" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Sponsor</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-block btn-secondary">Naar website</a>
-        </div>
-    </div>
-</div>
-
-<div class="row mt-4">
-
-    <div class="card col-3" style="width: 18rem;">
-        <img class="card-img-top mt-4" src="images/pexels.png" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Sponsor</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn-block btn btn-secondary">Naar website</a>
-        </div>
-    </div>
-
-        <div class="card col-3" style="width: 18rem;">
-        <img class="card-img-top mt-4" src="images/pexels1.png" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Sponsor</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-block btn-secondary">Naar website</a>
-        </div>
-    </div>
-
-            <div class="card col-3" style="width: 18rem;">
-        <img class="card-img-top mt-4" src="images/pexels3.png" alt="Card image cap">
-        <div class="card-body">
-            <h5 class="card-title">Sponsor</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-block btn-secondary">Naar website</a>
-        </div>
-    </div>
     
 </div>
 
