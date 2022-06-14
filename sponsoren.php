@@ -1,15 +1,12 @@
 <!DOCTYPE html>
-<?php
-$servername = "localhost";
-            $username = "root";
-            $password = "Wachtwoord123";
-            $dbname = "festivaldatabase";
-?>
+
+
 
 <html lang="en">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="./CSS/sponsoren.css" type="text/css">
 <head>
+
     <!-- jQuery -->
     <script src="/path/to/cdn/jquery.slim.min.js"></script>
     <!-- bootstrap -->
@@ -45,107 +42,21 @@ $servername = "localhost";
     </div>
 </div>
 
-
+<?php
+			include_once("connection.php");
+			$sql = "SELECT Sponsornaam, SponsorLogo, SponsorInfo, SponsorWebsite FROM sponsor";
+			$resultset = mysqli_query($conn, $sql) or die("database error:". mysqli_error($conn));			
+			while( $record = mysqli_fetch_assoc($resultset) ) {
+?>
 
 <div class="row mt-4">
     
     <div class="card col-3" style="width: 18rem;">
-    <img class="card-img-top mt-4" src="        
-    
-    <?php // php sponsorlogo    
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-        $sql = "SELECT Sponsorlogo FROM sponsor";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-  // output data of each row
-  while($row = $result->fetch_assoc()) {
-    echo "" . $row["Sponsorlogo"]. "";
-  }
-} else {
-  echo "0 results";
-}
-$conn->close();
-?>"
-
- alt="Card image cap">
+    <img class="card-img-top mt-4" src="<?php echo $record['SponsorLogo']; ?>" alt="Card image cap">
     <div class="card-body">
-        <h5 class="card-title">
-
-<?php //php sponsornaam        
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-
-$sql = "SELECT Sponsornaam FROM sponsor";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-  // output data of each row
-  while($row = $result->fetch_assoc()) {
-    echo "" . $row["Sponsornaam"]. "<br>";
-  }
-} else {
-  echo "0 results";
-}
-$conn->close();
-?></h5>
-        <p class="card-text">
-
-<?php // php sponsorinfo
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-        $sql = "SELECT Sponsorinfo FROM sponsor";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-  // output data of each row
-  while($row = $result->fetch_assoc()) {
-    echo "" . $row["Sponsorinfo"]. "<br>";
-  }
-} else {
-  echo "0 results";
-}
-$conn->close();
-?></p>
-
-        <a href= "
-
-        <?php // php sponsorwebsite
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-        $sql = "SELECT Sponsorwebsite FROM sponsor";
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-  // output data of each row
-  while($row = $result->fetch_assoc()) {
-    echo "" . $row["Sponsorwebsite"]. "";
-  }
-} else {
-  echo "0 results";
-}
-$conn->close();
-?> "
-
-class="btn btn-block btn-secondary">Naar website</a>
-
+        <h5 class="card-title"><?php echo $record['Sponsornaam']; ?></h5>
+        <p class="card-text"><?php echo $record['SponsorInfo']; ?></p>
+        <a href='<?php echo $record['SponsorWebsite']; ?>' class="btn btn-block btn-secondary">Naar website</a>
     </div>
 </div>
 
@@ -195,6 +106,7 @@ class="btn btn-block btn-secondary">Naar website</a>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
             <a href="#" class="btn btn-block btn-secondary">Naar website</a>
         </div>
+        <?php } ?>
     </div>
     
 </div>
