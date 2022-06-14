@@ -1,14 +1,7 @@
 /* styling navbar */
-a:hover{background-color: beige;}
+a:hover{background-color: black; opacity: 0.5;}
 
-/* Style the video: 100% width and height to cover the entire window */
-#myVideo {
-    position: fixed;
-    right: 0;
-    top: 0px;
-    min-width: 100%;
-    min-height: 100%;
-  }
+
   
   .collapse
   {
@@ -17,16 +10,34 @@ a:hover{background-color: beige;}
 
 /* styling container inschrijven */
 
-
 .container
 {
   background-image: url();
+  background-color: rgba(255, 255, 255, 0.15);
+
 }
 
-#festivals .card
+.row
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card
+{
+    border: 0px;
+}
+
+.card-body
 {
   border: 0px;
-  background-color: lightgray
+  background-color: lightgray;
 }
   
-  
+.spacer {
+    padding-top: 0px;
+    padding-bottom: 25px
+}
+
+

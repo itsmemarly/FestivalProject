@@ -53,20 +53,15 @@ $result = $sth->fetchAll();
 ?>
 <?php
 foreach ($result as $row) {
-    $sponsernaam = $row['Sponsornaam'];
-    $sponsorinfo = $row['SponsorInfo'];
-    $sponsorwebsite = $row['SponsorWebsite'];
-    $sponsorlogo = $row['SponsorLogo'];
-    ?>
+?>
 
 
     <div class="card col-md-3 col-sm-12" style="width: 18rem;">
-    <img class="card-img-top mt-4" src="<?php echo $sponsorlogo ?>" alt="Card image cap">
+    <img class="card-img-top mt-4" src="<?php echo $row['SponsorLogo']?>" alt="Card image cap">
     <div class="card-body">
-        <h5 class="card-title"><?php echo $sponsernaam ?></td></tr></h5>
-        <p class="card-text"><?php echo $sponsorinfo ?></p>
-        <!-- _blank zorgt ervoor dat de pagina zich in een nieuw tabblad opent -->
-        <a target="_blank" href='<?php echo $sponsorwebsite ?>' class="btn btn-block btn-secondary">Naar website</a>
+        <h5 class="card-title"><tr><td><?php echo $row['Sponsornaam']?></td></tr></h5>
+        <p class="card-text"><tr><td><?php echo $row['SponsorInfo']?></td></tr></p>
+        <a href="<?php echo $row['SponsorWebsite']?>" class="btn btn-block btn-secondary">Naar website</a>
     </div>
 </div>
 
