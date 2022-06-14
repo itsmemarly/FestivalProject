@@ -103,7 +103,11 @@ include_once("connection.php");
 
                             <tr>
                                 <th scope="row"> <?php echo $tijdvak['BeginTijd']?> '-' <?php echo $tijdvak['Eindtijd'] ?> </th>
-                                <td><b>Bandnaam</b><br> Stuk 1 <br> Stuk 2 <br> Stuk 3</td>
+                                <td><b><?php echo $tijdvak['BandNaam'] ?></b>
+                                <?php foreach()
+
+                                  ?>
+                                <br> Stuk 1 <br> Stuk 2 <br> Stuk 3</td>
                                 <td>1</td>
                                 <td>4</td>
                             </tr>
