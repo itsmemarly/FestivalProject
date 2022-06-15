@@ -86,8 +86,10 @@ include_once("navbar.php");
             <tbody>
             <?php
 
-$sth = $conn->prepare("SELECT * FROM tijdvak ORDER BY Begintijd ASC");
+$sth = $conn->prepare("SELECT * FROM tijdvak, band WHERE tijdvak.BandID = band.BandID ORDER BY Begintijd ASC");
+
 $sth->execute();
+
 
 /* Fetch all of the remaining rows in the result set */
 
@@ -100,11 +102,13 @@ foreach ($result as $row) {
     $eindtijd = $row['Eindtijd'];
     $gescoordepunten = $row['GescoordePunten'];
     $bandID = $row['BandID'];
+    $bandnaam = $row['BandNaam'];
+    $banddivisie = $row['Divisie'];
     ?>
     <tr>
                 <td><?php echo $begintijd ?> - <?php echo $eindtijd ?></td>
-                <td>Leeg</td>
-                <td><?php echo $bandID ?></td>
+                <td><?php echo $bandnaam?></td>
+                <td><?php echo $banddivisie ?></td>
                 <td><?php  
                 //Check of score al ingevuld is
                  if(is_null($gescoordepunten))
