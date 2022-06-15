@@ -1,5 +1,5 @@
 <?php
-include_once("connection.php");
+include_once('connection.php');
 ?>
 
 
@@ -8,10 +8,8 @@ include_once("connection.php");
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
     <!-- JS-->
     <script src="./JS/index.js"></script>
@@ -28,8 +26,7 @@ include_once("connection.php");
 
     <!-- Font Awesome -->
     <link rel="stylesheet" href="/path/to/font-awesome/all.min.css" />
-    <link rel='stylesheet' type='text/css'
-        href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
+    <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
 
 </head>
 
@@ -44,8 +41,8 @@ include_once("connection.php");
 
     <!-- Navbar-->
     <?php
-  include_once("navbar.php");
-  ?>
+    include_once("navbar.php");
+    ?>
 
     <div class="container">
         <!-- about header-->
@@ -53,19 +50,19 @@ include_once("connection.php");
             <div class="row justify-content-md-center">
                 <div class="card" style="background-color: rgb(211, 211, 211, 0.6)" id="FestivalInfo">
                     <h4 style="font-size: 36px; color: brown;">
-                    <?php   $q= $conn->prepare("SELECT FestivalNaam FROM `festival` WHERE FestivalNaam = 'Survento'");
-                            $q->execute(); 
-                            $FestivalNaam = $q->fetchColumn();
-                            echo $FestivalNaam
-                            ?>
+                        <?php $q = $conn->prepare("SELECT FestivalNaam FROM `festival` WHERE FestivalNaam = 'Survento'");
+                        $q->execute();
+                        $FestivalNaam = $q->fetchColumn();
+                        echo $FestivalNaam
+                        ?>
                     </h4>
                     <div class="card-body">
                         <h4 class="card-title d-flex">Over het festival</h4>
                         <p class="card-text d-flex">
                             <?php
-                            $q= $conn->prepare("SELECT FestivalInfo FROM `festival` WHERE FestivalNaam = 'Survento'");
-                            $q->execute(); 
-                            $FestivalInfo = $q->fetchColumn(); 
+                            $q = $conn->prepare("SELECT FestivalInfo FROM `festival` WHERE FestivalNaam = 'Survento'");
+                            $q->execute();
+                            $FestivalInfo = $q->fetchColumn();
                             echo $FestivalInfo ?>
                         </p>
                     </div>
@@ -92,20 +89,28 @@ include_once("connection.php");
                             </tr>
                         </thead>
                         <tbody>
-                          <?php
-                        include_once('connection.php');
-                       
-                        $stmt = $conn->prepare("SELECT * FROM tijdvak");
-                        $stmt->execute();
-                        while($tijdvak = $stmt->fetch(PDO::FETCH_ASSOC))
-                       
-                        ?>
-
-                            <tr>
-                                <th scope="row"> <?php echo $tijdvak['BeginTijd']?> '-' <?php echo $tijdvak['Eindtijd'] ?> </th>
+                            <?php
+                            
+                            $sth = $conn->prepare("SELECT * FROM tijdvak");
+                            $sth->execute();
+                            /* Fetch all of the remaining rows in the result set */
+                            $result = $sth->fetchAll();
+                            ?>
+                            <?php
+                                foreach ($result as $row)
+                                $BandNaam = $row['bandnaam'];
+                                $BeginTijd = $row['begintijd'];
+                                $EindTijd = $row['EindTijd'];
+                                $GescoordePunten = $row['GescoordePunten'];
+                                $NaamMuziekstuk = $row['NaamMuziekstuk'];
+                                $Dirigent = $row['Dirigent'];
+                                ?>
+                            <tr> 
+                                <th scope="row"> <?php echo $BeginTijd ?> '-' <?php echo $tijdvak['Eindtijd'] ?> </th>
                                 <td><b><?php $tijdvak['BandNaam'] ?></b>
-                               
-                                <br> Stuk 1 <br> Stuk 2 <br> Stuk 3</td>
+
+                                    <br> Stuk 1 <br> Stuk 2 <br> Stuk 3
+                                </td>
                                 <td>1</td>
                                 <td>4</td>
                             </tr>
@@ -179,8 +184,7 @@ include_once("connection.php");
 
                 <div class="containersponsor" id="featureContainer">
                     <div class="row  justify-content-center">
-                        <div id="feature" a href="https://www.jqueryscript.net/tags.php?/Carousel/" Carousel
-                            class="carousel slide" data-bs-ride="carousel">
+                        <div id="feature" a href="https://www.jqueryscript.net/tags.php?/Carousel/" Carousel class="carousel slide" data-bs-ride="carousel">
 
                             <!-- Carousel Items -->
                             <div class="carousel-inner" role="listbox" style="height: 150px;">
@@ -188,38 +192,32 @@ include_once("connection.php");
                                     <div class="row col2 justify-content-md-between">
 
                                         <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem"
-                                                style="background-image:  url('./images/image150.jpg');">
+                                            <div class="card border-0 SponsorItem" style="background-image:  url('./images/image150.jpg');">
                                             </div>
                                         </div>
 
                                         <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem"
-                                                style="background-image:  url('./images/image150.jpg');">
+                                            <div class="card border-0 SponsorItem" style="background-image:  url('./images/image150.jpg');">
                                             </div>
                                         </div>
 
                                         <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem"
-                                                style="background-image:  url('./images/image150.jpg');">
+                                            <div class="card border-0 SponsorItem" style="background-image:  url('./images/image150.jpg');">
                                             </div>
                                         </div>
 
                                         <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem"
-                                                style="background-image:  url('./images/image150.jpg');">
+                                            <div class="card border-0 SponsorItem" style="background-image:  url('./images/image150.jpg');">
                                             </div>
                                         </div>
 
                                         <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem"
-                                                style="background-image:  url('./images/image150.jpg');">
+                                            <div class="card border-0 SponsorItem" style="background-image:  url('./images/image150.jpg');">
                                             </div>
                                         </div>
 
                                         <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem"
-                                                style="background-image:  url('./images/image150.jpg');">
+                                            <div class="card border-0 SponsorItem" style="background-image:  url('./images/image150.jpg');">
                                             </div>
                                         </div>
 
@@ -230,38 +228,32 @@ include_once("connection.php");
                                     <div class="row col2">
 
                                         <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem"
-                                                style="background-image:  url('./images/image150.jpg');">
+                                            <div class="card border-0 SponsorItem" style="background-image:  url('./images/image150.jpg');">
                                             </div>
                                         </div>
 
                                         <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem"
-                                                style="background-image:  url('images/image150.jpg');">
+                                            <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
                                             </div>
                                         </div>
 
                                         <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem"
-                                                style="background-image:  url('images/image150.jpg');">
+                                            <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
                                             </div>
                                         </div>
 
                                         <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem"
-                                                style="background-image:  url('images/image150.jpg');">
+                                            <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
                                             </div>
                                         </div>
 
                                         <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem"
-                                                style="background-image:  url('images/image150.jpg');">
+                                            <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
                                             </div>
                                         </div>
 
                                         <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem"
-                                                style="background-image:  url('images/image150.jpg');">
+                                            <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
                                             </div>
                                         </div>
 
@@ -272,38 +264,32 @@ include_once("connection.php");
                                     <div class="row col2">
 
                                         <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem"
-                                                style="background-image:  url('images/image150.jpg');">
+                                            <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
                                             </div>
                                         </div>
 
                                         <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem"
-                                                style="background-image:  url('images/image150.jpg');">
+                                            <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
                                             </div>
                                         </div>
 
                                         <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem"
-                                                style="background-image:  url('images/image150.jpg');">
+                                            <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
                                             </div>
                                         </div>
 
                                         <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem"
-                                                style="background-image:  url('images/image150.jpg');">
+                                            <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
                                             </div>
                                         </div>
 
                                         <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem"
-                                                style="background-image:  url('images/image150.jpg');">
+                                            <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
                                             </div>
                                         </div>
 
                                         <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem"
-                                                style="background-image:  url('images/image150.jpg');">
+                                            <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
                                             </div>
                                         </div>
 

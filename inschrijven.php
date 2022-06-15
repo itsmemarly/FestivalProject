@@ -23,6 +23,7 @@
     <meta charset="UTF-8">
     <title>Inschrijven</title>
 </head>
+
 <body>
     <section>
         <header>
@@ -35,18 +36,11 @@
     
         </header>
     </section>
-    
-    <body style="background-image: linear-gradient(#2BC0E4, #EAECC6); background-repeat: no-repeat;  background-attachment: fixed;">
-<<<<<<< HEAD
-       
-   <!-- Navbar-->
-  <?php
-  include_once("navbar.php")
-  ?>
-  
-=======
+    <?php
+    include_once('navbar.php')
+    ?>
 
->>>>>>> 1ebd398cd6e931a4ce4c31ba51bf845df0aa85c0
+    <body style="background-image: linear-gradient(#2BC0E4, #EAECC6); background-repeat: no-repeat;  background-attachment: fixed;">
     <div class="container">
         <!-- row inschrijven festivals -->
         <div class="row" id="inschrijven">
