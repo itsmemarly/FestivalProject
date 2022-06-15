@@ -35,10 +35,10 @@ include_once("connection.php");
     </nav>
 <div class="collapse" id="navbarToggleExternalContent">
     <div class="bg-dark p-4">
-        <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="index.html">Home</a>
-        <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="inschrijven.html">Inschrijven</a>
-        <a class="nav-link" style="color: aliceblue; font-weight: bolder; font-size: 30px;" href="index.html">Sponsoren</a>
-        <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="login.html">Inloggen</a>
+        <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="index.php">Home</a>
+        <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="inschrijven.php">Inschrijven</a>
+        <a class="nav-link" style="color: aliceblue; font-weight: bolder; font-size: 30px;" href="sponsoren.php">Sponsoren</a>
+        <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="login.php">Inloggen</a>
     </div>
 </div>
 <div class="row mt-4">
@@ -53,20 +53,15 @@ $result = $sth->fetchAll();
 ?>
 <?php
 foreach ($result as $row) {
-    $sponsernaam = $row['Sponsornaam'];
-    $sponsorinfo = $row['SponsorInfo'];
-    $sponsorwebsite = $row['SponsorWebsite'];
-    $sponsorlogo = $row['SponsorLogo'];
-    ?>
+?>
 
 
     <div class="card col-md-3 col-sm-12" style="width: 18rem;">
-    <img class="card-img-top mt-4" src="<?php echo $sponsorlogo ?>" alt="Card image cap">
+    <img class="card-img-top mt-4" src="<?php echo $row['SponsorLogo']?>" alt="Card image cap">
     <div class="card-body">
-        <h5 class="card-title"><?php echo $sponsernaam ?></td></tr></h5>
-        <p class="card-text"><?php echo $sponsorinfo ?></p>
-        <!-- _blank zorgt ervoor dat de pagina zich in een nieuw tabblad opent -->
-        <a target="_blank" href='<?php echo $sponsorwebsite ?>' class="btn btn-block btn-secondary">Naar website</a>
+        <h5 class="card-title"><tr><td><?php echo $row['Sponsornaam']?></td></tr></h5>
+        <p class="card-text"><tr><td><?php echo $row['SponsorInfo']?></td></tr></p>
+        <a href="<?php echo $row['SponsorWebsite']?>" class="btn btn-block btn-secondary">Naar website</a>
     </div>
 </div>
 

@@ -12,7 +12,8 @@ items.forEach((el) => {
     next = next.nextElementSibling
   }
 })
-$(document).ready(function(){
+(document).ready(function(){
   $('#featureCarousel').carousel({interval: false});
   $('#featureCarousel').carousel('pause');
 });
+

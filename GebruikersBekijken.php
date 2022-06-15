@@ -28,27 +28,42 @@ include_once('navbar.php')
         <table class="table table-striped">
             <thead>
             <tr>
-                <th>Firstname</th>
-                <th>Lastname</th>
-                <th>Email</th>
+                <th>ID</th>
+                <th>Mail</th>
+                <th>Wachtwoord</th>
+                <th>Rol</th>
             </tr>
             </thead>
             <tbody>
-            <tr>
-                <td>John</td>
-                <td>Doe</td>
-                <td>john@example.com</td>
+
+            <?php
+
+$sth = $conn->prepare("SELECT * FROM gebruiker");
+$sth->execute();
+
+/* Fetch all of the remaining rows in the result set */
+
+$result = $sth->fetchAll();
+
+?>
+<?php
+foreach ($result as $row) {
+    $gebruikerID = $row['GebruikerID'];
+    $gebruikersrol = $row['Rol'];
+    $gebruikersmail = $row['GebruikerMail'];
+    $gebruikerwachtwoord = $row['GebruikerWW'];
+    ?>
+    <tr>
+                <td><?php echo $gebruikerID ?></td>
+                <td><?php echo $gebruikersmail ?></td>
+                <td><?php echo $gebruikerwachtwoord ?></td>
+                <td><?php echo $gebruikersrol ?></td>
             </tr>
-            <tr>
-                <td>Mary</td>
-                <td>Moe</td>
-                <td>mary@example.com</td>
-            </tr>
-            <tr>
-                <td>July</td>
-                <td>Dooley</td>
-                <td>july@example.com</td>
-            </tr>
+    <?php
+                        }
+    ?>
+        
+          
             </tbody>
         </table>
     </div>
