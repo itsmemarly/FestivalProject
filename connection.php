@@ -3,8 +3,8 @@
 $conn = "";
 
 try {
-	$servername = "localhost:3306";
-	$dbname = "FestivalProject";
+	$servername = "localhost";
+	$dbname = "festivalproject";
 	$username = "root";
 	$password = "";
 

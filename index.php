@@ -50,7 +50,7 @@ include_once('connection.php');
             <div class="row justify-content-md-center">
                 <div class="card" style="background-color: rgb(211, 211, 211, 0.6)" id="FestivalInfo">
                     <h4 style="font-size: 36px; color: brown;">
-                        <?php $q = $conn->prepare("SELECT FestivalNaam FROM `festival` WHERE FestivalNaam = 'Survento'");
+                        <?php $q = $conn->prepare("SELECT FestivalNaam FROM festival WHERE FestivalNaam = 'Survento'");
                         $q->execute();
                         $FestivalNaam = $q->fetchColumn();
                         echo $FestivalNaam
@@ -60,7 +60,7 @@ include_once('connection.php');
                         <h4 class="card-title d-flex">Over het festival</h4>
                         <p class="card-text d-flex">
                             <?php
-                            $q = $conn->prepare("SELECT FestivalInfo FROM `festival` WHERE FestivalNaam = 'Survento'");
+                            $q = $conn->prepare("SELECT FestivalInfo FROM festival WHERE FestivalNaam = 'Survento'");
                             $q->execute();
                             $FestivalInfo = $q->fetchColumn();
                             echo $FestivalInfo ?>
@@ -91,40 +91,31 @@ include_once('connection.php');
                         <tbody>
                             <?php
                             
-                            $sth = $conn->prepare("SELECT * FROM tijdvak");
+                            $sth = $conn->prepare("SELECT * FROM tijdvak, band, speelt_muziekstuk, muziekstuk WHERE tijdvak.BandID = band.BandID AND band.BandID = speelt_muziekstuk.BandID ORDER BY Begintijd ASC");
                             $sth->execute();
                             /* Fetch all of the remaining rows in the result set */
                             $result = $sth->fetchAll();
                             ?>
                             <?php
                                 foreach ($result as $row)
-                                $BandNaam = $row['bandnaam'];
-                                $BeginTijd = $row['begintijd'];
-                                $EindTijd = $row['EindTijd'];
+                                $BandNaam = $row['BandNaam'];
+                                $BeginTijd = $row['Begintijd'];
+                                $EindTijd = $row['Eindtijd'];
                                 $GescoordePunten = $row['GescoordePunten'];
-                                $NaamMuziekstuk = $row['NaamMuziekstuk'];
+                                $NaamMuziekstuk = $row['MuziekstukID'];
                                 $Dirigent = $row['Dirigent'];
+                                $Divisie = $row['Divisie'];
                                 ?>
                             <tr> 
-                                <th scope="row"> <?php echo $BeginTijd ?> '-' <?php echo $tijdvak['Eindtijd'] ?> </th>
-                                <td><b><?php $tijdvak['BandNaam'] ?></b>
-
-                                    <br> Stuk 1 <br> Stuk 2 <br> Stuk 3
+                                <th scope="row"> <?php echo $BeginTijd ?> - <?php echo $EindTijd ?> </th>
+                                <td>
+                                    <b><?php echo $BandNaam ?></b>
+                                    <br> <?php echo $Dirigent ?>
+                                    <br> stuk 1 <br> stuk 2
+                                    
                                 </td>
-                                <td>1</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">00:00 - 00:00</th>
-                                <td><b>Bandnaam</b></td>
-                                <td>1</td>
-                                <td>4</td>
-                            </tr>
-                            <tr>
-                                <th scope="row">00:00 - 00:00</th>
-                                <td><b>Bandnaam</b></td>
-                                <td>1</td>
-                                <td>4</td>
+                                <td> <?php echo $Divisie?></td>
+                                <td> <?php echo $GescoordePunten ?></td>
                             </tr>
                         </tbody>
                     </table>
