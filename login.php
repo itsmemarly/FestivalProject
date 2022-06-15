@@ -1,5 +1,5 @@
 <?php
-include_once("connection.php");
+include_once("Inlcudes/connection.php");
 ?>
 <!DOCTYPE html>
 <html lang="en-en">
@@ -18,11 +18,12 @@ include_once("connection.php");
 
 <body style="background-image: linear-gradient(#2BC0E4, #EAECC6); background-repeat: no-repeat;  background-attachment: fixed;">
 
-<!-- Navbar-->
-<?php
-  include_once("navbar.php")
-  ?>
-  
+<!-- Navbar -->
+
+   <?php
+   include_once("./Includes/exclNavbar.php");
+   ?>
+
 <!-- Content -->
 
         <div class="container">
