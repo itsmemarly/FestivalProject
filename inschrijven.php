@@ -32,41 +32,30 @@
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     
             <link rel="stylesheet" href="./CSS/navbar.css">
-    
+    <?php
+include_once("navbar.php);
+    ?>
         </header>
     </section>
     
-    <body>
+    <body style="background-image: linear-gradient(#2BC0E4, #EAECC6); background-repeat: no-repeat;  background-attachment: fixed;">
+<<<<<<< HEAD
        
-    <section>
-      <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-          <img src="https://lirp.cdn-website.com/a8be4524/dms3rep/multi/opt/logo+surventofestival-98w.png" alt="survento logo">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-        <div class="collapse" id="navbarToggleExternalContent">
-            <div class="bg-dark p-4">
-                <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="index.html">Home</a>
-                <a class="nav-link" style="color: aliceblue; font-weight: bolder; font-size: 30px;" href="inschrijven.html">Inschrijven</a>
-                <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="sponsoren.html">Sponsoren</a>
-                <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="login.html">Inloggen</a>
-                <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="puntentelling.html">Puntentelling</a>
-            </div>
-        </div>
-    
-    </section>
+   <!-- Navbar-->
+  <?php
+  include_once("navbar.php")
+  ?>
+  
+=======
 
+>>>>>>> 1ebd398cd6e931a4ce4c31ba51bf845df0aa85c0
     <div class="container">
         <!-- row inschrijven festivals -->
         <div class="row" id="inschrijven">
             <div class="row mt-4">
           <div class="col-sm-4">
             <div class="card" style="width: 18rem;">
-              <img src="/images/Festival.jpg" style="height: 350px;" class="card-img-top" alt="...">
+              <img src="./images/Festival.jpg" style="height: 350px;" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Festival</h5>
                 <p class="card-text">Hier staat informatie over dit festival. <br> Hier staat informatie over dit festival. <br> Hier staat informatie over dit festival.</p>
@@ -77,7 +66,7 @@
     
           <div class="col-sm-4">
             <div class="card" style="width: 18rem;">
-              <img src="/images/Festival.jpg" style="height: 350px;" class="card-img-top" alt="...">
+              <img src="./images/Festival.jpg" style="height: 350px;" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Festival</h5>
                 <p class="card-text">Hier staat informatie over dit festival. <br> Hier staat informatie over dit festival. <br> Hier staat informatie over dit festival.</p>
@@ -88,7 +77,7 @@
     
           <div class="col-sm-4">
             <div class="card" style="width: 18rem;">
-              <img src="/images/Festival.jpg" style="height: 350px;" class="card-img-top" alt="...">
+              <img src="./images/Festival.jpg" style="height: 350px;" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Festivalnaam</h5>
                 <p class="card-text">Hier staat informatie over dit festival. <br> Hier staat informatie over dit festival. <br> Hier staat informatie over dit festival.</p>
@@ -101,7 +90,7 @@
         <div class="row" id="inschrijven">
             <div class="col-sm-4">
               <div class="card" style="width: 18rem;">
-                <img src="/images/Festival.jpg" style="height: 350px;" class="card-img-top" alt="...">
+                <img src="./images/Festival.jpg" style="height: 350px;" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Festivalnaam</h5>
                   <p class="card-text">Hier staat informatie over dit festival. <br> Hier staat informatie over dit festival. <br> Hier staat informatie over dit festival.</p>
@@ -112,7 +101,7 @@
       
             <div class="col-sm-4">
               <div class="card" style="width: 18rem;">
-                <img src="/images/Festival.jpg" style="height: 350px;" class="card-img-top" alt="...">
+                <img src="./images/Festival.jpg" style="height: 350px;" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Festivalnaam</h5>
                   <p class="card-text">Hier staat informatie over dit festival. <br> Hier staat informatie over dit festival. <br> Hier staat informatie over dit festival.</p>
@@ -123,7 +112,7 @@
       
             <div class="col-sm-4">
               <div class="card" style="width: 18rem;">
-                <img src="/images/Festival.jpg" style="height: 350px;" class="card-img-top" alt="...">
+                <img src="./images/Festival.jpg" style="height: 350px;" class="card-img-top" alt="...">
                 <div class="card-body">
                   <h5 class="card-title">Festivalnaam</h5>
                   <p class="card-text">Hier staat informatie over dit festival. <br> Hier staat informatie over dit festival. <br> Hier staat informatie over dit festival.</p>

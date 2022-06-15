@@ -1,8 +1,10 @@
+<?php
+include_once("connection.php");
+?>
 <!DOCTYPE html>
 <html lang="en-en">
 
 <!-- Links -->
-<section>
     <header>
         <title>Inloggen & Registreren</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,40 +14,20 @@
        
 
     </header>
-</section>
 
-<body>
 
-<!-- Navbar -->
-<section>
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-          <img src="https://lirp.cdn-website.com/a8be4524/dms3rep/multi/opt/logo+surventofestival-98w.png" alt="survento logo">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-    <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
-            <a class="nav-link" style="color: aliceblue; font-weight: bolder; font-size: 30px;" href="index.html">Home</a>
-            <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="inschrijven.html">Inschrijven</a>
-            <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="sponsoren.html">Sponsoren</a>
-            <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="login.html">Inloggen</a>
-            <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="GebruikersBekijken.html">Gebruikers</a>
-            <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="SponsorenToevoegen.html">Sponsor toevoegen</a>
-        </div>
-    </div>
+<body style="background-image: linear-gradient(#2BC0E4, #EAECC6); background-repeat: no-repeat;  background-attachment: fixed;">
 
-</section>
-
+<!-- Navbar-->
+<?php
+  include_once("navbar.php")
+  ?>
+  
 <!-- Content -->
-<section>
-    <section>
+
         <div class="container">
             <div class="row mt-4">
-                <div class="col-md-6" style="background-color: #f5dbdb">
+                <div class="col-md-6" style="background-color: black">
                     <h1 class="text-white">Informatie</h1>
 
                 </div>
@@ -115,19 +97,16 @@
                     </div>
 
                 </div>
-            </div>
-            <div class="row col-md-6">
 
+            <!-- Plek voor een footer-->
+              <footer>
+                  
+              </footer>
             </div>
+         
         </div>
-    </section>
-    
-
-   
-</section>
+     
 
 </body>
-<footer>
-    
-</footer>
+
 </html>

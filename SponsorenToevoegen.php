@@ -11,7 +11,7 @@
 </header>
 </section>
 
-<body>
+<body style="background-image: linear-gradient(#2BC0E4, #EAECC6); background-repeat: no-repeat;  background-attachment: fixed;">
 
 <!-- Navbar -->
 <section>
@@ -27,12 +27,12 @@
     </nav>
     <div class="collapse" id="navbarToggleExternalContent">
         <div class="bg-dark p-4">
-            <a class="nav-link" style="color: aliceblue; font-weight: bolder; font-size: 30px;" href="index.html">Home</a>
-            <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="inschrijven.html">Inschrijven</a>
-            <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="sponsoren.html">Sponsoren</a>
-            <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="login.html">Inloggen</a>
-            <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="GebruikersBekijken.html">Gebruikers</a>
-            <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="SponsorenToevoegen.html">Sponsor toevoegen</a>
+            <a class="nav-link" style="color: aliceblue; font-weight: bolder; font-size: 30px;" href="index.php">Home</a>
+            <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="inschrijven.php">Inschrijven</a>
+            <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="sponsoren.php">Sponsoren</a>
+            <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="login.php">Inloggen</a>
+            <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="GebruikersBekijken.php">Gebruikers</a>
+            <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="SponsorenToevoegen.php">Sponsor toevoegen</a>
         </div>
     </div>
 
@@ -41,10 +41,10 @@
 
 <!-- Card sponsor toevoegen -->
 <section>
-    <div class="container mt-4 ">
-      
-        <div class="mt-4 card col-6">
-            <form>
+    <div class="container">
+      <div class="row">
+        <div class="mt-4 ms-5 card col-md-6 col-sm-12">
+            <form method="post">
                 <div class=" mt-4 ms-2 mb-3 row">
                     <h1>Sponsor toevoegen</h1>
                 </div>
@@ -67,7 +67,7 @@
                     </div>
                 </div>
                 <div class=" ms-2 mb-3 row">
-                    <label for="formFileMultiple" class="col-sm-12 col-form-label">Voeg afbeelding(en) toe:</label>
+                    <label for="formFileMultiple" class="col-sm-12 col-form-label">Voeg afbeelding toe:</label>
                     <div class="col-sm-10">
                         <input class="form-control form-control-md" type="file" id="formFileMultiple">    
                     </div>
@@ -80,9 +80,10 @@
         </div>
        
        <!-- Card voor lijst sponsoren --> 
-    <div class="mt-4 card col-6">
+    <div class="mt-4 ms-5 card col-md-5 col-sm-12">
         
     </div>
+      </div>
     </div>
 </section>
 </body>

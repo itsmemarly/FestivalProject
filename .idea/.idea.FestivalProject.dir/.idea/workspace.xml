@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
     <list default="true" id="0ec31465-fa38-4b9c-9bcf-e0ac67486cfb" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FestivalProject.dir/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FestivalProject.dir/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SponsorenToevoegen.html" beforeDir="false" afterPath="$PROJECT_DIR$/SponsorenToevoegen.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
-=======
-    <list default="true" id="0ec31465-fa38-4b9c-9bcf-e0ac67486cfb" name="Changes" comment="" />
->>>>>>> df1e76a631161a8bb44fb2b82b76923aab3d2242
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,25 +56,16 @@
       <workItem from="1652876905623" duration="1295000" />
       <workItem from="1653034944332" duration="1054000" />
       <workItem from="1653040671962" duration="5787000" />
-<<<<<<< HEAD
-      <workItem from="1653478759436" duration="517000" />
-      <workItem from="1653915470977" duration="604000" />
-=======
       <workItem from="1653896136894" duration="1648000" />
-      <workItem from="1653986496035" duration="4737000" />
->>>>>>> df1e76a631161a8bb44fb2b82b76923aab3d2242
+      <workItem from="1653986496035" duration="9738000" />
+      <workItem from="1654590568908" duration="364000" />
+      <workItem from="1654760031979" duration="122000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-<<<<<<< HEAD
-  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
-  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
-  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
-=======
->>>>>>> df1e76a631161a8bb44fb2b82b76923aab3d2242
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
