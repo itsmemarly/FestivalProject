@@ -106,7 +106,7 @@ foreach ($result as $row) {
     $banddivisie = $row['Divisie'];
     ?>
     <tr>
-                <td><?php echo $begintijd ?> - <?php echo $eindtijd ?></td>
+                <td><b><?php echo date('H:i', strtotime($begintijd)) ?> - <?php echo date('H:i', strtotime($eindtijd)) ?></b></td>
                 <td><?php echo $bandnaam?></td>
                 <td><?php echo $banddivisie ?></td>
                 <td><?php  
@@ -125,24 +125,7 @@ foreach ($result as $row) {
     <?php
                         }
     ?>
-            <tr>
-              <th scope="row">00:00 - 00:00</th>
-              <td><b>Bandnaam</b><br> Stuk 1 <br> Stuk 2 <br> Stuk 3</td>
-              <td>1</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <th scope="row">00:00 - 00:00</th>
-              <td><b>Bandnaam</b></td>
-              <td>1</td>
-              <td>4</td>
-            </tr>
-            <tr>
-              <th scope="row">00:00 - 00:00</th>
-              <td><b>Bandnaam</b></td>
-              <td>1</td>
-              <td>4</td>
-            </tr>
+           
             </tbody>
           </table>
           
