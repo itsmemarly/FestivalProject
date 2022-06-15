@@ -1,5 +1,5 @@
 <?php
-include_once("connection.php");
+include_once("Inlcudes/connection.php");
 ?>
 <!DOCTYPE html>
 <html lang="en-en">
@@ -20,26 +20,9 @@ include_once("connection.php");
 
 <!-- Navbar -->
 
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-          <img src="https://lirp.cdn-website.com/a8be4524/dms3rep/multi/opt/logo+surventofestival-98w.png" alt="survento logo">
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-            data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-        </div>
-    <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
-            <a class="nav-link" style="color: aliceblue;font-size: 30px;" href="index.html">Home</a>
-            <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="inschrijven.html">Inschrijven</a>
-            <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="sponsoren.html">Sponsoren</a>
-            <a class="nav-link" style="color: aliceblue;font-weight: bolder; font-size: 30px;" href="login.html">Inloggen</a>
-            <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="GebruikersBekijken.html">Gebruikers</a>
-            <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="SponsorenToevoegen.html">Sponsor toevoegen</a>
-        </div>
-    </div>
-    </nav>
+   <?php
+   include_once("./Includes/exclNavbar.php");
+   ?>
 
 <!-- Content -->
 

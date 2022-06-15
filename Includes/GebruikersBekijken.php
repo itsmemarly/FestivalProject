@@ -27,15 +27,9 @@ include_once("connection.php");
             <span class="navbar-toggler-icon"></span>
           </button>
         </div>
-        <div class="collapse" id="navbarToggleExternalContent">
-            <div class="bg-dark p-4">
-                <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="index.html">Home</a>
-                <a class="nav-link" style="color: aliceblue; font-weight: bolder; font-size: 30px;" href="inschrijven.html">Inschrijven</a>
-                <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="sponsoren.html">Sponsoren</a>
-                <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="login.html">Inloggen</a>
-            </div>
-        </div>
-        </nav>
+      <?php
+include_once("./exclNavbar.php");
+      ?>
 
 </section>
 <body style="background-image: linear-gradient(#2BC0E4, #EAECC6); background-repeat: no-repeat;  background-attachment: fixed;">

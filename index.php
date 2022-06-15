@@ -1,5 +1,5 @@
 <?php
-include_once("connection.php");
+include_once("./Includes/connection.php");
 ?>
 
 <html lang="en">
@@ -42,7 +42,7 @@ include_once("connection.php");
 
   <!-- Navbar-->
 <?php
-include_once("navbar.php");
+include_once("./Includes/navbar.php");
 ?>
 
   <div class="container">
