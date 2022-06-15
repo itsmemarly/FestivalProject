@@ -1,12 +1,12 @@
 <?php
-include_once("Includes/connection.php")
+include_once("./connection.php");
 ?>
 <!DOCTYPE html>
 <html lang="en-en">
 
 <!-- Links -->
     <header>
-        <title>Inloggen</title>
+        <title>Registreren</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
@@ -21,7 +21,7 @@ include_once("Includes/connection.php")
 <!-- Navbar -->
 
    <?php
-   include_once("./Includes/exclNavbar.php");
+   include_once("./exclNavbar.php");
    ?>
 
 <!-- Content -->
@@ -37,12 +37,12 @@ include_once("Includes/connection.php")
 
                     <div class="card">
                         <div class="card-header">
-                            <h5 class="card-title">Login</h5>
+                            <h5 class="card-title">Registreren</h5>
                             <ul class="nav nav-tabs card-header-tabs" data-bs-tabs="tabs">
+                             
                                 <li class="nav-item">
-                                    <a class="nav-link active" aria-current="true" data-bs-toggle="tab" href="#login">Login</a>
+                                    <a class="nav-link" data-bs-toggle="tab" href="#registreren">Registreren</a>
                                 </li>
-                          
                             </ul>
                         </div>
                         <form class="card-body tab-content">
@@ -59,7 +59,16 @@ include_once("Includes/connection.php")
                                         <input type="password" class="form-control" id="loginPass">
                                     </div>
                                 </div>
-                                <button class="btn btn-primary" type="submit">Login</button>
+                              
+                                </div>
+
+                                <div class="mb-3 row">
+                                    <label for="userPass2" class="col-sm-4 col-form-label">Herhaal wachtwoord</label>
+                                    <div class="col-sm-8">
+                                        <input type="password" class="form-control" id="userPass2">
+                                    </div>
+                                </div>
+                                <button class="btn btn-primary" type="submit">Registreer</button>
                             </div>
 
                         </form>
