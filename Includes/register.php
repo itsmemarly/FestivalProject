@@ -45,18 +45,18 @@ include_once("./connection.php");
                                 </li>
                             </ul>
                         </div>
-                        <form class="card-body tab-content">
+                        <form class="card-body tab-content" method="post" action= ".@register.php">
                             <div class="tab-pane active" id="login">
                                 <div class="mb-3 row">
                                     <label for="loginEmail" class="col-sm-4 col-form-label">Email</label>
                                     <div class="col-sm-8">
-                                        <input type="text" class="form-control" id="loginEmail">
+                                        <input type="text" class="form-control" id="loginEmail" name="gebruikermail" required>
                                     </div>
                                 </div>
                                 <div class="mb-3 row">
                                     <label for="loginPass" class="col-sm-4 col-form-label">Password</label>
                                     <div class="col-sm-8">
-                                        <input type="password" class="form-control" id="loginPass">
+                                        <input type="password" class="form-control" id="loginPass" name="gebruikerww" required>
                                     </div>
                                 </div>
                               
@@ -68,7 +68,7 @@ include_once("./connection.php");
                                         <input type="password" class="form-control" id="userPass2">
                                     </div>
                                 </div>
-                                <button class="btn btn-primary" type="submit">Registreer</button>
+                                <button class="btn btn-primary" type="submit" >Registreer</button>
                             </div>
 
                         </form>
