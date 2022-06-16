@@ -6,7 +6,7 @@ include_once("./links.php");
 <!DOCTYPE html>
 <html lang="en">
 <header>
-    <title>Gebruikers</title>
+    <title>Festivaloverzicht</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </header>
