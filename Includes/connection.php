@@ -4,7 +4,7 @@ $conn = "";
 
 try {
 	$servername = "localhost";
-	$dbname = "festivalproject";
+	$dbname = "projectfestival";
 	$username = "root";
 	$password = "";
 
