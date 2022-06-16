@@ -2,6 +2,7 @@
 include_once("./Includes/connection.php");
 
 include_once("./Includes/links.php");
+
 ?>
 <!DOCTYPE html>
 <html lang="en-en">
@@ -42,21 +43,21 @@ include_once("./Includes/links.php");
                           
                             </ul>
                         </div>
-                        <form class="card-body tab-content">
+                        <form class="card-body tab-content" method="post" action="checkLogin.php">
                             <div class="tab-pane active" id="login">
                                 <div class="mb-3 row">
                                     <label for="loginEmail" class="col-sm-4 col-form-label">Email</label>
                                     <div class="col-sm-8">
-                                        <input type="text" class="form-control" id="loginEmail">
+                                        <input type="text" class="form-control" name="loginEmail" id="loginEmail">
                                     </div>
                                 </div>
                                 <div class="mb-3 row">
                                     <label for="loginPass" class="col-sm-4 col-form-label">Password</label>
                                     <div class="col-sm-8">
-                                        <input type="password" class="form-control" id="loginPass">
+                                        <input type="password" class="form-control" name="loginPass" id="loginPass">
                                     </div>
                                 </div>
-                                <a class="btn btn-primary" href="./Includes/dashboard.php"  type="submit">Login</a>
+                                <button class="btn btn-primary" name="checkLogin" type="submit">Login</button>
                             </div>
 
                         </form>
