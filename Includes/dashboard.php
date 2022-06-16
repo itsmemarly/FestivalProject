@@ -91,8 +91,21 @@ include_once("./exclNavbar.php");
         </div>
       </a>
     </div>
-
     
+    <!-- Archief-->
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 p-2">
+      <a class="text-decoration-none" href="./archief.php">
+        <div class="card p-3 shadow bg-card text-center border-0">
+          <div class="card-body">
+            <i class="fa fa-box-archive fa-2x" aria-hidden="true"></i>
+            <hr />
+            <p class="card-title lead">Archief Bekijken</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <!-- Contact opnemen -->
 
     <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 p-2">
       <a class="text-decoration-none" href="#" data-toggle="modal" data-target="#modelHELP">
