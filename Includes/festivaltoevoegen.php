@@ -35,7 +35,7 @@ include_once("./exclNavbar.php");
     <div class="container col-sm-12 col-md-12">
         <div class="row">
             <div class="mt-4 ms-5 card  ">
-                <form method="post">
+                <form method="post" action="addfestival.php">
                     <div class=" mt-4 ms-2 mb-3 row">
                         <h1>Festival toevoegen</h1>
                     </div>
@@ -81,7 +81,7 @@ include_once("./exclNavbar.php");
                     </div>
                     </div>
                     <div class="ms-2 mb-3 row">
-                        <button type="submit" class="ms-2 col-sm-4 btn btn-success">Opslaan</button>
+                        <button type="submit" name="submit" class="ms-2 col-sm-4 btn btn-success">Opslaan</button>
                     </div>
                 </form>
             </div>

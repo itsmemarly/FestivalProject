@@ -18,20 +18,29 @@ include_once("./Includes/links.php");
         <header>
             <title>Inloggen & Registreren</title>
             <meta name="viewport" content="width=device-width, initial-scale=1">
-            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    
+
             <link rel="stylesheet" href="./CSS/navbar.css">
     <?php
 include_once("./Includes/navbar.php");
     ?>
         </header>
     </section>
+<<<<<<< HEAD
     <?php
     include_once('navbar.php')
     ?>
 
     <body style="background-image: linear-gradient(#2BC0E4, #EAECC6); background-repeat: no-repeat;  background-attachment: fixed;">
+=======
+    
+    <body style="background-image: linear-gradient(#2BC0E4, #EAECC6); background-repeat: no-repeat;  background-attachment: fixed;">
+       
+   <!-- Navbar-->
+  <?php
+  include_once("./Includes/navbar.php")
+  ?>
+  
+>>>>>>> 4c78f3897fc90ffa10a99fc12cdefb155e31e547
     <div class="container">
         <!-- row inschrijven festivals -->
         <div class="row" id="inschrijven">
