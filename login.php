@@ -3,37 +3,6 @@ include_once("./Includes/connection.php");
 
 include_once("./Includes/links.php");
 
-session_start();
-if(!empty($_SESSION['GebruikerMail'])) {
-header('location:plan.php');
-}
-
-
-
-if(isset($_POST['login'])) {
-
-$user = $_POST['GebruikerMail'];
-$pass = $_POST['GeberuikerWW'];
-
-if(empty($user) || empty($pass)) {
-$message = 'Alle velden zijn verplicht';
-} else {
-$query = $conn->prepare("SELECT GebruikerMail, GebruikerWW FROM gebruiker WHERE 
-GebruikerMail=? AND GebruikerWW=? ");
-$query->execute(array($user,$pass));
-$row = $query->fetch(PDO::FETCH_BOTH);
-
-if($query->rowCount() > 0) {
-  $_SESSION['GebruikerMail'] = $user;
-  header('location:plan.php');
-} else {
-  $message = "Email/Wachtwoord is incorrect";
-}
-
-
-}
-
-}
 ?>
 <!DOCTYPE html>
 <html lang="en-en">
@@ -74,21 +43,21 @@ if($query->rowCount() > 0) {
                           
                             </ul>
                         </div>
-                        <form class="card-body tab-content">
+                        <form class="card-body tab-content" method="post" action="checkLogin.php">
                             <div class="tab-pane active" id="login">
                                 <div class="mb-3 row">
                                     <label for="loginEmail" class="col-sm-4 col-form-label">Email</label>
                                     <div class="col-sm-8">
-                                        <input type="text" class="form-control" id="loginEmail">
+                                        <input type="text" class="form-control" name="loginEmail" id="loginEmail">
                                     </div>
                                 </div>
                                 <div class="mb-3 row">
                                     <label for="loginPass" class="col-sm-4 col-form-label">Password</label>
                                     <div class="col-sm-8">
-                                        <input type="password" class="form-control" id="loginPass">
+                                        <input type="password" class="form-control" name="loginPass" id="loginPass">
                                     </div>
                                 </div>
-                                <a class="btn btn-primary" href="./Includes/dashboard.php"  type="submit">Login</a>
+                                <button class="btn btn-primary" name="checkLogin" type="submit">Login</button>
                             </div>
 
                         </form>
