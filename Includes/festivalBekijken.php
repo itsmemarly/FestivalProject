@@ -6,7 +6,7 @@ include_once("./links.php");
 <!DOCTYPE html>
 <html lang="en">
 <header>
-    <title>Gebruikers</title>
+    <title>Festivaloverzicht</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </header>
@@ -22,40 +22,42 @@ include_once("./links.php");
     <body style="background-image: linear-gradient(#2BC0E4, #EAECC6); background-repeat: no-repeat;  background-attachment: fixed;">
         <section>
             <div class="container mt-3">
-                <h2>Gebruikers</h2>
-                <p>Informatie over de gebruikers van de website:</p>
+                <h2>Festivaloverzicht</h2>
+                <p>Overzicht van alle festivals:</p>
                 <table class="table table-striped">
                     <thead>
                         <tr>
-                            <th>Firstname</th>
-                            <th>Lastname</th>
-                            <th>Email</th>
-                            <th>Edit</th>
-                            <th>Delete</th>
+                            <th>Festivalnaam</th>
+                            <th>Datum</th>
+                            <th>Tijd</th>
+                            <th>Bewerken</th>
+                            <th>Verwijderen</th>
                         </tr>
                     </thead>
                     <tbody>
+                    <?php
+                $sth = $conn->prepare("SELECT * FROM festival ORDER BY FestivalDatum ASC");
+                $sth->execute();
+                /* Fetch all of the remaining rows in the result set */
+                $result = $sth->fetchAll();
+                ?>
+                    <?php
+                  foreach ($result as $row) {
+                    $FestivalNaam = $row['FestivalNaam'];
+                    $FestivalDatum = $row['FestivalDatum'];
+                    $FestivalBegintijd = $row['FestivalBegintijd'];
+                    $FestivalEindtijd = $row['FestivalEindtijd'];
+                 ?>
+                  
                         <tr>
-                            <td>John</td>
-                            <td>Doe</td>
-                            <td>john@example.com</td>
-                            <td><button class="btn btn-primary">Edit gebruiker</button></td>
-                            <td><button class="btn btn-danger">Delete gebruiker</button></td>
+                            <td><?php echo $FestivalNaam?></td> 
+                            <td><?php echo date ('d-m-y', strtotime($FestivalDatum))?></td>
+                            <td><?php echo date('H:i', strtotime($FestivalBegintijd)) ?> - <?php echo date('H:i', strtotime($FestivalEindtijd))?></td>
+                            <td><button class="btn btn-primary">Edit festival</button></td>
+                            <td><button class="btn btn-danger">Delete festival</button></td>
                         </tr>
-                        <tr>
-                            <td>Mary</td>
-                            <td>Moe</td>
-                            <td>mary@example.com</td>
-                            <td><button class="btn btn-primary">Edit gebruiker</button></td>
-                            <td><button class="btn btn-danger">Delete gebruiker</button></td>
-                        </tr>
-                        <tr>
-                            <td>July</td>
-                            <td>Dooley</td>
-                            <td>july@example.com</td>
-                            <td><button class="btn btn-primary">Edit gebruiker</button></td>
-                            <td><button class="btn btn-danger">Delete gebruiker</button></td>
-                        </tr>
+                        
+                        <?php } ?>
                     </tbody>
                 </table>
             </div>

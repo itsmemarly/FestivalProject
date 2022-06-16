@@ -2,7 +2,6 @@
 include_once("./connection.php");
 include_once("./links.php");
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <header>
