@@ -20,18 +20,8 @@ include_once("./Includes/links.php");
             <meta name="viewport" content="width=device-width, initial-scale=1">
 
             <link rel="stylesheet" href="./CSS/navbar.css">
-    <?php
-include_once("./Includes/navbar.php");
-    ?>
         </header>
     </section>
-<<<<<<< HEAD
-    <?php
-    include_once('navbar.php')
-    ?>
-
-    <body style="background-image: linear-gradient(#2BC0E4, #EAECC6); background-repeat: no-repeat;  background-attachment: fixed;">
-=======
     
     <body style="background-image: linear-gradient(#2BC0E4, #EAECC6); background-repeat: no-repeat;  background-attachment: fixed;">
        
@@ -40,7 +30,6 @@ include_once("./Includes/navbar.php");
   include_once("./Includes/navbar.php")
   ?>
   
->>>>>>> 4c78f3897fc90ffa10a99fc12cdefb155e31e547
     <div class="container">
         <!-- row inschrijven festivals -->
         <div class="row" id="inschrijven">

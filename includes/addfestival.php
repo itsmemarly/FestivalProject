@@ -1,23 +1,27 @@
 <?php
+include_once ('./links.php');
+include_once ('./connection.php');
 
-require_once 'connection.php';
- 
     if(ISSET($_POST['submit'])){
         try{
-            $FestivalNaam = $_POST['firstname'];
-            $FestivalLogo = $_POST['lastname'];
-            $FestivalInfo = $_POST['username'];
-            $FestivalDatum = $_POST['password'];
-            $FestivalEindtijd = $_POST['']
+            $FestivalNaam = $_POST['FestivalNaam'];
+            $FestivalLogo = $_POST['FestivalLogo'];
+            $FestivalInfo = $_POST['FestivalInfo'];
+            $FestivalDatum = $_POST['FestivalDatum'];
+            $FestivalBegintijd = $_POST['FestivalBegintijd'];
+            $FestivalEindtijd = $_POST['FestivalEindtijd'];
             $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-            $sql = "INSERT INTO `user` (`firstname`, `lastname`, `username`, `password`) VALUES ('$firstname', '$lastname', '$username', '$password')";
-            $conn->exec($sql);
+            if($FestivalNaam){
+                echo "Yes 1";
+            }
+            $sql = "INSERT INTO festival (`FestivalNaam`, `FestivalLogo`, `FestivalInfo`, `FestivalDatum`, 'FestivalBegintijd', 'FestivalEindtijd') VALUES (`$FestivalNaam`, `$FestivalLogo`, `$FestivalInfo`, `$FestivalDatum`, '$FestivalBegintijd', '$FestivalEindtijd')";
+            $conn->execute($sql);
+
+
         }catch(PDOException $e){
             echo $e->getMessage();
         }
- 
-        $conn = null;
- 
+  
         echo "<script>alert('Successfully inserted data!')</script>";
         echo "<script>window.location='index.php'</script>";
     }
