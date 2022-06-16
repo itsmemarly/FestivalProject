@@ -15,8 +15,6 @@ $statement->execute([
     ':roles' => $roles
 ]);
 
-$publisher_id = $conn->lastInsertId();
-
-echo 'The publisher id ' . $publisher_id . ' was inserted';
+header("Location:./GebruikersBekijken.php");
 }
 ?>
