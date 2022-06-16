@@ -6,23 +6,22 @@ include_once("./links.php");
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
-    <link rel="stylesheet" href="./../CSS/puntentelling.css">
+
     
     <meta charset="UTF-8">
     <title>Puntentelling</title>
 </head>
-<body>
+<body style="background-image: linear-gradient(#2BC0E4, #EAECC6); background-repeat: no-repeat;  background-attachment: fixed;">
 <?php
 include_once("./exclNavbar.php");
 ?>
 
     <!-- Form -->
     <div class="container-fluid mt-4">
-        <div class="column">
+        <div class="">
 
         <!-- muzikaliteit -->
-        <div class="muzikaliteit card .col-12 col-3 mt-4" style="width: 30rem;">
+        <div class="muzikaliteit card .col-sm-12 col-md-3 mt-4" style="width: 30rem;">
             <div class="card-body">
                 <h6 class="card-title">Beoordeling muzikaliteit</h6>
                 <div class="mb-3 mt-3">
@@ -55,7 +54,7 @@ include_once("./exclNavbar.php");
         
         
         <!-- programmaopbouw -->
-        <div class="card col-3 mt-4 " style="width: 30rem;">
+        <div class="card col-md-3 mt-4 " style="width: 30rem;">
             <div class="card-body">
                 <h6 class="card-title">Beoordeling programmaopbouw</h6>
                 <div class="mb-3 mt-3">
@@ -87,7 +86,7 @@ include_once("./exclNavbar.php");
         </div>
 
         <!-- presentatie en entertainment -->
-        <div class="presentatie card col-3 mt-4" style="width: 30rem;">
+        <div class="presentatie card col-md-3 mt-4" style="width: 30rem;">
             <div class="card-body">
                 <h6 class="card-title">Beoordeling presentatie en entertainment</h6>
                 <div class="mb-3 mt-3">
@@ -122,7 +121,7 @@ include_once("./exclNavbar.php");
         
     </div> <!-- container -->
 
-    <div class="container2">
+    <div class="container2 col-md-6">
     <!-- Uitslagen -->
     <table class="Uitslag table table-striped">
         <thead>

@@ -18,7 +18,7 @@ include_once("./Includes/links.php");
 <!-- Navbar -->
 
    <?php
-   include_once("./Includes/exclNavbar.php");
+   include_once("./Includes/navbar.php");
    ?>
 
 <!-- Content -->
@@ -56,7 +56,7 @@ include_once("./Includes/links.php");
                                         <input type="password" class="form-control" id="loginPass">
                                     </div>
                                 </div>
-                                <button class="btn btn-primary" type="submit">Login</button>
+                                <a class="btn btn-primary" href="./Includes/dashboard.php"  type="submit">Login</a>
                             </div>
 
                         </form>
