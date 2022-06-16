@@ -1,5 +1,7 @@
 <?php
 include_once("./Includes/connection.php");
+
+include_once("./Includes/links.php");
 ?>
 
 <html lang="en">
@@ -18,17 +20,9 @@ include_once("./Includes/connection.php");
   <!-- CSS stylesheet-->
   <link rel="stylesheet" href="CSS/index.css">
   <link rel="stylesheet" href="CSS/navbar.css">
-  <!-- jQuery -->
-  <script src="/path/to/cdn/jquery.slim.min.js"></script>
 
-  <!-- Bootstrap 5 -->
-  <link rel="stylesheet" href="/path/to/cdn/bootstrap.min.css" />
-  <script src="/path/to/cdn/bootstrap.bundle.min.js"></script>
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="/path/to/font-awesome/all.min.css" />
-  <link rel='stylesheet' type='text/css'
-    href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
+ 
 
 </head>
 

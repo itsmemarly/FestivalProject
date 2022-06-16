@@ -1,5 +1,7 @@
 <?php
 include_once("./Includes/connection.php");
+
+include_once("./Includes/links.php");
 ?>
 <!DOCTYPE html>
 

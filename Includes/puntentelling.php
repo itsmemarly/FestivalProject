@@ -1,45 +1,21 @@
+<?php
+include_once("./connection.php");
+
+include_once("./links.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Bootstrap 5 -->
-    <link rel="stylesheet" href="/path/to/cdn/bootstrap.min.css" />
-    <script src="/path/to/cdn/bootstrap.bundle.min.js"></script>
-
-    <!-- jQuery -->
-    <script src="/path/to/cdn/jquery.slim.min.js"></script>
-
-    <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-            crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="CSS/puntentelling.css">
+  
+    <link rel="stylesheet" href="./../CSS/puntentelling.css">
     
     <meta charset="UTF-8">
     <title>Puntentelling</title>
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-dark bg-dark">
-        <div class="container-fluid">
-            <img src="https://lirp.cdn-website.com/a8be4524/dms3rep/multi/opt/logo+surventofestival-98w.png" alt="survento logo">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </div>
-    </nav>
-    <div class="collapse" id="navbarToggleExternalContent">
-        <div class="bg-dark p-4">
-            <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="index.html">Home</a>
-            <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="inschrijven.html">Inschrijven</a>
-            <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="index.html">Sponsoren</a>
-            <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="login.html">Inloggen</a>
-            <a class="nav-link" style="color: aliceblue; font-weight: bolder; font-size: 30px;" href="puntentelling.html">Puntentelling</a>
-        </div>
-    </div>
+<?php
+include_once("./exclNavbar.php");
+?>
 
     <!-- Form -->
     <div class="container-fluid mt-4">

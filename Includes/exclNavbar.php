@@ -17,6 +17,8 @@
             <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="./Includes/GebruikersBekijken.php">Gebruikers</a>
             <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="./Includes/SponsorenToevoegen.php">Sponsor toevoegen</a>
             <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="./Includes/festivaltoevoegen.php">Festival toevoegen</a>
+            <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="./Includes/puntentelling.php">Score toevoegen</a>
+        </div>
         </div>
     </div>
     </nav>
