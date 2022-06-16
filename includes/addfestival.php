@@ -8,7 +8,7 @@ include_once ('./connection.php');
             $FestivalDatum = $_POST['FestivalDatum'];
             $FestivalBegintijd = $_POST['FestivalBegintijd'];
             $FestivalEindtijd = $_POST['FestivalEindtijd'];
-            $sql = 'INSERT INTO festival (FestivalNaam, FestivalLogo, FestivalInfo, FestivalDatum, FestivalBegintijd, FestivalEindtijd) VALUES (:FestivalNaam, :FestivalLogo, FestivalInfo, FestivalDatum, FestivalBegintijd, FestivalEindtijd)';
+            $sql = 'INSERT INTO festival (FestivalNaam, FestivalLogo, FestivalInfo, FestivalDatum, FestivalBegintijd, FestivalEindtijd) VALUES (:FestivalNaam, :FestivalLogo, `:FestivalInfo, :FestivalDatum, :FestivalBegintijd, :FestivalEindtijd)';
 
             $statement = $conn->prepare($sql);
             $statement->execute([
