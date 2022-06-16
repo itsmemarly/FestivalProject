@@ -15,7 +15,20 @@ include_once("./links.php");
 include_once("./exclNavbar.php");
 ?>
 
-<?php
+<h2>Score overzicht</h2>
+                <p>Overzicht van alle scores:</p>
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Band Naam</th>
+                            <th>Divisie</th>
+                            <th>Beoordeeld op</th>
+                            <th>Gescoorde punten</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    <?php
 $sth = $conn->prepare("SELECT * FROM tijdvak");
 $sth->execute();
 $sth = $conn->prepare("SELECT * FROM band");
