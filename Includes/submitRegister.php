@@ -6,7 +6,7 @@ if(isset($_POST["submit"]))
 $data = $_POST;
 
 if ($data['loginPass'] !== $data['userPass2']) {
-    die('Password and Confirm password should match!');   
+    die('De ingevoerde wachtwoorden zijn niet hetzelfde!');   
  }
 
 {
