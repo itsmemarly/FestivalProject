@@ -5,193 +5,69 @@ include_once('connection.php');
 <html lang="en">
 
 <head>
-<<<<<<< HEAD
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
     </script>
     <!-- JS-->
     <script src="./JS/index.js"></script>
-=======
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- bootstrap -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-    crossorigin="anonymous"></script>
-  <!-- JS-->
-  <script src="./JS/index.js"></script>
->>>>>>> 609a6fddaaa2c78209cec007168f1e3a9f8dad17
 
-  <!-- CSS stylesheet-->
-  <link rel="stylesheet" href="CSS/index.css">
-  <link rel="stylesheet" href="CSS/navbar.css">
-  <!-- jQuery -->
-  <script src="/path/to/cdn/jquery.slim.min.js"></script>
+    <!-- CSS stylesheet-->
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/navbar.css">
+    <!-- jQuery -->
+    <script src="/path/to/cdn/jquery.slim.min.js"></script>
 
-  <!-- Bootstrap 5 -->
-  <link rel="stylesheet" href="/path/to/cdn/bootstrap.min.css" />
-  <script src="/path/to/cdn/bootstrap.bundle.min.js"></script>
+    <!-- Bootstrap 5 -->
+    <link rel="stylesheet" href="/path/to/cdn/bootstrap.min.css" />
+    <script src="/path/to/cdn/bootstrap.bundle.min.js"></script>
 
-<<<<<<< HEAD
     <!-- Font Awesome -->
     <link rel="stylesheet" href="/path/to/font-awesome/all.min.css" />
-    <link rel='stylesheet' type='text/css' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
-=======
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="/path/to/font-awesome/all.min.css" />
-  <link rel='stylesheet' type='text/css'
-    href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
->>>>>>> 609a6fddaaa2c78209cec007168f1e3a9f8dad17
+    <link rel='stylesheet' type='text/css'
+        href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
 
 </head>
 
 <body>
-  <!-- Background image-->
-  <section>
-    <video autoplay muted loop id="myVideo">
-      <source src="images/brass2.mp4" type="video/mp4">
-    </video>
-  </section>
-
-  <!-- Navbar-->
-<?php
-include_once("navbar.php");
-?>
-
-  <div class="container">
-    <!-- about header-->
+    <!-- Background image-->
     <section>
-      <div class="row justify-content-md-center">
-        <div class="card" style="background-color: rgb(211, 211, 211, 0.4)" id="FestivalInfo">
-          <h4 style="font-size: 36px; color: brown;">Survento Fanfare Festival</h4>
-          <div class="card-body">
-            <h4 class="card-title d-flex">Over het festival</h4>
-            <p class="card-text d-flex">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quas facilis
-              magnam accusantium, ullam dicta delectus maxime eius voluptatibus aliquam molestiae amet recusandae labore
-              vero reiciendis earum. Ab, reprehenderit quia. Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Accusamus cupiditate saepe doloribus perspiciatis ullam quam quidem magni, excepturi est. Nihil
-              cupiditate, possimus debitis sapiente, maiores placeat veritatis quas ratione illum, vero porro doloremque
-              consectetur saepe. Expedita id ducimus quod, est quisquam adipisci! Ipsa reiciendis eveniet eum vel labore
-              incidunt quis.</p>
-          </div>
-
-        </div>
-      </div>
+        <video autoplay muted loop id="myVideo">
+            <source src="images/brass2.mp4" type="video/mp4">
+        </video>
     </section>
 
-    <!-- Timetable -->
-    <section>
-      <div class="row">
-
-        <div class="card" style="background-color:rgba(211, 211, 211, 0.4) ;">
-          <div class="row col-sm-12 ">
-            <h1 class="d-flex justify-content-center" style="color: brown ;">Festival Programma</h1>
-          </div>
-          <table class="table table-striped">
-            <thead>
-            <tr>
-              <th scope="col">Tijd</th>
-              <th scope="col">Orkest & Stukken</th>
-              <th scope="col">Divisie</th>
-              <th scope="col">Punten</th>
-            </tr>
-            </thead>
-            <tbody>
-            <?php
-
-$sth = $conn->prepare("SELECT * FROM tijdvak, band WHERE tijdvak.BandID = band.BandID ORDER BY Begintijd ASC");
-
-$sth->execute();
-
-
-/* Fetch all of the remaining rows in the result set */
-
-$result = $sth->fetchAll();
-
-?>
-<?php
-foreach ($result as $row) {
-    $begintijd = $row['Begintijd'];
-    $eindtijd = $row['Eindtijd'];
-    $gescoordepunten = $row['GescoordePunten'];
-    $bandID = $row['BandID'];
-    $bandnaam = $row['BandNaam'];
-    $banddivisie = $row['Divisie'];
-    ?>
-    <tr>
-                <td><b><?php echo date('H:i', strtotime($begintijd)) ?> - <?php echo date('H:i', strtotime($eindtijd)) ?></b></td>
-                <td><?php echo $bandnaam?></td>
-                <td><?php echo $banddivisie ?></td>
-                <td><?php  
-                //Check of score al ingevuld is
-                 if(is_null($gescoordepunten))
-                  {
-                    echo "Score is onbekend";
-                  }
-                  else
-                  {
-                    echo $gescoordepunten;
-                  } 
-                  ?></td>
-               
-            </tr>
+    <!-- Navbar-->
     <?php
-<<<<<<< HEAD
-    include_once("navbar.php");
-    ?>
+  include_once("navbar.php");
+  ?>
 
     <div class="container">
         <!-- about header-->
         <section>
             <div class="row justify-content-md-center">
                 <div class="card" style="background-color: rgb(211, 211, 211, 0.6)" id="FestivalInfo">
-                    <h4 style="font-size: 36px; color: brown;">
-                        <?php $q = $conn->prepare("SELECT FestivalNaam FROM festival WHERE FestivalNaam = 'Survento'");
-                        $q->execute();
-                        $FestivalNaam = $q->fetchColumn();
-                        echo $FestivalNaam
-                        ?>
-                    </h4>
+                    <?php
+                        $sth = $conn->prepare("SELECT * FROM festival WHERE festival.FestivalNaam = 'survento'");
+                        $sth->execute();
+                        /* Fetch all of the remaining rows in the result set */
+                        $result = $sth->fetchAll(); 
+                    ?>
+                    <?php foreach($result as $row) { 
+                    $FestivalID = $row['FestivalID'];    
+                    ?>
+
+                    <h4 style="font-size: 36px; color: brown;"><?php echo $row['FestivalNaam']; ?></h4>
                     <div class="card-body">
                         <h4 class="card-title d-flex">Over het festival</h4>
-                        <p class="card-text d-flex">
-                            <?php
-                            $q = $conn->prepare("SELECT FestivalInfo FROM festival WHERE FestivalNaam = 'Survento'");
-                            $q->execute();
-                            $FestivalInfo = $q->fetchColumn();
-                            echo $FestivalInfo ?>
-                        </p>
+                        <p class="card-text d-flex"><?php echo $row['FestivalInfo']; ?></p>
                     </div>
-=======
-                        }
-    ?>
-           
-            </tbody>
-          </table>
-          
-         
-        
-           
-          </div>
-    </section>
-
-    <!-- row juryleden -->
-    <section>
->>>>>>> 609a6fddaaa2c78209cec007168f1e3a9f8dad17
-
-      <div class="row d-flex justify-content-between">
-
-        <div class="col-md-3 col-sm-12 mt-4">
-          <div class="card">
-            <img src="./images/jurylid1.jpg" style="height: 350px;" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Jury lid</h5>
-              <p class="card-text">Ik ben een jurylid. Hier staat veel interessante informatie over mij</p>
+                    <?php } ?>
+                </div>
             </div>
-<<<<<<< HEAD
         </section>
 
         <!-- Timetable -->
@@ -212,39 +88,73 @@ foreach ($result as $row) {
                             </tr>
                         </thead>
                         <tbody>
+
                             <?php
-                            
-                            $sth = $conn->prepare("SELECT * FROM tijdvak, band, speelt_muziekstuk, muziekstuk WHERE tijdvak.BandID = band.BandID AND band.BandID = speelt_muziekstuk.BandID ORDER BY Begintijd ASC");
-                            $sth->execute();
-                            /* Fetch all of the remaining rows in the result set */
-                            $result = $sth->fetchAll();
-                            ?>
+                          $sth = $conn->prepare("SELECT * FROM tijdvak, band WHERE tijdvak.BandID = band.BandID ORDER BY Begintijd ASC");
+                          $sth->execute();
+                          /* Fetch all of the remaining rows in the result set */
+                          $result = $sth->fetchAll(); ?>
                             <?php
-                                foreach ($result as $row)
-                                $BandNaam = $row['BandNaam'];
-                                $BeginTijd = $row['Begintijd'];
-                                $EindTijd = $row['Eindtijd'];
-                                $GescoordePunten = $row['GescoordePunten'];
-                                $NaamMuziekstuk = $row['MuziekstukID'];
-                                $Dirigent = $row['Dirigent'];
-                                $Divisie = $row['Divisie'];
-                                ?>
-                            <tr> 
-                                <th scope="row"> <?php echo $BeginTijd ?> - <?php echo $EindTijd ?> </th>
-                                <td>
-                                    <b><?php echo $BandNaam ?></b>
-                                    <br> <?php echo $Dirigent ?>
-                                    <br> stuk 1 <br> stuk 2
-                                    
+                          foreach ($result as $row) {
+                          $begintijd = $row['Begintijd'];
+                          $eindtijd = $row['Eindtijd'];
+                          $gescoordepunten = $row['GescoordePunten'];
+                          $bandID = $row['BandID'];
+                          $bandnaam = $row['BandNaam'];
+                          $banddivisie = $row['Divisie'];
+                          $Dirigent = $row['Dirigent']
+                          ?>
+                            <tr>
+                                <td><b><?php echo date('H:i', strtotime($begintijd)) ?> -
+                                        <?php echo date('H:i', strtotime($eindtijd)) ?></b></td>
+                                <td><b><?php echo $bandnaam ?></b>
+                                    <br><?php echo $Dirigent ?>
+                                    <div class='collapse' id='collapsemuziek'>
+                                        <?php  
+                                    $sth = $conn->prepare("SELECT MuziekstukID FROM speelt_muziekstuk WHERE speelt_muziekstuk.BandID = $bandID");
+                                    $sth->execute();
+                                    /* Fetch all of the remaining rows in the result set */
+                                    $result = $sth->fetchAll(); ?>
+                                        <?php
+                                    foreach($result as $row){
+                                      $MuziekstukID = $row['MuziekstukID'];
+                                    ?>
+                                        <?php
+                                        $sth = $conn->prepare("SELECT NaamMuziekstuk FROM muziekstuk WHERE muziekstuk.MuziekstukID = $MuziekstukID");
+                                        $sth->execute();
+                                        /* Fetch all of the remaining rows in the result set */
+                                        $result = $sth->fetchAll(); 
+                                        ?>
+                                        <?php
+                                        foreach($result as $row){
+                                          $MuziekstukNaam = $row['NaamMuziekstuk'];
+                                          ?>
+                                        <br> <?php echo $MuziekstukNaam ?>
+                                        <?php } ?>
+                                        <?php } ?>
+                                    </div>
                                 </td>
-                                <td> <?php echo $Divisie?></td>
-                                <td> <?php echo $GescoordePunten ?></td>
+                                <td><?php echo $banddivisie ?></td>
+                                <td>
+                                    <?php
+                                  //Check of score al ingevuld is
+                                  if (is_null($gescoordepunten)) {
+                                  echo "Score is onbekend";
+                                  } 
+                                  else {
+                                  echo $gescoordepunten;
+                                  }?>
+                                </td>
                             </tr>
+                            <?php } ?>
+
                         </tbody>
                     </table>
-
-
-
+                    <p>
+                        <a class='btn btn-secondary' role='button' type='button' data-bs-toggle="collapse"
+                            data-bs-target="#collapsemuziek" aria-controls="collapsemuziek" aria-expanded="false">
+                            toggle muziekstukken</a>
+                    </p>
 
                 </div>
         </section>
@@ -252,327 +162,86 @@ foreach ($result as $row) {
         <!-- row juryleden -->
         <section>
 
-            <div class="row d-flex justify-content-between">
-
+            <div class="row d-flex justify-content-center">
+                <?php
+                $sth = $conn->prepare("SELECT JuryID FROM jureert WHERE jureert.FestivalID = $FestivalID");
+                $sth->execute();
+                /* Fetch all of the remaining rows in the result set */
+                $result = $sth->fetchAll();
+                ?>
+                <?php
+                  foreach ($result as $row) {
+                    $JuryID = $row['JuryID'];
+                  
+                 ?>
+                <?php
+                $sth = $conn->prepare("SELECT * FROM jury WHERE jury.JuryID = $JuryID");
+                $sth->execute();
+                /* Fetch all of the remaining rows in the result set */
+                $result = $sth->fetchAll();
+                ?>
+                <?php
+                  foreach ($result as $row) { ?>
                 <div class="col-md-3 col-sm-12 mt-4">
-                    <div class="card">
-                        <img src="./images/jurylid1.jpg" style="height: 350px;" class="card-img-top" alt="...">
+                    <div class="card" style="height:max-content">
+                        <img src="<?php echo $row['JuryLogo'] ?>" style="max-height: 300px;" class="card-img-top"
+                            alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Jury lid</h5>
-                            <p class="card-text">Ik ben een jurylid. Hier staat veel interessante informatie over mij
+                            <h5 class="card-title"><?php echo $row['JuryNaam'] ?></h5>
+                            <p class="card-text"><?php echo $row['JuryInfo'] ?></p>
+                            <?php
+                                  //Check of er een website is ingevuld
+                                  if (is_null($row['JuryWebsite'])) {
+                                  } 
+                                  else { ?>
+                            <p>
+                                <a href="<?php echo $row['JuryWebsite']?>" target='_blank'><button type='button'
+                                        class="btn-secondary">Website</button></a>
                             </p>
-                        </div>
-                    </div>
-                </div>z
+                            <?php } ?>
 
-                <div class="col-md-3 col-sm-12 mt-4">
-                    <div class="card">
-                        <img src="./images/jurylid2.jpg" style="height: 350px;" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Jury lid</h5>
-                            <p class="card-text">Ik ben een jurylid. Hier staat veel interessante informatie over mij.
-                            </p>
                         </div>
                     </div>
                 </div>
+                <?php } ?>
+                <?php } ?>
 
-                <div class="col-md-3 col-sm-12 mt-4">
-                    <div class="card">
-                        <img src="./images/jurylid3.jpg" style="height: 350px;" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Jury lid</h5>
-                            <p class="card-text">Ik ben een jurylid. Hier staat veel interessante informatie over mij.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-=======
-          </div>
-        </div>
->>>>>>> 609a6fddaaa2c78209cec007168f1e3a9f8dad17
-
-        <div class="col-md-3 col-sm-12 mt-4">
-          <div class="card">
-            <img src="./images/jurylid2.jpg" style="height: 350px;" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Jury lid</h5>
-              <p class="card-text">Ik ben een jurylid. Hier staat veel interessante informatie over mij.</p>
             </div>
-          </div>
-        </div>
-
-<<<<<<< HEAD
         </section>
 
         <!--carousel sponsoren -->
         <section>
-
-            <div class="row col2" style="padding: 0cm;">
-
-                <div class="containersponsor" id="featureContainer">
-                    <div class="row  justify-content-center">
-                        <div id="feature" a href="https://www.jqueryscript.net/tags.php?/Carousel/" Carousel class="carousel slide" data-bs-ride="carousel">
-
-                            <!-- Carousel Items -->
-                            <div class="carousel-inner" role="listbox" style="height: 150px;">
-                                <div class="carousel-item active">
-                                    <div class="row col2 justify-content-md-between">
-
-                                        <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem" style="background-image:  url('./images/image150.jpg');">
-                                            </div>
-                                        </div>
-
-                                        <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem" style="background-image:  url('./images/image150.jpg');">
-                                            </div>
-                                        </div>
-
-                                        <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem" style="background-image:  url('./images/image150.jpg');">
-                                            </div>
-                                        </div>
-
-                                        <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem" style="background-image:  url('./images/image150.jpg');">
-                                            </div>
-                                        </div>
-
-                                        <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem" style="background-image:  url('./images/image150.jpg');">
-                                            </div>
-                                        </div>
-
-                                        <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem" style="background-image:  url('./images/image150.jpg');">
-                                            </div>
-                                        </div>
-
-                                    </div>
-
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="row col2">
-
-                                        <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem" style="background-image:  url('./images/image150.jpg');">
-                                            </div>
-                                        </div>
-
-                                        <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                                            </div>
-                                        </div>
-
-                                        <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                                            </div>
-                                        </div>
-
-                                        <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                                            </div>
-                                        </div>
-
-                                        <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                                            </div>
-                                        </div>
-
-                                        <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                                <div class="carousel-item">
-                                    <div class="row col2">
-
-                                        <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                                            </div>
-                                        </div>
-
-                                        <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                                            </div>
-                                        </div>
-
-                                        <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                                            </div>
-                                        </div>
-
-                                        <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                                            </div>
-                                        </div>
-
-                                        <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                                            </div>
-                                        </div>
-
-                                        <div class="col  justify-content-center">
-                                            <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-
-                            </div>
+            <div class="row d-flex justify-content-center">
+                <div id="carouselExampleSlidesOnly" class="carousel slide " data-bs-ride="carousel">
+                    <div class="carousel-inner d-flex justify-content-center">
+                        <div class="carousel-item active">
+                            <img src="./images/image150.jpg" alt="...">
                         </div>
+                        <?php
+                        $sth = $conn->prepare("SELECT SponsorLogo FROM sponsor");
+                        $sth->execute();
+                        /* Fetch all of the remaining rows in the result set */
+                        $result = $sth->fetchAll();
+                        ?>
+                        <?php
+                        foreach ($result as $row) { ?>
+
+                        <div class="carousel-item">
+                            <img src="<?php echo $row['SponsorLogo']?>" class="d-block"
+                                style="width: 150px; height: 150px">
+                        </div>
+                        <?php } ?>
+
                     </div>
                 </div>
-=======
-        <div class="col-md-3 col-sm-12 mt-4">
-          <div class="card">
-            <img src="./images/jurylid3.jpg" style="height: 350px;" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Jury lid</h5>
-              <p class="card-text">Ik ben een jurylid. Hier staat veel interessante informatie over mij.</p>
->>>>>>> 609a6fddaaa2c78209cec007168f1e3a9f8dad17
+
             </div>
-          </div>
-        </div>
-
-      </div>
-
-    </section>
-
-    <!--carousel sponsoren -->
-    <section>
-
-      <div class="row col2" style="padding: 0cm;">
-
-        <div class="containersponsor" id="featureContainer">
-          <div class="row  justify-content-center">
-            <div id="feature" a href="https://www.jqueryscript.net/tags.php?/Carousel/" Carousel class="carousel slide"
-              data-bs-ride="carousel">
-
-              <!-- Carousel Items -->
-              <div class="carousel-inner" role="listbox" style="height: 150px;">
-                <div class="carousel-item active">
-                  <div class="row col2 justify-content-md-between">
-
-                    <div class="col  justify-content-center">
-                      <div class="card border-0 SponsorItem" style="background-image:  url('./images/image150.jpg');">
-                      </div>
-                    </div>
-
-                    <div class="col  justify-content-center">
-                      <div class="card border-0 SponsorItem" style="background-image:  url('./images/image150.jpg');">
-                      </div>
-                    </div>
-
-                    <div class="col  justify-content-center">
-                      <div class="card border-0 SponsorItem" style="background-image:  url('./images/image150.jpg');">
-                      </div>
-                    </div>
-
-                    <div class="col  justify-content-center">
-                      <div class="card border-0 SponsorItem" style="background-image:  url('./images/image150.jpg');">
-                      </div>
-                    </div>
-
-                    <div class="col  justify-content-center">
-                      <div class="card border-0 SponsorItem" style="background-image:  url('./images/image150.jpg');">
-                      </div>
-                    </div>
-
-                    <div class="col  justify-content-center">
-                      <div class="card border-0 SponsorItem" style="background-image:  url('./images/image150.jpg');">
-                      </div>
-                    </div>
-
-                  </div>
-
-                </div>
-                <div class="carousel-item">
-                  <div class="row col2">
-
-                    <div class="col  justify-content-center">
-                      <div class="card border-0 SponsorItem" style="background-image:  url('./images/image150.jpg');">
-                      </div>
-                    </div>
-
-                    <div class="col  justify-content-center">
-                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                      </div>
-                    </div>
-
-                    <div class="col  justify-content-center">
-                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                      </div>
-                    </div>
-
-                    <div class="col  justify-content-center">
-                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                      </div>
-                    </div>
-
-                    <div class="col  justify-content-center">
-                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                      </div>
-                    </div>
-
-                    <div class="col  justify-content-center">
-                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-
-                <div class="carousel-item">
-                  <div class="row col2">
-
-                    <div class="col  justify-content-center">
-                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                      </div>
-                    </div>
-
-                    <div class="col  justify-content-center">
-                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                      </div>
-                    </div>
-
-                    <div class="col  justify-content-center">
-                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                      </div>
-                    </div>
-
-                    <div class="col  justify-content-center">
-                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                      </div>
-                    </div>
-
-                    <div class="col  justify-content-center">
-                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                      </div>
-                    </div>
-
-                    <div class="col  justify-content-center">
-                      <div class="card border-0 SponsorItem" style="background-image:  url('images/image150.jpg');">
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
+        </section>
+    </div>
 
 
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 
-  </div>
+
 
 </body>
 
