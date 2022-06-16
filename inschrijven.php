@@ -12,6 +12,7 @@ include_once("./Includes/links.php");
     <meta charset="UTF-8">
     <title>Inschrijven</title>
 </head>
+
 <body>
     <section>
         <header>
@@ -19,9 +20,6 @@ include_once("./Includes/links.php");
             <meta name="viewport" content="width=device-width, initial-scale=1">
 
             <link rel="stylesheet" href="./CSS/navbar.css">
-    <?php
-include_once("./Includes/navbar.php");
-    ?>
         </header>
     </section>
     
