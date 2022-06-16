@@ -17,9 +17,13 @@ include_once("connection.php");
 <body>
 
 <!-- Navbar -->
-<?php
-include_once('navbar.php')
-?>
+<section>
+
+      <?php
+include_once("./exclNavbar.php");
+      ?>
+
+</section>
 <body style="background-image: linear-gradient(#2BC0E4, #EAECC6); background-repeat: no-repeat;  background-attachment: fixed;">
 <section>
     <div class="container mt-3">

@@ -1,5 +1,7 @@
 <?php
-include_once('connection.php');
+include_once("./Includes/connection.php");
+
+include_once("./Includes/links.php");
 ?>
 
 <html lang="en">
@@ -15,25 +17,30 @@ include_once('connection.php');
     <!-- JS-->
     <script src="./JS/index.js"></script>
 
-    <!-- CSS stylesheet-->
-    <link rel="stylesheet" href="CSS/index.css">
-    <link rel="stylesheet" href="CSS/navbar.css">
-    <!-- jQuery -->
-    <script src="/path/to/cdn/jquery.slim.min.js"></script>
+  <!-- CSS stylesheet-->
+  <link rel="stylesheet" href="CSS/index.css">
+  <link rel="stylesheet" href="CSS/navbar.css">
 
-    <!-- Bootstrap 5 -->
-    <link rel="stylesheet" href="/path/to/cdn/bootstrap.min.css" />
-    <script src="/path/to/cdn/bootstrap.bundle.min.js"></script>
 
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="/path/to/font-awesome/all.min.css" />
-    <link rel='stylesheet' type='text/css'
-        href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css'>
+ 
 
 </head>
 
 <body>
-    <!-- Background image-->
+  <!-- Background image-->
+  <section>
+    <video autoplay muted loop id="myVideo">
+      <source src="images/brass2.mp4" type="video/mp4">
+    </video>
+  </section>
+
+  <!-- Navbar-->
+<?php
+include_once("./Includes/navbar.php");
+?>
+
+  <div class="container">
+    <!-- about header-->
     <section>
         <video autoplay muted loop id="myVideo">
             <source src="images/brass2.mp4" type="video/mp4">
