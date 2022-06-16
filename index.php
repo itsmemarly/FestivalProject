@@ -49,7 +49,7 @@ include_once('connection.php');
         <!-- about header-->
         <section>
             <div class="row justify-content-md-center">
-                <div class="card" style="background-color: rgb(211, 211, 211, 0.6)" id="FestivalInfo">
+                <div class="card" style="background-color: rgb(211, 211, 211, 0.8)" id="FestivalInfo">
                     <?php
                         $sth = $conn->prepare("SELECT * FROM festival WHERE festival.FestivalNaam = 'survento'");
                         $sth->execute();
@@ -74,7 +74,7 @@ include_once('connection.php');
         <section>
             <div class="row">
 
-                <div class="card" style="background-color:rgba(211, 211, 211, 0.6) ;">
+                <div class="card" style="background-color:rgba(211, 211, 211, 0.8) ;">
                     <div class="row col-sm-12 ">
                         <h1 class="d-flex justify-content-center" style="color: brown ;">Festival Programma</h1>
                     </div>
