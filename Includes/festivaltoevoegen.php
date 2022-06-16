@@ -1,3 +1,6 @@
+<?php
+include_once("./connection.php");
+?>
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
@@ -21,58 +24,47 @@
 
 
 
-<body>
+<body style="background-image: linear-gradient(#2BC0E4, #EAECC6); background-repeat: no-repeat;  background-attachment: fixed;">
 <!-- Navbar -->
-<nav class="navbar navbar-dark bg-dark">
-    <div class="container-fluid">
-        <img src="https://lirp.cdn-website.com/a8be4524/dms3rep/multi/opt/logo+surventofestival-98w.png" alt="survento logo">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-    </div>
-</nav>
-<div class="collapse" id="navbarToggleExternalContent">
-    <div class="bg-dark p-4">
-        <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="index.html">Home</a>
-        <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="inschrijven.html">Inschrijven</a>
-        <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="index.html">Sponsoren</a>
-        <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="login.html">Inloggen</a>
-        <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="puntentelling.html">Puntentelling</a>
-        <a class="nav-link" style="color: aliceblue; font-weight: bolder; font-size: 30px;" href="puntentelling.html">Festival toevoegen</a>
-    </div>
-</div>
+<?php
+include_once("./exclNavbar.php");
+?>
 
 <!-- x -->
 <section>
-    <div class="container">
+    <div class="container col-sm-12 col-md-12">
         <div class="row">
-            <div class="mt-4 ms-5 card col-md-6 col-sm-12">
+            <div class="mt-4 ms-5 card  ">
                 <form method="post">
                     <div class=" mt-4 ms-2 mb-3 row">
                         <h1>Festival toevoegen</h1>
                     </div>
                     <div class="mt-4 ms-2 mb-3 row">
                         <label for="FestivalNaam" class="col-sm-12 col-form-label">Naam van het festival:</label>
-                        <div class="col-sm-10">
+                        <div class="col-sm-8">
                             <input type="text" class="form-control" id="FestivalNaam">
                         </div>
                     </div>
                     <div class=" ms-2 mb-3 row">
+                        <label for="FestivalLogo" class="col-sm-12 col-form-label">Voeg logo toe:</label>
+                        <div class="col-sm-8">
+                            <input class="form-control form-control-md" type="file" id="FestivalLogo">
+                        </div>
+                       
+                    <div class="mt-4 ms-2 mb-3 row">
                         <label for="FestivalInfo" class="col-sm-12 col-form-label">Voeg een beschrijving toe:</label>
-                        <div class="col-sm-10">
-                            <textarea class="form-control" id="FestivalInfo" rows="3"></textarea>
+                        <div class="col-sm-8">
+                            <textarea class="form-control form-control-md" id="FestivalInfo" rows="3"></textarea>
                         </div>
                     </div>
                     <div class=" ms-2 mb-3 row">
-                        <label for="FestivalDatum" class="col-sm-12 col-form-label">Datum:</label>
+                        <label for="FestivalDatum" class="col-sm-2 col-form-label">Datum:</label>
                         <div class="col-sm-10">
                             <input type="date" id="FestivalDatum" name="FestivalDatum">
                         </div>
                     </div>
                     <div class=" ms-2 mb-3 row">
-                        <label for="BeginTijd" class="col-sm-12 col-form-label">Start tijd:</label>
+                        <label for="BeginTijd" class="col-sm-2 col-form-label">Start tijd:</label>
                         <div class="col-sm-10">
                             <form action="/action_page.php">
                                 <input type="time" id="BeginTijd" name="appt">
@@ -80,19 +72,13 @@
                         </div>
                     </div>
                     <div class=" ms-2 mb-3 row">
-                        <label for="EindTijd" class="col-sm-12 col-form-label">Eind tijd:</label>
+                        <label for="EindTijd" class="col-sm-2 col-form-label">Eind tijd:</label>
                         <div class="col-sm-10">
                             <form action="/action_page.php">
                                 <input type="time" id="EindTijd" name="appt">
                             </form>
                         </div>
                     </div>
-                    <div class=" ms-2 mb-3 row">
-                        <label for="FestivalLogo" class="col-sm-12 col-form-label">Voeg logo toe:</label>
-                        <div class="col-sm-10">
-                            <input class="form-control form-control-md" type="file" id="FestivalLogo">
-                        </div>
-
                     </div>
                     <div class="ms-2 mb-3 row">
                         <button type="submit" class="ms-2 col-sm-4 btn btn-success">Opslaan</button>

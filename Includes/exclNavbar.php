@@ -16,6 +16,7 @@
             <a class="nav-link" style="color: aliceblue;font-weight: bolder; font-size: 30px;" href="../login.php">Inloggen</a>
             <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="./Includes/GebruikersBekijken.php">Gebruikers</a>
             <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="./Includes/SponsorenToevoegen.php">Sponsor toevoegen</a>
+            <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="./Includes/festivaltoevoegen.php">Festival toevoegen</a>
         </div>
     </div>
     </nav>
