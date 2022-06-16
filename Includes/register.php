@@ -29,6 +29,11 @@ include_once("./links.php");
             <div class="row mt-4">
                 <div class="col-md-6" style="background-color: black">
                     <h1 class="text-white">Informatie</h1>
+                    <p class="text-white"><br>Dit is een registratieportaal voor administratoren en coördinatoren.<br>
+                        <br>In dit portaal kunnen accounts aangemaakt worden voor nieuwe administratoren of coördinatoren.<br>
+                        <br>Vul hier een emailadres in en maak een wachtwoord aan.
+                        <br><br><br><br><br>Let op! Dit is niet bedoeld voor het registreren van nieuwe gebruikers (bands), maar alleen voor geverifieerde administratoren en coördinatoren.
+                    </p>
 
                 </div>
 

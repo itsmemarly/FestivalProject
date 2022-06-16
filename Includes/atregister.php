@@ -1,4 +1,4 @@
-<?php
+<?php {
 
 $GebruikerMail= $_POST['GebruikerMail'];
 $GebruikerWW= $_POST['GebruikerWW'];
@@ -6,7 +6,7 @@ $GebruikerWW= $_POST['GebruikerWW'];
 include_once("./connection.php");
 include_once("./links.php");
 
-//$pdo = database::connect();
+$pdo = database::connect();
 
 try{
 
@@ -27,5 +27,10 @@ catch(Exception $exception){
 }
 
 $conn = null;
+
+?>
+
+<?php
+    }
 ?>
 
