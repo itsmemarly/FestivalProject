@@ -9,8 +9,6 @@ include_once("./links.php");
     <header>
         <title>Registreren</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-
     </header>
 
 
@@ -20,7 +18,6 @@ include_once("./links.php");
 
    <?php
    include_once("./exclNavbar.php");
-   include_once("./links.php");
    ?>
 
 <!-- Content -->
@@ -29,11 +26,6 @@ include_once("./links.php");
             <div class="row mt-4">
                 <div class="col-md-6" style="background-color: black">
                     <h1 class="text-white">Informatie</h1>
-                    <p class="text-white"><br>Dit is een registratieportaal voor administratoren en coördinatoren.<br>
-                        <br>In dit portaal kunnen accounts aangemaakt worden voor nieuwe administratoren of coördinatoren.<br>
-                        <br>Vul hier een emailadres in en maak een wachtwoord aan.
-                        <br><br><br><br><br>Let op! Dit is niet bedoeld voor het registreren van nieuwe gebruikers (bands), maar alleen voor geverifieerde administratoren en coördinatoren.
-                    </p>
 
                 </div>
 
@@ -49,18 +41,18 @@ include_once("./links.php");
                                 </li>
                             </ul>
                         </div>
-                        <form class="card-body tab-content" method="post" action= "atregister.php">
+                        <form class="card-body tab-content" action="submitRegister.php" method="post">
                             <div class="tab-pane active" id="login">
                                 <div class="mb-3 row">
                                     <label for="loginEmail" class="col-sm-4 col-form-label">Email</label>
                                     <div class="col-sm-8">
-                                        <input type="text" class="form-control" id="loginEmail" name="GebruikerMail" required>
+                                        <input type="text" class="form-control" name="loginEmail" id="loginEmail">
                                     </div>
                                 </div>
                                 <div class="mb-3 row">
                                     <label for="loginPass" class="col-sm-4 col-form-label">Password</label>
                                     <div class="col-sm-8">
-                                        <input type="password" class="form-control" id="loginPass" name="GebruikerWW" required>
+                                        <input type="password" class="form-control" name="loginPass" id="loginPass">
                                     </div>
                                 </div>
                               
@@ -69,10 +61,10 @@ include_once("./links.php");
                                 <div class="mb-3 row">
                                     <label for="userPass2" class="col-sm-4 col-form-label">Herhaal wachtwoord</label>
                                     <div class="col-sm-8">
-                                        <input type="password" class="form-control" id="userPass2">
+                                        <input type="password" class="form-control" name="userPass2" id="userPass2">
                                     </div>
                                 </div>
-                                <button class="btn btn-primary" type="submit">Registreer</button>
+                                <button class="btn btn-primary" name="submit" type="submit">Registreer</button>
                             </div>
 
                         </form>
@@ -81,7 +73,6 @@ include_once("./links.php");
                 </div>
 
             <!-- Plek voor een footer-->
-
               <footer>
                   
               </footer>
