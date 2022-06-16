@@ -15,16 +15,30 @@ include_once("./links.php");
 include_once("./exclNavbar.php");
 ?>
 
+<?php
+$sth = $conn->prepare("SELECT * FROM tijdvak");
+$sth->execute();
+$sth = $conn->prepare("SELECT * FROM band");
+$sth->execute();
+
+/* Fetch all of the remaining rows in the result set */
+
+$result = $sth->fetchAll();
+
+?>
+<?php
+foreach ($result as $row) {
+?>
 <div class="container2 col-md-6">
     <!-- Uitslagen -->
     <table class="Uitslag table table-striped">
         <thead>
         <tr>
             <th scope="col">#</th>
-            <th scope="col">Bandnaam</th>
-            <th scope="col">Divisie</th>
+            <th><td><tr><td><?php echo $row['BandNaam']?></td></tr></td></th>
+            <th><td><tr><td><?php echo $row['Divisie']?></td></tr></td></th>
             <th scope="col">Beoordeeld op</th>
-            <th scope="col">Totaal</th>
+            <th><td><tr><td><?php echo $row['GescoordePunten']?></td></tr></td></th>
         </tr>
         </thead>
         <tbody>
@@ -35,23 +49,12 @@ include_once("./exclNavbar.php");
             <td>Muzikaliteit</td>
             <td>50 punten</td>
         </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>2e divisie</td>
-            <td>Programmaopbouw</td>
-            <td>30 punten</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td>Larry</td>
-            <td>3e divisie</td>
-            <td>Presentatie en entertainment</td>
-            <td>50 punten</td>
-        </tr>
         </tbody>
     </table>
     </div>
 
     </body>
+    <?php
+    }
+?>
 </html>

@@ -55,7 +55,7 @@ foreach ($result as $row) {
                             <td></td>
                             <td><button class="btn btn-primary">Edit gebruiker</button></td>
                             <form action="deletegebruiker.php" method="post">
-                            <td><button class="btn btn-danger" type="button" href=">Delete gebruiker</button></td>
+                            <td><button class="btn btn-danger" type="button">Delete</button></td>
                             </form>
                         </tr>
                     </tbody>
