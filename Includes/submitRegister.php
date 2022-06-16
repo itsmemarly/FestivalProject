@@ -2,6 +2,13 @@
 
 include_once ('./connection.php');
 if(isset($_POST["submit"]))
+
+$data = $_POST;
+
+if ($data['loginPass'] !== $data['userPass2']) {
+    die('Password and Confirm password should match!');   
+ }
+
 {
 $username = $_POST['loginEmail'];
 $pw = $_POST['loginPass'];
@@ -14,6 +21,8 @@ $statement->execute([
     ':pw' => $pw,
     ':roles' => $roles
 ]);
+
+ 
 
 header("Location:./GebruikersBekijken.php");
 }
