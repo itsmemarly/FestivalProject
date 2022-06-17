@@ -22,8 +22,8 @@ include_once("./links.php");
     <body style="background-image: linear-gradient(#2BC0E4, #EAECC6); background-repeat: no-repeat;  background-attachment: fixed;">
         <section>
             <div class="container mt-3">
-                <h2>Festivaloverzicht</h2>
-                <p>Overzicht van alle festivals:</p>
+                <h2>Score overzicht</h2>
+                <p>Overzicht van alle scores:</p>
                 <table class="table table-striped">
                     <thead>
                         <tr>
@@ -49,9 +49,9 @@ include_once("./links.php");
                   
                         echo "<tr>";
                             echo "<td>" . $GebruikerID . "</td>";
-                            echo "<td>".$GebruikerMail . "</td>";
+                            echo "<td>". $GebruikerMail . "</td>";
                             echo "<td>" .  "<a class='btn btn-primary' href='./gebruikeraanpassen.php?id=".$row['GebruikerID']."'>Edit gebruiker</a>"; "</td>";
-                            echo "<td>" .  "<a class='btn btn-danger' href='./festivalaanpassen.php?id=".$row['GebruikerID']."'>Delete gebruiker</a>"; "</td>";
+                            echo "<td>" .  "<a class='btn btn-danger' href='./deletegebruiker.php?id=".$row['GebruikerID']."'>Delete gebruiker</a>"; "</td>";
                             echo "</tr>";
                         
                          } ?>
