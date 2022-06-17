@@ -41,33 +41,27 @@ $result = $sth->fetchAll();
 ?>
 <?php
 foreach ($result as $row) {
+
+    $BandNaam = $row['BandNaam'];
+    $Divisie = $row['Divisie'];
+    $GescoordePunten = $row['GescoordePunten'];
+
+
+  
+        echo "<tr>";
+            echo "<td>" . $BandNaam . "</td>";
+            echo "<td>". $Divisie . "</td>";
+            echo "<td" . $GescoordePunten . "</td>";
+            echo "</tr>";
+}
 ?>
-<div class="container2 col-md-6">
-    <!-- Uitslagen -->
-    <table class="Uitslag table table-striped">
-        <thead>
-        <tr>
-            <th scope="col">#</th>
-            <th><td><tr><td><?php echo $row['BandNaam']?></td></tr></td></th>
-            <th><td><tr><td><?php echo $row['Divisie']?></td></tr></td></th>
-            <th scope="col">Beoordeeld op</th>
-            <th><td><tr><td><?php echo $row['GescoordePunten']?></td></tr></td></th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>1e divisie</td>
-            <td>Muzikaliteit</td>
-            <td>50 punten</td>
-        </tr>
+
         </tbody>
     </table>
     </div>
 
     </body>
     <?php
-    }
+    
 ?>
 </html>
