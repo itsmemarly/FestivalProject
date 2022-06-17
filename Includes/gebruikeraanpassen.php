@@ -16,7 +16,7 @@ $GebruikerWW = $row['GebruikerWW'];
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Gebruiker aanpassen</title>
 </head>
 
 
@@ -35,7 +35,7 @@ include_once("./exclNavbar.php");
                 <form method="post" action="./editgebruiker.php?id=<?=$GebruikerID?>">
                 
                     <div class=" mt-4 ms-2 mb-3 row">
-                        <h1>Festival aanpassen</h1>
+                        <h1>Gebruiker aanpassen</h1>
                     </div>
                     <div class="mt-4 ms-2 mb-3 row">
                         <label for="FestivalNaam" class="col-sm-12 col-form-label">Mail:</label>

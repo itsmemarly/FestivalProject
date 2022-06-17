@@ -91,6 +91,31 @@ include_once("./exclNavbar.php");
         </div>
       </a>
     </div>
+
+    <!-- Sponsoren Bekijken -->
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 p-2">
+      <a class="text-decoration-none" href="./SponsorenBekijken.php">
+        <div class="card p-3 shadow bg-card text-center border-0 ">
+          <div class="card-body">
+            <i class="fa fa-eye fa-2x" aria-hidden="true"></i>
+            <hr />
+            <p class="card-title lead">Sponsoren Bekijken</p>
+          </div>
+        </div>
+      </a>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 p-2">
+      <a class="text-decoration-none" href="./SponsorenToevoegen.php">
+        <div class="card p-3 shadow bg-card text-center border-0">
+          <div class="card-body">
+            <i class="fa fa-plus fa-2x" aria-hidden="true"></i>
+            <hr />
+            <p class="card-title lead">Sponsor Toevoegen</p>
+          </div>
+        </div>
+      </a>
+    </div>
     
     <!-- Archief-->
     <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 p-2">

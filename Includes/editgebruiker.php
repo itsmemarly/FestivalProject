@@ -14,6 +14,6 @@ $sql = "UPDATE gebruiker SET GebruikerMail = '$GebruikerMail', GebruikerWW = '$G
             $statement = $conn->prepare($sql);
             $statement->execute();
 
-            header('Location:./gebruikeraanpassen.php?id='.$GebruikerID);
+            header('Location:GebruikersBekijken.php');
         }
 ?>
