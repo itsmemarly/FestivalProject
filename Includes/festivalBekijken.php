@@ -1,7 +1,10 @@
 <?php
 include_once("./connection.php");
 include_once("./links.php");
+// Initialize the session
+session_start();
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -43,6 +46,7 @@ include_once("./links.php");
                 ?>
                     <?php
                   foreach ($result as $row) {
+                    $festivalID = $row['FestivalID'];
                     $FestivalNaam = $row['FestivalNaam'];
                     $FestivalDatum = $row['FestivalDatum'];
                     $FestivalBegintijd = $row['FestivalBegintijd'];
@@ -54,7 +58,9 @@ include_once("./links.php");
                             <td><?php echo date ('d-m-y', strtotime($FestivalDatum))?></td>
                             <td><?php echo date('H:i', strtotime($FestivalBegintijd)) ?> - <?php echo date('H:i', strtotime($FestivalEindtijd))?></td>
                             <td><button class="btn btn-primary">Edit festival</button></td>
-                            <td><button class="btn btn-danger">Delete festival</button></td>
+                            <form action="deletefestival.php" method="post">
+                            <td><button class="btn btn-danger" value="$festivalID" name="delete">Delete festival</button></td>
+                            </form>
                         </tr>
                         
                         <?php } ?>
