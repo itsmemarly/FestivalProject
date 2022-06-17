@@ -57,15 +57,11 @@ include_once("./exclNavbar.php");
                     
                 </div>
                 <div class="ms-2 mb-3 row">
-                <button type="submit" class="ms-2 col-sm-4 btn btn-success">Opslaan</button>
+                <button type="submit" name="submit" class="ms-2 col-sm-4 btn btn-success">Opslaan</button>
                 </div>
             </form>
         </div>
-       
-       <!-- Card voor lijst sponsoren --> 
-    <div class="mt-4 ms-5 card col-md-5 col-sm-12">
-        
-    </div>
+
       </div>
     </div>
 </section>

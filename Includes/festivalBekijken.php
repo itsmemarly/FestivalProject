@@ -56,7 +56,11 @@ include_once("./links.php");
                             echo "<td>"  . date('H:i', strtotime($FestivalBegintijd)) . '-' . date('H:i', strtotime($FestivalEindtijd)) .
                              "</td>";
                             echo "<td>" .  "<a class='btn btn-primary' href='./festivalaanpassen.php?id=".$row['FestivalID']."'>Edit festival</a>"; "</td>";
+<<<<<<< HEAD
                             echo "<td>" .  "<a class='btn btn-danger' href='./deletefestival.php?id=".$row['FestivalID']."'>Delete festival</a>"; "</td>";
+=======
+                            echo "<td>" .  "<a class='btn btn-danger' href='./festivalaanpassen.php?id=".$row['FestivalID']."'>Delete festival</a>"; "</td>";
+>>>>>>> 1ef226c8640f751981fb0f54215389442c7c0886
                             echo "</tr>";
                         
                          } ?>

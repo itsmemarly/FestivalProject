@@ -13,6 +13,7 @@
                 <a class="nav-link" style="color: aliceblue; font-weight: bolder; font-size: 30px;" href="./inschrijven.php">Inschrijven</a>
 [                <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="./sponsoren.php">Sponsoren</a>
 ]                <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="./login.php">Inloggen</a>
+                <a class="nav-link" style="color: aliceblue; font-size: 30px;" href="./Includes/dashboard.php">Dashboard</a>
             </div>
         </div>
         </nav>
