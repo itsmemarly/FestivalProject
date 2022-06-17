@@ -41,7 +41,7 @@ include_once("./Includes/links.php");
                         $sth = $conn->prepare("SELECT * FROM festival WHERE festival.FestivalNaam = 'survento'");
                         $sth->execute();
                         /* Fetch all of the remaining rows in the result set */
-                        $result = $sth->fetchAll(); 
+                        $result = $sth->fetchAll();
                     ?>
                         <?php foreach($result as $row) { 
                     $FestivalID = $row['FestivalID'];    
@@ -140,7 +140,7 @@ include_once("./Includes/links.php");
                         <p>
                             <a class='btn btn-secondary' role='button' type='button' data-bs-toggle="collapse"
                                 data-bs-target="#collapsemuziek" aria-controls="collapsemuziek" aria-expanded="false">
-                                toggle muziekstukken</a>
+                                Muziekstukken tonen</a>
                         </p>
 
                     </div>

@@ -19,6 +19,6 @@ FestivalEindtijd = '$FestivalEindtijd' WHERE festival.FestivalID = $FestivalID";
             $statement = $conn->prepare($sql);
             $statement->execute();
 
-            header('Location:./festivalaanpassen.php?id='.$FestivalID);
+            header('Location:./festivalbekijken.php');
         }
 ?>

@@ -20,7 +20,7 @@ $FestivalEindtijd = $_POST['FestivalEindtijd'];
                 ':FestivalEindtijd' => $FestivalEindtijd
             ]);
 
-            header("Location:./festivaltoevoegen.php");
+            header("Location:./festivalBekijken.php");
         }
 
 ?>
