@@ -6,6 +6,7 @@ include_once("./Includes/links.php");
 session_start();
 if(!empty($_SESSION['loginEmail'])) {
 header("location:./Includes/dashboard.php");
+
 }
 
 
