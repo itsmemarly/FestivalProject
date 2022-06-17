@@ -1,10 +1,7 @@
 <?php
 include_once("./connection.php");
 include_once("./links.php");
-// Initialize the session
-session_start();
 ?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -46,24 +43,23 @@ session_start();
                 ?>
                     <?php
                   foreach ($result as $row) {
-                    $festivalID = $row['FestivalID'];
                     $FestivalNaam = $row['FestivalNaam'];
                     $FestivalDatum = $row['FestivalDatum'];
                     $FestivalBegintijd = $row['FestivalBegintijd'];
                     $FestivalEindtijd = $row['FestivalEindtijd'];
-                 ?>
+                    $FestivalID = $row['FestivalID'];
+                
                   
-                        <tr>
-                            <td><?php echo $FestivalNaam?></td> 
-                            <td><?php echo date ('d-m-y', strtotime($FestivalDatum))?></td>
-                            <td><?php echo date('H:i', strtotime($FestivalBegintijd)) ?> - <?php echo date('H:i', strtotime($FestivalEindtijd))?></td>
-                            <td><button class="btn btn-primary">Edit festival</button></td>
-                            <form action="deletefestival.php" method="post">
-                            <td><button class="btn btn-danger" value="$festivalID" name="delete">Delete festival</button></td>
-                            </form>
-                        </tr>
+                        echo "<tr>";
+                            echo "<td>" . $FestivalNaam . "</td>";
+                            echo "<td>". date ('d-m-y', strtotime($FestivalDatum)) . "</td>";
+                            echo "<td>"  . date('H:i', strtotime($FestivalBegintijd)) . '-' . date('H:i', strtotime($FestivalEindtijd)) .
+                             "</td>";
+                            echo "<td>" .  "<a class='btn btn-primary' href='./festivalaanpassen.php?id=".$row['FestivalID']."'>Edit festival</a>"; "</td>";
+                            echo "</tr>";
                         
-                        <?php } ?>
+                         } ?>
+
                     </tbody>
                 </table>
             </div>
