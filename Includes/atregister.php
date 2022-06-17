@@ -28,9 +28,7 @@ catch(Exception $exception){
 
 $conn = null;
 
-?>
 
-<?php
     }
 ?>
 

@@ -27,32 +27,32 @@ include_once("./exclNavbar.php");
     <div class="container">
       <div class="row">
         <div class="mt-4 ms-5 card col-md-6 col-sm-12">
-            <form method="post">
+            <form method="post" action="./addSponsor.php">
                 <div class=" mt-4 ms-2 mb-3 row">
                     <h1>Sponsor toevoegen</h1>
                 </div>
                 <div class="mt-4 ms-2 mb-3 row">
                     <label for="sponsorNaam" class="col-sm-12 col-form-label">Naam</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="sponsorNaam">
+                        <input type="text" class="form-control" id="sponsornaam">
                     </div>
                 </div>
                 <div class=" ms-2 mb-3 row">
                     <label for="sponsorBeschrijving" class="col-sm-12 col-form-label">Beschrijving</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="sponsorBeschrijving">
+                        <input type="text" class="form-control" id="SponsorInfo">
                     </div>
                 </div>
                 <div class=" ms-2 mb-3 row">
                     <label for="sponsorLink" class="col-sm-12 col-form-label">Link naar website</label>
                     <div class="col-sm-10">
-                        <input type="text" class="form-control" id="sponsorLink">
+                        <input type="text" class="form-control" id="SponsorWebsite">
                     </div>
                 </div>
                 <div class=" ms-2 mb-3 row">
                     <label for="formFileMultiple" class="col-sm-12 col-form-label">Voeg afbeelding toe:</label>
                     <div class="col-sm-10">
-                        <input class="form-control form-control-md" type="file" id="formFileMultiple">    
+                        <input class="form-control" type="text" id="SponsorLogo">    
                     </div>
                     
                 </div>
