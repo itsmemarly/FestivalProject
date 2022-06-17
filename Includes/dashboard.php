@@ -69,7 +69,7 @@ include_once("./exclNavbar.php");
     <!-- Scores toevoegen & bekijken -->
 
     <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 p-2">
-      <a class="text-decoration-none" href="./puntentelling.php">
+      <a class="text-decoration-none" href="./puntentellingbekijken.php">
         <div class="card p-3 shadow bg-card text-center border-0 ">
           <div class="card-body">
             <i class="fa fa-eye fa-2x" aria-hidden="true"></i>

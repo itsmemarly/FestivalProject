@@ -59,7 +59,7 @@ include_once("./links.php");
                                 </div>
 
                                 <div class="mb-3 row">
-                                    <label for="userPass2" class="col-sm-4 col-form-label">Herhaal wachtwoord</label>
+                                    <label for="userPass2" class="col-sm-4 col-form-label" >Herhaal wachtwoord</label>
                                     <div class="col-sm-8">
                                         <input type="password" class="form-control" name="userPass2" id="userPass2">
                                     </div>
