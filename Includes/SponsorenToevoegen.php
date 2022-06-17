@@ -50,7 +50,7 @@ include_once("./exclNavbar.php");
                     </div>
                 </div>
                 <div class=" ms-2 mb-3 row">
-                    <label for="formFileMultiple" class="col-sm-12 col-form-label">Voeg afbeelding toe:</label>
+                    <label for="SponsorLogo" class="col-sm-12 col-form-label">Voeg afbeelding toe:</label>
                     <div class="col-sm-10">
                         <input class="form-control" type="text" id="SponsorLogo">    
                     </div>
