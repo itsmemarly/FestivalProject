@@ -2,10 +2,11 @@
 include_once("./connection.php");
 include_once("./links.php");
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <header>
-    <title>Gebruikers</title>
+    <title>Festivaloverzicht</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
 </header>
@@ -18,54 +19,47 @@ include_once("./links.php");
     include_once("./exclNavbar.php")
     ?>
 
-<?php
-$sth = $conn->prepare("SELECT * FROM gebruiker");
-$sth->execute();
-
-/* Fetch all of the remaining rows in the result set */
-
-$result = $sth->fetchAll();
-
-?>
-<?php
-foreach ($result as $row) {
-?>
-
-
     <body style="background-image: linear-gradient(#2BC0E4, #EAECC6); background-repeat: no-repeat;  background-attachment: fixed;">
         <section>
             <div class="container mt-3">
-                <h2>Gebruikers</h2>
-                <p>Informatie over de gebruikers van de website:</p>
+                <h2>Festivaloverzicht</h2>
+                <p>Overzicht van alle festivals:</p>
                 <table class="table table-striped">
                     <thead>
                         <tr>
-                            <th>Firstname</th>
-                            <th>Lastname</th>
-                            <th><td><tr><td><?php echo $row['GebruikerMail']?></td></tr></td></th>
-                            <th>Edit</th>
-                            <th>Delete</th>
+                            <th>ID</th>
+                            <th>Mail</th>
+                            <th>Bewerken</th>
+                            <th>Verwijderen</th>
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td>John</td>
-                            <td>Doe</td>
-                            <td></td>
-                            <td><button class="btn btn-primary">Edit gebruiker</button></td>
-                            <form action="deletegebruiker.php" method="post">
-                            <td><button class="btn btn-danger" type="button">Delete</button></td>
-                            </form>
-                        </tr>
+                    <?php
+                $sth = $conn->prepare("SELECT * FROM gebruiker");
+                $sth->execute();
+                /* Fetch all of the remaining rows in the result set */
+                $result = $sth->fetchAll();
+                ?>
+                    <?php
+                  foreach ($result as $row) {
+                    $GebruikerID = $row['GebruikerID'];
+                    $GebruikerMail = $row['GebruikerMail'];
+              
+                
+                  
+                        echo "<tr>";
+                            echo "<td>" . $GebruikerID . "</td>";
+                            echo "<td>".$GebruikerMail . "</td>";
+                            echo "<td>" .  "<a class='btn btn-primary' href='./gebruikeraanpassen.php?id=".$row['GebruikerID']."'>Edit gebruiker</a>"; "</td>";
+                            echo "<td>" .  "<a class='btn btn-danger' href='./festivalaanpassen.php?id=".$row['GebruikerID']."'>Delete gebruiker</a>"; "</td>";
+                            echo "</tr>";
+                        
+                         } ?>
+
                     </tbody>
                 </table>
-
             </div>
         </section>
     </body>
-
-<?php
-    }
-?>
 
 </html>
