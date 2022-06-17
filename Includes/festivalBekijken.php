@@ -47,17 +47,19 @@ include_once("./links.php");
                     $FestivalDatum = $row['FestivalDatum'];
                     $FestivalBegintijd = $row['FestivalBegintijd'];
                     $FestivalEindtijd = $row['FestivalEindtijd'];
-                 ?>
+                    $FestivalID = $row['FestivalID'];
+                
                   
-                        <tr>
-                            <td><?php echo $FestivalNaam?></td> 
-                            <td><?php echo date ('d-m-y', strtotime($FestivalDatum))?></td>
-                            <td><?php echo date('H:i', strtotime($FestivalBegintijd)) ?> - <?php echo date('H:i', strtotime($FestivalEindtijd))?></td>
-                            <td><button class="btn btn-primary">Edit festival</button></td>
-                            <td><button class="btn btn-danger">Delete festival</button></td>
-                        </tr>
+                        echo "<tr>";
+                            echo "<td>" . $FestivalNaam . "</td>";
+                            echo "<td>". date ('d-m-y', strtotime($FestivalDatum)) . "</td>";
+                            echo "<td>"  . date('H:i', strtotime($FestivalBegintijd)) . '-' . date('H:i', strtotime($FestivalEindtijd)) .
+                             "</td>";
+                            echo "<td>" .  "<a class='btn btn-primary' href='./festivalaanpassen.php?id=".$row['FestivalID']."'>Edit festival</a>"; "</td>";
+                            echo "</tr>";
                         
-                        <?php } ?>
+                         } ?>
+
                     </tbody>
                 </table>
             </div>
