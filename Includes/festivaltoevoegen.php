@@ -48,7 +48,7 @@ include_once("./exclNavbar.php");
                     <div class=" ms-2 mb-3 row">
                         <label for="FestivalLogo" class="col-sm-12 col-form-label">Voeg logo toe:</label>
                         <div class="col-sm-8">
-                            <input class="form-control form-control-md" type="file" name="FestivalLogo">
+                            <input class="form-control form-control-md" type="text" name="FestivalLogo">
                         </div>
                        
                     <div class="mt-4 ms-2 mb-3 row">
