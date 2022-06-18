@@ -4,9 +4,9 @@ $conn = "";
 
 try {
 	$servername = "localhost";
-	$dbname = "festivaldatabase";
+	$dbname = "projectfestival";
 	$username = "root";
-	$password = "Wachtwoord123";
+	$password = "";
 
 	$conn = new PDO(
 		"mysql:host=$servername; dbname=$dbname",
