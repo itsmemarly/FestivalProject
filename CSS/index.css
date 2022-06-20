@@ -1,23 +1,16 @@
 
-.row{
-  padding: 10px;
+.carousel-item .active{
+  justify-content: center;
 }
 
-/* styling for background video */
-#myVideo {
-  position: fixed;
-  right: 0;
-  top: 0px;
-  min-width: 100%;
-  min-height: 100%;
+.row{
+  padding: 10px;
 }
 
 .card{
   border:0ch;
 }
-.card-title{
-  justify-content: center;
-}
+
 
 .collapse {
   position: relative;
@@ -35,5 +28,3 @@
   
   align-items: center;
 }
-
-
