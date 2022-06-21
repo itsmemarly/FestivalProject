@@ -51,7 +51,7 @@ include_once("./links.php");
                             echo "<td>" . $GebruikerID . "</td>";
                             echo "<td>".$GebruikerMail . "</td>";
                             echo "<td>" .  "<a class='btn btn-primary' href='./gebruikeraanpassen.php?id=".$row['GebruikerID']."'>Edit gebruiker</a>"; "</td>";
-                            echo "<td>" .  "<a class='btn btn-danger' href='./festivalaanpassen.php?id=".$row['GebruikerID']."'>Delete gebruiker</a>"; "</td>";
+                            echo "<td>" .  "<a class='btn btn-danger' href='./deletegebruiker.php?id=".$row['GebruikerID']."'>Delete gebruiker</a>"; "</td>";
                             echo "</tr>";
                         
                          } ?>
